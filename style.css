@@ -339,19 +339,20 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-.badge-icon,
-.chip-icon,
-.why-icon,
-.service-icon {
+.mahara-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
+  flex: 0 0 28px;
   border-radius: 50%;
   border: 1px solid var(--gold);
   color: var(--gold);
-  font-size: 0.9rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .hero-visual {
@@ -815,18 +816,6 @@ textarea {
 .mini-contact-card small {
   color: rgba(255,255,255,0.72);
   font-size: 0.8rem;
-}
-
-.mini-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  font-weight: 700;
 }
 
 .brand-panel {
