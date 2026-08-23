@@ -20,75 +20,74 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const collectQuoteData = () => {
+    if (!quoteForm) return null;
+
+    const formData = new FormData(quoteForm);
+    const servicesRequired = formData.getAll("servicesRequired").map((value) => value.toString());
+
+    return {
+      fullName: formData.get("fullName")?.toString().trim() || "Not provided",
+      companyName: formData.get("companyName")?.toString().trim() || "Not provided",
+      country: formData.get("country")?.toString().trim() || "Not provided",
+      businessEmail: formData.get("businessEmail")?.toString().trim() || "Not provided",
+      phone: formData.get("phone")?.toString().trim() || "Not provided",
+      industry: formData.get("industry")?.toString().trim() || "Not provided",
+      agentsRequired: formData.get("agentsRequired")?.toString().trim() || "Not provided",
+      languagesRequired: formData.get("languagesRequired")?.toString().trim() || "Not provided",
+      workingHours: formData.get("workingHours")?.toString().trim() || "Not provided",
+      additionalInfo: formData.get("additionalInfo")?.toString().trim() || "Not provided",
+      servicesRequired
+    };
+  };
+
   if (quoteForm) {
     quoteForm.addEventListener("submit", (event) => {
       event.preventDefault();
-
-      const formData = new FormData(quoteForm);
-      const fullName = formData.get("fullName")?.toString().trim() || "Not provided";
-      const companyName = formData.get("companyName")?.toString().trim() || "Not provided";
-      const country = formData.get("country")?.toString().trim() || "Not provided";
-      const businessEmail = formData.get("businessEmail")?.toString().trim() || "Not provided";
-      const phone = formData.get("phone")?.toString().trim() || "Not provided";
-      const industry = formData.get("industry")?.toString().trim() || "Not provided";
-      const agentsRequired = formData.get("agentsRequired")?.toString().trim() || "Not provided";
-      const languagesRequired = formData.get("languagesRequired")?.toString().trim() || "Not provided";
-      const workingHours = formData.get("workingHours")?.toString().trim() || "Not provided";
-      const additionalInfo = formData.get("additionalInfo")?.toString().trim() || "Not provided";
-      const servicesRequired = formData.getAll("servicesRequired").map((value) => value.toString());
+      const data = collectQuoteData();
+      if (!data) return;
 
       const subject = "New BPO Inquiry - MAHARA BPO";
       const emailBody = [
-        `Full Name: ${fullName}`,
-        `Company Name: ${companyName}`,
-        `Country: ${country}`,
-        `Business Email: ${businessEmail}`,
-        `Phone / WhatsApp: ${phone}`,
-        `Industry: ${industry}`,
-        `Number of Agents: ${agentsRequired}`,
-        `Required Languages: ${languagesRequired}`,
-        `Services Required: ${servicesRequired.length ? servicesRequired.join(", ") : "Not provided"}`,
-        `Working Hours: ${workingHours}`,
-        `Additional Information: ${additionalInfo}`
+        `Full Name: ${data.fullName}`,
+        `Company Name: ${data.companyName}`,
+        `Country: ${data.country}`,
+        `Business Email: ${data.businessEmail}`,
+        `Phone / WhatsApp: ${data.phone}`,
+        `Industry: ${data.industry}`,
+        `Number of Agents: ${data.agentsRequired}`,
+        `Required Languages: ${data.languagesRequired}`,
+        `Services Required: ${data.servicesRequired.length ? data.servicesRequired.join(", ") : "Not provided"}`,
+        `Working Hours: ${data.workingHours}`,
+        `Additional Information: ${data.additionalInfo}`
       ].join("\n");
 
-      const mailtoUrl = `mailto:info@maharabpo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-      window.location.href = mailtoUrl;
+      window.location.href = `mailto:Info@MaharaBPO.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
       if (formMessage) {
-        formMessage.textContent = "Your email application will open so you can send the inquiry to info@maharabpo.com.";
+        formMessage.textContent = "Your email application will open so you can send the inquiry to Info@MaharaBPO.com.";
       }
     });
   }
 
-  if (whatsappQuoteBtn) {
+  if (whatsappQuoteBtn && quoteForm) {
     whatsappQuoteBtn.addEventListener("click", () => {
-      const formData = new FormData(quoteForm);
-      const fullName = formData.get("fullName")?.toString().trim() || "Not provided";
-      const companyName = formData.get("companyName")?.toString().trim() || "Not provided";
-      const country = formData.get("country")?.toString().trim() || "Not provided";
-      const businessEmail = formData.get("businessEmail")?.toString().trim() || "Not provided";
-      const phone = formData.get("phone")?.toString().trim() || "Not provided";
-      const industry = formData.get("industry")?.toString().trim() || "Not provided";
-      const agentsRequired = formData.get("agentsRequired")?.toString().trim() || "Not provided";
-      const languagesRequired = formData.get("languagesRequired")?.toString().trim() || "Not provided";
-      const workingHours = formData.get("workingHours")?.toString().trim() || "Not provided";
-      const additionalInfo = formData.get("additionalInfo")?.toString().trim() || "Not provided";
-      const servicesRequired = formData.getAll("servicesRequired").map((value) => value.toString());
+      const data = collectQuoteData();
+      if (!data) return;
 
       const messageLines = [
         "Hello MAHARA BPO, I would like to request information about your BPO services.",
-        `Full Name: ${fullName}`,
-        `Company Name: ${companyName}`,
-        `Country: ${country}`,
-        `Business Email: ${businessEmail}`,
-        `Phone / WhatsApp: ${phone}`,
-        `Industry: ${industry}`,
-        `Number of Agents: ${agentsRequired}`,
-        `Required Languages: ${languagesRequired}`,
-        `Services Required: ${servicesRequired.length ? servicesRequired.join(", ") : "Not provided"}`,
-        `Working Hours: ${workingHours}`,
-        `Additional Information: ${additionalInfo}`
+        `Full Name: ${data.fullName}`,
+        `Company Name: ${data.companyName}`,
+        `Country: ${data.country}`,
+        `Business Email: ${data.businessEmail}`,
+        `Phone / WhatsApp: ${data.phone}`,
+        `Industry: ${data.industry}`,
+        `Number of Agents: ${data.agentsRequired}`,
+        `Required Languages: ${data.languagesRequired}`,
+        `Services Required: ${data.servicesRequired.length ? data.servicesRequired.join(", ") : "Not provided"}`,
+        `Working Hours: ${data.workingHours}`,
+        `Additional Information: ${data.additionalInfo}`
       ];
 
       const whatsappUrl = `https://wa.me/923471417357?text=${encodeURIComponent(messageLines.join("\n"))}`;
