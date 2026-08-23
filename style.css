@@ -1,16 +1,16 @@
 :root {
-  --bg-900: #090f15;
-  --bg-800: #0d151d;
-  --bg-700: #111b24;
-  --panel: #141f2b;
-  --panel-soft: #1a2734;
-  --panel-strong: #0b1117;
-  --gold: #d1ae68;
-  --gold-soft: #e8d7a6;
-  --text: #f5f7f9;
-  --muted: #c4ced8;
-  --muted-2: #8f9aa6;
-  --border: rgba(209, 174, 104, 0.22);
+  --bg-900: #1a1a1a;
+  --bg-800: #242424;
+  --bg-700: #333333;
+  --panel: #2d2d2d;
+  --panel-soft: #383838;
+  --panel-strong: #161616;
+  --gold: #c9a96e;
+  --gold-soft: #e1c58f;
+  --text: #ffffff;
+  --muted: #d0d0d0;
+  --muted-2: #a5a5a5;
+  --border: rgba(201, 169, 110, 0.28);
   --shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
   --radius: 24px;
   --container: 1280px;
@@ -136,16 +136,19 @@ h3 {
   box-shadow: inset 0 0 0 1px rgba(209, 174, 104, 0.2);
 }
 
-.small {
-  width: 42px;
-  height: 42px;
-  font-size: 1.35rem;
+.brand-logo {
+  display: block;
+  height: 54px;
+  width: auto;
+  object-fit: contain;
 }
 
-.large-mark {
-  width: 62px;
-  height: 62px;
-  font-size: 2.2rem;
+.brand-logo-panel {
+  height: 130px;
+}
+
+.brand-logo-mini {
+  height: 60px;
 }
 
 .brand-copy {
@@ -213,6 +216,32 @@ h3 {
 
 .nav-cta {
   margin-left: 8px;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid rgba(209, 174, 104, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.lang-option.active {
+  background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+  color: var(--bg-900);
 }
 
 .btn {
@@ -890,6 +919,37 @@ textarea {
   color: var(--text);
   font-size: 1.6rem;
   box-shadow: 0 18px 34px rgba(29, 163, 84, 0.32);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-whatsapp:hover,
+.floating-whatsapp:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(29, 163, 84, 0.42);
+}
+
+.floating-whatsapp::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  padding: 0.45rem 0.7rem;
+  border-radius: 6px;
+  background: var(--panel-strong);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) translateX(4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.floating-whatsapp:hover::after,
+.floating-whatsapp:focus-visible::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
 }
 
 .nav-toggle {
@@ -904,6 +964,27 @@ textarea {
   padding: 0.7rem 0.7rem;
 }
 
+.mobile-header-controls {
+  display: none;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-menu-brand {
+  display: none;
+}
+
+.mobile-language-switcher {
+  gap: 2px;
+  padding: 2px;
+  border-color: rgba(201, 169, 110, 0.18);
+}
+
+.mobile-language-switcher .lang-option {
+  padding: 0.4rem 0.5rem;
+  font-size: 0.7rem;
+}
+
 .nav-toggle span {
   display: block;
   width: 100%;
@@ -912,7 +993,125 @@ textarea {
   background: var(--text);
 }
 
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+  font-family: "Tajawal", Tahoma, sans-serif;
+  line-height: 1.85;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3 {
+  font-family: "Tajawal", Tahoma, sans-serif;
+  letter-spacing: 0;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+html[dir="rtl"] h1 {
+  line-height: 1.18;
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] li {
+  font-weight: 400;
+}
+
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .nav-menu,
+html[dir="rtl"] .lang-option,
+html[dir="rtl"] .btn,
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+  font-family: "Tajawal", Tahoma, sans-serif;
+}
+
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+html[dir="rtl"] .nav-menu,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .lang-option {
+  font-weight: 700;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+  line-height: 1.6;
+}
+
+html[dir="rtl"] .nav-menu,
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .hero-inner,
+html[dir="rtl"] .about-grid,
+html[dir="rtl"] .why-grid,
+html[dir="rtl"] .benefits-layout,
+html[dir="rtl"] .quote-layout,
+html[dir="rtl"] .contact-wrap,
+html[dir="rtl"] .footer-grid,
+html[dir="rtl"] .footer-bottom-inner {
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-menu {
+  left: auto;
+  right: 22px;
+}
+
+html[dir="rtl"] .nav-cta {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+html[dir="rtl"] .hero-rtl,
+html[dir="rtl"] .why-image-badge {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .benefits-copy li {
+  padding-left: 0;
+  padding-right: 24px;
+}
+
+html[dir="rtl"] .benefits-copy li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .brand-panel {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .floating-whatsapp {
+  right: auto;
+  left: 22px;
+}
+
+html[dir="rtl"] .floating-whatsapp::after {
+  right: auto;
+  left: calc(100% + 12px);
+  transform: translateY(-50%) translateX(-4px);
+}
+
+html[dir="rtl"] .floating-whatsapp:hover::after,
+html[dir="rtl"] .floating-whatsapp:focus-visible::after {
+  transform: translateY(-50%) translateX(0);
+}
+
 @media (max-width: 980px) {
+  .mobile-header-controls {
+    display: flex;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -926,10 +1125,26 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     padding: 18px 16px;
-    background: rgba(8, 12, 17, 0.96);
+    background: var(--panel-strong);
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: var(--shadow);
+    backdrop-filter: none;
+  }
+
+  .mobile-menu-brand {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mobile-menu-brand .brand-logo {
+    height: 44px;
+  }
+
+  html[dir="rtl"] .nav-menu {
+    align-items: flex-end;
   }
 
   .nav-menu.open {
