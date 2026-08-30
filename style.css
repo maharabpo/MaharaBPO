@@ -2,6 +2,7 @@
    MAHARA BPO
    PREMIUM MODERN CONTACT CENTER
    MASTER STYLESHEET
+   VERSION — FINAL RTL/LTR SAFE
    ========================================================= */
 
 /* =========================================================
@@ -33,12 +34,13 @@
   --radius: 24px;
 }
 
-
 /* =========================================================
    RESET
    ========================================================= */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -49,6 +51,8 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
+
   background: var(--bg);
   color: var(--text);
 
@@ -90,13 +94,13 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
-}
-
-button {
-  cursor: pointer;
 }
 
 input,
@@ -138,7 +142,6 @@ textarea {
   outline-offset: 4px;
 }
 
-
 /* =========================================================
    CONTAINER
    ========================================================= */
@@ -152,12 +155,13 @@ textarea {
   margin-inline: auto;
 }
 
-
 /* =========================================================
    EYEBROW
    ========================================================= */
 
 .eyebrow {
+  margin-bottom: 16px;
+
   color: var(--gold);
 
   font-size: 0.72rem;
@@ -165,10 +169,7 @@ textarea {
 
   letter-spacing: 0.18em;
   text-transform: uppercase;
-
-  margin-bottom: 16px;
 }
-
 
 /* =========================================================
    HEADER
@@ -177,7 +178,6 @@ textarea {
 .site-header {
   position: sticky;
   top: 0;
-
   z-index: 1000;
 
   background: rgba(7, 9, 12, 0.88);
@@ -214,7 +214,6 @@ textarea {
   object-fit: contain;
 }
 
-
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -234,8 +233,7 @@ textarea {
 .nav-menu > a {
   position: relative;
 
-  transition:
-    color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 .nav-menu > a::after {
@@ -254,8 +252,7 @@ textarea {
   transform: scaleX(0);
   transform-origin: center;
 
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .nav-menu > a:hover {
@@ -265,7 +262,6 @@ textarea {
 .nav-menu > a:hover::after {
   transform: scaleX(1);
 }
-
 
 /* =========================================================
    LANGUAGE SWITCHER
@@ -289,7 +285,6 @@ textarea {
 
 .lang-option {
   border: 0;
-
   border-radius: 999px;
 
   padding: 0.42rem 0.68rem;
@@ -315,7 +310,6 @@ textarea {
 .lang-option:hover:not(.active) {
   color: var(--white);
 }
-
 
 /* =========================================================
    BUTTONS
@@ -401,7 +395,6 @@ textarea {
   color: #8ff0b4;
 }
 
-
 /* =========================================================
    HERO
    ========================================================= */
@@ -425,7 +418,6 @@ textarea {
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 
   z-index: -1;
@@ -444,7 +436,6 @@ textarea {
   content: "";
 
   position: absolute;
-
   inset: 0;
 
   z-index: -1;
@@ -511,6 +502,8 @@ textarea {
 .hero-copy h1 {
   max-width: 780px;
 
+  color: var(--white);
+
   font-size:
     clamp(
       3.2rem,
@@ -522,13 +515,10 @@ textarea {
 
   letter-spacing: -0.055em;
   line-height: 0.98;
-
-  color: var(--white);
 }
 
 .hero-copy h1 span {
   display: block;
-
   color: var(--gold-light);
 }
 
@@ -614,7 +604,6 @@ textarea {
 
   font-size: 0.65rem;
 }
-
 
 /* =========================================================
    HERO SIDE
@@ -727,7 +716,6 @@ textarea {
   line-height: 1.8;
 }
 
-
 /* =========================================================
    GENERAL SECTIONS
    ========================================================= */
@@ -789,7 +777,6 @@ textarea {
 .contact-section {
   background: #0d1319;
 }
-
 
 /* =========================================================
    SECTION INTRO
@@ -859,10 +846,8 @@ textarea {
 
 .section-lead {
   color: var(--muted);
-
   line-height: 1.9;
 }
-
 
 /* =========================================================
    VALUE CARDS
@@ -972,6 +957,20 @@ textarea {
   font-size: 1.2rem;
 }
 
+.value-icon svg,
+.service-icon svg {
+  width: 22px;
+  height: 22px;
+
+  fill: none;
+  stroke: currentColor;
+
+  stroke-width: 1.8;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .value-card h3 {
   margin-bottom: 12px;
 
@@ -984,7 +983,6 @@ textarea {
   font-size: 0.88rem;
   line-height: 1.9;
 }
-
 
 /* =========================================================
    SERVICES
@@ -1064,8 +1062,6 @@ textarea {
   border-radius: 50%;
 
   color: var(--gold);
-
-  font-size: 1rem;
 }
 
 .service-card h3 {
@@ -1094,7 +1090,6 @@ textarea {
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
-
 
 /* =========================================================
    TRUST / STATS
@@ -1188,7 +1183,6 @@ textarea {
   letter-spacing: 0.08em;
 }
 
-
 /* =========================================================
    PROCESS
    ========================================================= */
@@ -1249,7 +1243,6 @@ textarea {
   font-size: 0.86rem;
   line-height: 1.9;
 }
-
 
 /* =========================================================
    TECHNOLOGY
@@ -1358,7 +1351,6 @@ textarea {
   font-size: 0.82rem;
   line-height: 1.85;
 }
-
 
 /* =========================================================
    WHY MAHARA
@@ -1479,7 +1471,6 @@ textarea {
   line-height: 1.8;
 }
 
-
 /* =========================================================
    EXPERIENCE
    ========================================================= */
@@ -1549,7 +1540,6 @@ textarea {
   font-size: 1rem;
   line-height: 2;
 }
-
 
 /* =========================================================
    TESTIMONIAL
@@ -1630,7 +1620,6 @@ textarea {
   letter-spacing: 0.1em;
 }
 
-
 /* =========================================================
    FINAL CTA
    ========================================================= */
@@ -1699,7 +1688,6 @@ textarea {
 
   color: var(--gold-light);
 }
-
 
 /* =========================================================
    QUOTE
@@ -1883,7 +1871,6 @@ textarea {
     rgba(215, 111, 111, 0.1) !important;
 }
 
-
 /* =========================================================
    CONTACT
    ========================================================= */
@@ -1931,7 +1918,6 @@ textarea {
   background:
     rgba(201, 169, 110, 0.03);
 }
-
 
 /* =========================================================
    PROFESSIONAL SVG CONTACT ICONS
@@ -2027,10 +2013,9 @@ textarea {
   word-break: break-word;
 }
 
-
 /* =========================================================
-   LTR CONTACT DATA
-   NEVER REVERSE THESE IN ARABIC
+   LTR DATA
+   NEVER REVERSE
    ========================================================= */
 
 .contact-value,
@@ -2040,18 +2025,38 @@ textarea {
 .whatsapp-value,
 .website-value,
 .domain-value,
-.ltr-data {
+.ltr-data,
+.ltr,
+.keep-ltr {
   direction: ltr !important;
 
-  unicode-bidi: plaintext;
+  unicode-bidi: isolate;
 
-  text-align: left;
+  text-align: left !important;
+
+  writing-mode: horizontal-tb;
 }
 
 .contact-value a:hover {
   color: var(--gold-light);
 }
 
+/* =========================================================
+   NUMBERS
+   ========================================================= */
+
+.number,
+.phone-number,
+.whatsapp-number,
+.website-number,
+.time-number,
+.ltr-number {
+  direction: ltr !important;
+
+  unicode-bidi: isolate;
+
+  display: inline-block;
+}
 
 /* =========================================================
    FOOTER
@@ -2158,26 +2163,39 @@ textarea {
   gap: 20px;
 }
 
-.footer-meta a:hover {
-  color: var(--gold);
-}
-
-
 /* =========================================================
-   ENGLISH BRAND NAME — KEEP LTR
+   ENGLISH BRAND
+   ALWAYS LTR
    ========================================================= */
 
 .brand-name,
 .brand-name-en,
 .english-brand,
-.footer-brand-name {
+.footer-brand-name,
+.mahara-brand,
+[data-brand="en"] {
   direction: ltr !important;
 
   unicode-bidi: isolate;
 
-  text-align: left;
+  text-align: left !important;
+
+  display: inline-block;
 }
 
+/* =========================================================
+   24/7
+   ========================================================= */
+
+.service-247,
+.support-247,
+[data-ltr="247"] {
+  direction: ltr !important;
+
+  unicode-bidi: isolate;
+
+  display: inline-block;
+}
 
 /* =========================================================
    FLOATING WHATSAPP
@@ -2292,7 +2310,6 @@ textarea {
     translateX(0);
 }
 
-
 /* =========================================================
    MOBILE NAVIGATION
    ========================================================= */
@@ -2357,10 +2374,13 @@ textarea {
     rotate(-45deg);
 }
 
-
 /* =========================================================
-   RTL — ARABIC
+   RTL — PAGE LEVEL ONLY
    ========================================================= */
+
+html[dir="rtl"] {
+  direction: rtl;
+}
 
 html[dir="rtl"] body {
   font-family:
@@ -2368,6 +2388,8 @@ html[dir="rtl"] body {
     Tahoma,
     Arial,
     sans-serif;
+
+  direction: rtl;
 
   text-align: right;
 
@@ -2394,28 +2416,25 @@ html[dir="rtl"] h4 {
   line-height: 1.4;
 }
 
-
 /* =========================================================
-   RTL NAV
+   RTL HEADER
    ========================================================= */
+
+html[dir="rtl"] .navbar {
+  direction: rtl;
+}
 
 html[dir="rtl"] .nav-menu {
   direction: rtl;
 }
 
-html[dir="rtl"] .nav-cta {
-  margin-left: 0;
-  margin-right: 5px;
+html[dir="rtl"] .nav-menu > a::after {
+  transform-origin: center;
 }
-
 
 /* =========================================================
    RTL HERO
    ========================================================= */
-
-html[dir="rtl"] .hero {
-  background-position: center;
-}
 
 html[dir="rtl"] .hero-overlay {
   background:
@@ -2433,16 +2452,11 @@ html[dir="rtl"] .hero-copy {
 }
 
 html[dir="rtl"] .hero-eyebrow {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 html[dir="rtl"] .hero-copy h1 {
-  font-size:
-    clamp(
-      3rem,
-      6vw,
-      6rem
-    );
+  letter-spacing: 0;
 
   line-height: 1.25;
 }
@@ -2466,13 +2480,21 @@ html[dir="rtl"] .hero-card {
   text-align: right;
 }
 
-
 /* =========================================================
    RTL SECTIONS
+   IMPORTANT:
+   Do NOT reverse grids blindly.
    ========================================================= */
 
-html[dir="rtl"] .section-intro {
-  direction: rtl;
+html[dir="rtl"] .section-intro,
+html[dir="rtl"] .value-card,
+html[dir="rtl"] .service-card,
+html[dir="rtl"] .process-card,
+html[dir="rtl"] .technology-copy,
+html[dir="rtl"] .why-layout,
+html[dir="rtl"] .testimonial-wrap,
+html[dir="rtl"] .quote-layout {
+  text-align: right;
 }
 
 html[dir="rtl"] .section-heading {
@@ -2484,52 +2506,16 @@ html[dir="rtl"] .value-index {
   left: 25px;
 }
 
-html[dir="rtl"] .value-card {
-  text-align: right;
-}
-
-html[dir="rtl"] .service-card {
-  text-align: right;
-}
-
 html[dir="rtl"] .service-top {
-  direction: rtl;
-}
-
-html[dir="rtl"] .process-card {
-  text-align: right;
-}
-
-html[dir="rtl"] .technology-grid {
-  direction: rtl;
-}
-
-html[dir="rtl"] .technology-copy {
-  text-align: right;
-}
-
-html[dir="rtl"] .why-layout {
   direction: rtl;
 }
 
 html[dir="rtl"] .why-item {
   direction: rtl;
-
-  grid-template-columns:
-    45px
-    1fr;
-}
-
-html[dir="rtl"] .why-item > span {
-  text-align: right;
 }
 
 html[dir="rtl"] .experience-content {
   text-align: right;
-}
-
-html[dir="rtl"] .testimonial-wrap {
-  direction: rtl;
 }
 
 html[dir="rtl"] .testimonial-heading {
@@ -2538,15 +2524,6 @@ html[dir="rtl"] .testimonial-heading {
 
 html[dir="rtl"] .testimonial-message {
   text-align: right;
-}
-
-html[dir="rtl"] .quote-points span::before {
-  margin-right: 0;
-  margin-left: 10px;
-}
-
-html[dir="rtl"] .quote-layout {
-  direction: rtl;
 }
 
 html[dir="rtl"] .quote-copy {
@@ -2562,51 +2539,45 @@ html[dir="rtl"] .quote-form label {
   text-align: right;
 }
 
+html[dir="rtl"] .quote-points span::before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* =========================================================
+   RTL FORMS
+   ========================================================= */
+
 html[dir="rtl"] .quote-form input,
 html[dir="rtl"] .quote-form select,
 html[dir="rtl"] .quote-form textarea {
-  text-align: right;
   direction: rtl;
+  text-align: right;
 }
 
-
 /* =========================================================
-   IMPORTANT:
-   EMAIL / PHONE / WHATSAPP / WEBSITE STAY LTR IN ARABIC
+   LTR FORM DATA
    ========================================================= */
 
 html[dir="rtl"] input[type="email"],
-html[dir="rtl"] input[type="tel"] {
-  direction: ltr !important;
-  text-align: left !important;
-}
-
-html[dir="rtl"] .contact-value,
-html[dir="rtl"] .contact-value a,
+html[dir="rtl"] input[type="tel"],
+html[dir="rtl"] input[name="email"],
+html[dir="rtl"] input[name="phone"],
+html[dir="rtl"] input[name="whatsapp"],
 html[dir="rtl"] .email-value,
 html[dir="rtl"] .phone-value,
 html[dir="rtl"] .whatsapp-value,
 html[dir="rtl"] .website-value,
 html[dir="rtl"] .domain-value,
-html[dir="rtl"] .ltr-data {
-  direction: ltr !important;
-
-  unicode-bidi: plaintext;
-
-  text-align: left !important;
-}
-
-html[dir="rtl"] .brand-name,
-html[dir="rtl"] .brand-name-en,
-html[dir="rtl"] .english-brand,
-html[dir="rtl"] .footer-brand-name {
+html[dir="rtl"] .ltr-data,
+html[dir="rtl"] .ltr,
+html[dir="rtl"] .keep-ltr {
   direction: ltr !important;
 
   unicode-bidi: isolate;
 
   text-align: left !important;
 }
-
 
 /* =========================================================
    RTL CONTACT
@@ -2618,15 +2589,17 @@ html[dir="rtl"] .contact-grid {
 
 html[dir="rtl"] .contact-card {
   direction: rtl;
-
   text-align: right;
 }
 
 html[dir="rtl"] .contact-card .contact-value,
 html[dir="rtl"] .contact-card .contact-value a {
+  direction: ltr !important;
+
+  unicode-bidi: isolate;
+
   text-align: left !important;
 }
-
 
 /* =========================================================
    RTL FOOTER
@@ -2651,7 +2624,6 @@ html[dir="rtl"] .footer-meta {
   direction: rtl;
 }
 
-
 /* =========================================================
    RTL WHATSAPP
    ========================================================= */
@@ -2666,9 +2638,8 @@ html[dir="rtl"] .floating-whatsapp::after {
   left: calc(100% + 12px);
 }
 
-
 /* =========================================================
-   RESPONSIVE — TABLET
+   MOBILE — TABLET
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -2713,9 +2684,8 @@ html[dir="rtl"] .floating-whatsapp::after {
   }
 }
 
-
 /* =========================================================
-   RESPONSIVE — MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -2863,9 +2833,8 @@ html[dir="rtl"] .floating-whatsapp::after {
   }
 }
 
-
 /* =========================================================
-   RESPONSIVE — SMALL MOBILE
+   SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 620px) {
@@ -2900,12 +2869,14 @@ html[dir="rtl"] .floating-whatsapp::after {
   html[dir="rtl"] .hero-copy h1 {
     font-size:
       clamp(
-        2.5rem,
+        2.45rem,
         12vw,
         4rem
       );
 
-    line-height: 1.35;
+    line-height: 1.4;
+
+    letter-spacing: 0;
   }
 
   .hero-description {
@@ -3052,11 +3023,14 @@ html[dir="rtl"] .floating-whatsapp::after {
     right: auto;
   }
 
+  .floating-whatsapp::after {
+    display: none;
+  }
+
   .contact-card {
     min-height: 125px;
   }
 }
-
 
 /* =========================================================
    VERY SMALL DEVICES
@@ -3090,7 +3064,6 @@ html[dir="rtl"] .floating-whatsapp::after {
   }
 }
 
-
 /* =========================================================
    ACCESSIBILITY
    ========================================================= */
@@ -3105,7 +3078,44 @@ html[dir="rtl"] .floating-whatsapp::after {
   *::before,
   *::after {
     animation: none !important;
-
     transition: none !important;
   }
+}
+
+/* =========================================================
+   FINAL SAFETY RULES
+   ========================================================= */
+
+/*
+  These classes are intentionally available so JavaScript
+  can mark values that must NEVER become RTL.
+*/
+
+[dir="rtl"] .force-ltr,
+[dir="rtl"] .force-ltr *,
+[dir="rtl"] [data-direction="ltr"],
+[dir="rtl"] [data-direction="ltr"] * {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  text-align: left !important;
+}
+
+/*
+  English brand remains English.
+*/
+
+[dir="rtl"] .force-brand-ltr,
+[dir="rtl"] .force-brand-ltr * {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  text-align: left !important;
+}
+
+/*
+  Prevent accidental horizontal overflow.
+*/
+
+html,
+body {
+  overflow-x: hidden;
 }
