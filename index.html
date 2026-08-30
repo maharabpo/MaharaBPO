@@ -2,1885 +2,76 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mahara BPO | Customer Service Outsourcing</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Mahara BPO | Your Customer Service Partner</title>
 
   <meta
     name="description"
-    content="Mahara BPO provides professionally managed customer service outsourcing solutions for businesses across the Gulf region."
+    content="Mahara BPO provides professional customer service outsourcing solutions for businesses across the Gulf region."
   >
 
-  <meta name="theme-color" content="#080a0d">
+  <meta
+    name="keywords"
+    content="Mahara BPO, customer service, BPO, outsourcing, call center, Gulf, customer support"
+  >
+
+  <meta name="theme-color" content="#1A1A1A">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
-  <!-- Website CSS -->
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- =====================================================
-       HEADER
+       HEADER / NAVIGATION
        ===================================================== -->
 
   <header class="site-header">
 
-    <div class="container navbar">
+    <div class="container nav-container">
 
-      <!-- LOGO -->
-      <a href="#home" class="brand" aria-label="Mahara BPO Home">
+      <!-- Logo -->
+      <a
+        href="#home"
+        class="brand-logo"
+        aria-label="Mahara BPO Home"
+      >
         <img
           src="mahra-logo1.png"
           alt="Mahara BPO"
-          class="brand-logo"
+          class="logo-image"
         >
       </a>
 
-      <!-- DESKTOP / MOBILE NAVIGATION -->
-      <nav class="nav-menu" id="navMenu">
 
-        <a href="#home" data-i18n="nav.home">Home</a>
-
-        <a href="#about" data-i18n="nav.about">About</a>
-
-        <a href="#services" data-i18n="nav.services">Services</a>
-
-        <a href="#process" data-i18n="nav.process">Process</a>
-
-        <a href="#technology" data-i18n="nav.technology">
-          Technology
-        </a>
-
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <!-- Desktop / Mobile Navigation -->
+      <nav
+        class="nav-menu"
+        id="main-navigation"
+        aria-label="Main navigation"
+      >
 
         <a
-          href="#quote"
-          class="btn btn-primary nav-cta"
-          data-i18n="nav.quote"
+          href="#home"
+          data-i18n="nav.home"
         >
-          Request a Quote
+          Home
         </a>
-
-      </nav>
-
-      <!-- MOBILE CONTROLS -->
-      <div class="mobile-header-controls">
-
-        <div class="lang-switcher">
-
-          <button
-            type="button"
-            class="lang-option active"
-            data-lang="en"
-          >
-            EN
-          </button>
-
-          <button
-            type="button"
-            class="lang-option"
-            data-lang="ar"
-          >
-            AR
-          </button>
-
-        </div>
-
-        <button
-          type="button"
-          class="nav-toggle"
-          id="navToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-      </div>
-
-      <!-- DESKTOP LANGUAGE SWITCHER -->
-      <div class="desktop-language-switcher">
-
-        <div class="lang-switcher">
-
-          <button
-            type="button"
-            class="lang-option active"
-            data-lang="en"
-          >
-            EN
-          </button>
-
-          <button
-            type="button"
-            class="lang-option"
-            data-lang="ar"
-          >
-            AR
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- =====================================================
-       MAIN
-       ===================================================== -->
-
-  <main>
-
-
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
-
-    <section class="hero" id="home">
-
-      <div class="hero-overlay"></div>
-
-      <div class="container hero-inner">
-
-        <div class="hero-copy">
-
-          <div class="hero-eyebrow">
-            <span data-i18n="hero.eyebrow">
-              Customer Experience Partner
-            </span>
-          </div>
-
-          <h1 data-i18n="hero.title">
-            YOUR CUSTOMER
-            <span>SERVICE PARTNER</span>
-          </h1>
-
-          <p
-            class="hero-description"
-            data-i18n="hero.description"
-          >
-            Helping businesses across the Gulf outsource customer
-            service to dedicated, professionally managed teams.
-          </p>
-
-          <div class="hero-actions">
-
-            <a
-              href="#quote"
-              class="btn btn-primary"
-              data-i18n="hero.primary"
-            >
-              Start a Conversation
-            </a>
-
-            <a
-              href="#services"
-              class="btn btn-outline"
-              data-i18n="hero.secondary"
-            >
-              Explore Services
-            </a>
-
-          </div>
-
-          <div class="hero-trust">
-
-            <div class="trust-item">
-              <span class="trust-number">01</span>
-              <span data-i18n="hero.trust1">
-                Dedicated Teams
-              </span>
-            </div>
-
-            <div class="trust-item">
-              <span class="trust-number">02</span>
-              <span data-i18n="hero.trust2">
-                Gulf-Focused
-              </span>
-            </div>
-
-            <div class="trust-item">
-              <span class="trust-number">03</span>
-              <span data-i18n="hero.trust3">
-                24/7 Support
-              </span>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="hero-side">
-
-          <div class="hero-image-frame">
-
-            <img
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
-              alt="Professional customer service team"
-              loading="eager"
-            >
-
-          </div>
-
-          <div class="hero-card">
-
-            <div class="hero-card-line"></div>
-
-            <div
-              class="hero-card-label"
-              data-i18n="hero.cardLabel"
-            >
-              Mahara BPO
-            </div>
-
-            <h2 data-i18n="hero.cardTitle">
-              Service built around your customer.
-            </h2>
-
-            <p data-i18n="hero.cardText">
-              Reliable people, structured processes and modern
-              technology working together to deliver better
-              customer experiences.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         ABOUT
-         ===================================================== -->
-
-    <section class="value-section" id="about">
-
-      <div class="container">
-
-        <div class="section-intro">
-
-          <div>
-
-            <div
-              class="eyebrow"
-              data-i18n="about.eyebrow"
-            >
-              About Mahara
-            </div>
-
-            <h2 data-i18n="about.title">
-              Built to make customer service simpler, stronger and more scalable.
-            </h2>
-
-          </div>
-
-          <p
-            class="section-lead"
-            data-i18n="about.description"
-          >
-            Mahara BPO helps businesses create dependable customer
-            experiences through professionally managed outsourcing
-            teams designed around their operations.
-          </p>
-
-        </div>
-
-
-        <div class="value-grid">
-
-          <!-- VALUE 1 -->
-          <article class="value-card">
-
-            <span class="value-index">01</span>
-
-            <div class="value-icon" aria-hidden="true">
-
-              <svg
-                viewBox="0 0 24 24"
-                width="22"
-                height="22"
-                fill="none"
-              >
-
-                <path
-                  d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                />
-
-                <circle
-                  cx="12"
-                  cy="7"
-                  r="4"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                />
-
-              </svg>
-
-            </div>
-
-            <h3 data-i18n="values.1.title">
-              Dedicated People
-            </h3>
-
-            <p data-i18n="values.1.text">
-              Professionally managed teams focused on your customers,
-              your standards and your brand.
-            </p>
-
-          </article>
-
-
-          <!-- VALUE 2 -->
-          <article class="value-card">
-
-            <span class="value-index">02</span>
-
-            <div class="value-icon" aria-hidden="true">
-
-              <svg
-                viewBox="0 0 24 24"
-                width="22"
-                height="22"
-                fill="none"
-              >
-
-                <path
-                  d="M4 19V5"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                />
-
-                <path
-                  d="M4 5c5-3 10 3 16 0v10c-6 3-11-3-16 0"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linejoin="round"
-                />
-
-              </svg>
-
-            </div>
-
-            <h3 data-i18n="values.2.title">
-              Gulf Focus
-            </h3>
-
-            <p data-i18n="values.2.text">
-              Customer service solutions designed with the Gulf market,
-              expectations and communication styles in mind.
-            </p>
-
-          </article>
-
-
-          <!-- VALUE 3 -->
-          <article class="value-card">
-
-            <span class="value-index">03</span>
-
-            <div class="value-icon" aria-hidden="true">
-
-              <svg
-                viewBox="0 0 24 24"
-                width="22"
-                height="22"
-                fill="none"
-              >
-
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="8.5"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                />
-
-                <path
-                  d="M12 7v5l3 2"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                />
-
-              </svg>
-
-            </div>
-
-            <h3 data-i18n="values.3.title">
-              Always Available
-            </h3>
-
-            <p data-i18n="values.3.text">
-              Flexible operating models that help you stay responsive
-              when your customers need you.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         SERVICES
-         ===================================================== -->
-
-    <section class="services-section" id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div
-            class="eyebrow"
-            data-i18n="services.eyebrow"
-          >
-            What We Do
-          </div>
-
-          <h2 data-i18n="services.title">
-            Customer service solutions that fit your business.
-          </h2>
-
-          <p
-            class="section-description"
-            data-i18n="services.description"
-          >
-            From daily customer interactions to complete support
-            operations, Mahara BPO provides flexible outsourcing
-            solutions built around your goals.
-          </p>
-
-        </div>
-
-
-        <div class="service-grid">
-
-
-          <!-- SERVICE 1 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">01</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <path
-                    d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linejoin="round"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.1.title">
-              Customer Support
-            </h3>
-
-            <p data-i18n="services.1.text">
-              Professional customer support teams handling questions,
-              requests and customer interactions with care.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-
-          <!-- SERVICE 2 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">02</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <path
-                    d="M4 5h16v14H4z"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linejoin="round"
-                  />
-
-                  <path
-                    d="M8 9h8M8 13h5"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.2.title">
-              Call Center Operations
-            </h3>
-
-            <p data-i18n="services.2.text">
-              Structured inbound and outbound call operations supported
-              by clear processes and professional teams.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-
-          <!-- SERVICE 3 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">03</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <path
-                    d="M4 6h16v12H4z"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linejoin="round"
-                  />
-
-                  <path
-                    d="m4 7 8 6 8-6"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linejoin="round"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.3.title">
-              Email & Chat Support
-            </h3>
-
-            <p data-i18n="services.3.text">
-              Consistent support across digital channels so customers
-              receive the same quality of service wherever they connect.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-
-          <!-- SERVICE 4 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">04</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="8.5"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                  />
-
-                  <path
-                    d="M12 7v5l3 2"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.4.title">
-              24/7 Support
-            </h3>
-
-            <p data-i18n="services.4.text">
-              Flexible coverage models that keep your customer service
-              available beyond standard business hours.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-
-          <!-- SERVICE 5 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">05</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <path
-                    d="M12 3v18M3 12h18"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                    stroke-linecap="round"
-                  />
-
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="8.5"
-                    stroke="currentColor"
-                    stroke-width="1.7"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.5.title">
-              Sales Support
-            </h3>
-
-            <p data-i18n="services.5.text">
-              Customer-focused sales assistance designed to support
-              lead handling, follow-ups and conversion activities.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-
-          <!-- SERVICE 6 -->
-          <article class="service-card">
-
-            <div class="service-top">
-
-              <span class="service-number">06</span>
-
-              <div class="service-icon" aria-hidden="true">
-
-                <svg
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                >
-
-                  <path
-                    d="M5 19V9M12 19V5M19 19v-7"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                  />
-
-                </svg>
-
-              </div>
-
-            </div>
-
-            <h3 data-i18n="services.6.title">
-              Back Office Support
-            </h3>
-
-            <p data-i18n="services.6.text">
-              Reliable operational support that helps your internal
-              teams stay focused on the work that matters most.
-            </p>
-
-            <span
-              class="service-link"
-              data-i18n="services.learn"
-            >
-              Learn More →
-            </span>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         TRUST STATS
-         ===================================================== -->
-
-    <section class="trust-section">
-
-      <div class="container">
-
-        <div class="trust-heading">
-
-          <div
-            class="eyebrow"
-            data-i18n="stats.eyebrow"
-          >
-            The Mahara Standard
-          </div>
-
-          <h2 data-i18n="stats.title">
-            Built around consistency, quality and measurable service.
-          </h2>
-
-        </div>
-
-
-        <div class="trust-grid">
-
-          <div class="trust-stat">
-            <strong>24/7</strong>
-            <span data-i18n="stats.1">
-              Support Availability
-            </span>
-          </div>
-
-          <div class="trust-stat">
-            <strong>01</strong>
-            <span data-i18n="stats.2">
-              Dedicated Partner
-            </span>
-          </div>
-
-          <div class="trust-stat">
-            <strong>100%</strong>
-            <span data-i18n="stats.3">
-              Customer Focus
-            </span>
-          </div>
-
-          <div class="trust-stat">
-            <strong>GCC</strong>
-            <span data-i18n="stats.4">
-              Regional Focus
-            </span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         PROCESS
-         ===================================================== -->
-
-    <section class="process-section" id="process">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div
-            class="eyebrow"
-            data-i18n="process.eyebrow"
-          >
-            How It Works
-          </div>
-
-          <h2 data-i18n="process.title">
-            A simple process. A better customer experience.
-          </h2>
-
-        </div>
-
-
-        <div class="process-grid">
-
-          <article class="process-card">
-
-            <span class="process-number">01</span>
-
-            <h3 data-i18n="process.1.title">
-              Understand
-            </h3>
-
-            <p data-i18n="process.1.text">
-              We learn your business, customers, requirements and
-              service expectations.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <span class="process-number">02</span>
-
-            <h3 data-i18n="process.2.title">
-              Design
-            </h3>
-
-            <p data-i18n="process.2.text">
-              We create an operating model and workflow designed
-              around your customer journey.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <span class="process-number">03</span>
-
-            <h3 data-i18n="process.3.title">
-              Launch
-            </h3>
-
-            <p data-i18n="process.3.text">
-              Your dedicated team is prepared, trained and introduced
-              into the agreed service process.
-            </p>
-
-          </article>
-
-
-          <article class="process-card">
-
-            <span class="process-number">04</span>
-
-            <h3 data-i18n="process.4.title">
-              Improve
-            </h3>
-
-            <p data-i18n="process.4.text">
-              Performance is monitored continuously so the service
-              can evolve with your business.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         TECHNOLOGY
-         ===================================================== -->
-
-    <section class="technology-section" id="technology">
-
-      <div class="container technology-grid">
-
-        <div class="technology-copy">
-
-          <div
-            class="eyebrow"
-            data-i18n="technology.eyebrow"
-          >
-            Technology & Operations
-          </div>
-
-          <h2 data-i18n="technology.title">
-            Modern tools. Human service.
-          </h2>
-
-          <p data-i18n="technology.description">
-            Technology helps our teams stay organized, responsive
-            and connected while people remain at the center of every
-            customer interaction.
-          </p>
-
-          <a
-            href="#quote"
-            class="text-link"
-            data-i18n="technology.link"
-          >
-            Build Your Support Model →
-          </a>
-
-        </div>
-
-
-        <div class="technology-grid-cards">
-
-          <article class="technology-card">
-
-            <span>01</span>
-
-            <h3 data-i18n="technology.1.title">
-              Omnichannel
-            </h3>
-
-            <p data-i18n="technology.1.text">
-              Support across the channels your customers already use.
-            </p>
-
-          </article>
-
-
-          <article class="technology-card">
-
-            <span>02</span>
-
-            <h3 data-i18n="technology.2.title">
-              Reporting
-            </h3>
-
-            <p data-i18n="technology.2.text">
-              Clear operational visibility to help teams understand
-              performance and opportunities.
-            </p>
-
-          </article>
-
-
-          <article class="technology-card">
-
-            <span>03</span>
-
-            <h3 data-i18n="technology.3.title">
-              Quality
-            </h3>
-
-            <p data-i18n="technology.3.text">
-              Structured processes designed to maintain consistent
-              customer service quality.
-            </p>
-
-          </article>
-
-
-          <article class="technology-card">
-
-            <span>04</span>
-
-            <h3 data-i18n="technology.4.title">
-              Scalability
-            </h3>
-
-            <p data-i18n="technology.4.text">
-              Flexible support capacity that can grow with your needs.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         WHY MAHARA
-         ===================================================== -->
-
-    <section class="why-section">
-
-      <div class="container why-layout">
-
-        <div class="why-image">
-
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=85"
-            alt="Mahara BPO professional team"
-            loading="lazy"
-          >
-
-          <div
-            class="why-image-overlay"
-            data-i18n="why.imageLabel"
-          >
-            People behind the service
-          </div>
-
-        </div>
-
-
-        <div>
-
-          <div
-            class="eyebrow"
-            data-i18n="why.eyebrow"
-          >
-            Why Mahara
-          </div>
-
-          <h2
-            class="section-title-large"
-            data-i18n="why.title"
-          >
-            More than outsourcing. A partner for your customer experience.
-          </h2>
-
-
-          <div class="why-list">
-
-
-            <article class="why-item">
-
-              <span>01</span>
-
-              <div>
-
-                <h3 data-i18n="why.1.title">
-                  Dedicated Management
-                </h3>
-
-                <p data-i18n="why.1.text">
-                  Structured management keeps service delivery aligned
-                  with your expectations.
-                </p>
-
-              </div>
-
-            </article>
-
-
-            <article class="why-item">
-
-              <span>02</span>
-
-              <div>
-
-                <h3 data-i18n="why.2.title">
-                  Customer First
-                </h3>
-
-                <p data-i18n="why.2.text">
-                  Every interaction is treated as an opportunity to
-                  strengthen your relationship with customers.
-                </p>
-
-              </div>
-
-            </article>
-
-
-            <article class="why-item">
-
-              <span>03</span>
-
-              <div>
-
-                <h3 data-i18n="why.3.title">
-                  Flexible Operations
-                </h3>
-
-                <p data-i18n="why.3.text">
-                  Support models can adapt as your volumes, channels
-                  and business requirements change.
-                </p>
-
-              </div>
-
-            </article>
-
-
-            <article class="why-item">
-
-              <span>04</span>
-
-              <div>
-
-                <h3 data-i18n="why.4.title">
-                  Regional Understanding
-                </h3>
-
-                <p data-i18n="why.4.text">
-                  We understand the importance of communication,
-                  responsiveness and service expectations across the Gulf.
-                </p>
-
-              </div>
-
-            </article>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         EXPERIENCE
-         ===================================================== -->
-
-    <section class="experience-section">
-
-      <div class="experience-background"></div>
-
-      <div class="container">
-
-        <div class="experience-content">
-
-          <div
-            class="eyebrow"
-            data-i18n="experience.eyebrow"
-          >
-            Your Brand. Our Team.
-          </div>
-
-          <h2 data-i18n="experience.title">
-            Let your customers feel the difference.
-          </h2>
-
-          <p data-i18n="experience.text">
-            The best outsourcing partnership feels like an extension
-            of your own business. That is the standard we aim to build
-            with every Mahara BPO engagement.
-          </p>
-
-          <a
-            href="#quote"
-            class="btn btn-primary"
-            data-i18n="experience.button"
-          >
-            Talk to Mahara
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         TESTIMONIAL / APPROACH
-         ===================================================== -->
-
-    <section class="testimonial-section">
-
-      <div class="container testimonial-wrap">
-
-        <div class="testimonial-heading">
-
-          <div
-            class="eyebrow"
-            data-i18n="testimonial.eyebrow"
-          >
-            Our Approach
-          </div>
-
-          <h2 data-i18n="testimonial.title">
-            Service should feel effortless.
-          </h2>
-
-        </div>
-
-
-        <div class="testimonial-message">
-
-          <span class="quote-mark">
-            “
-          </span>
-
-          <p data-i18n="testimonial.text">
-            We believe great customer service is not simply about
-            answering calls. It is about understanding people,
-            representing your brand and creating confidence at every
-            touchpoint.
-          </p>
-
-          <div class="testimonial-line"></div>
-
-          <span data-i18n="testimonial.author">
-            Mahara BPO
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FINAL CTA
-         ===================================================== -->
-
-    <section class="final-cta">
-
-      <div class="container final-cta-inner">
-
-        <div>
-
-          <div
-            class="eyebrow"
-            data-i18n="cta.eyebrow"
-          >
-            Ready to Scale?
-          </div>
-
-          <h2 data-i18n="cta.title">
-            Let's build a better customer experience together.
-          </h2>
-
-          <p data-i18n="cta.text">
-            Tell us what you need and our team will help you explore
-            the right outsourcing model.
-          </p>
-
-        </div>
-
-        <a
-          href="#quote"
-          class="btn final-cta-button"
-          data-i18n="cta.button"
-        >
-          Request a Quote
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         QUOTE FORM
-         ===================================================== -->
-
-    <section class="quote-section" id="quote">
-
-      <div class="container quote-layout">
-
-        <div class="quote-copy">
-
-          <div
-            class="eyebrow"
-            data-i18n="quote.eyebrow"
-          >
-            Start a Conversation
-          </div>
-
-          <h2 data-i18n="quote.title">
-            Tell us about your customer service needs.
-          </h2>
-
-          <p data-i18n="quote.description">
-            Share a few details and the Mahara BPO team will get back
-            to you to discuss your requirements.
-          </p>
-
-
-          <div class="quote-points">
-
-            <span data-i18n="quote.point1">
-              Dedicated customer service teams
-            </span>
-
-            <span data-i18n="quote.point2">
-              Flexible operating models
-            </span>
-
-            <span data-i18n="quote.point3">
-              Gulf-focused service delivery
-            </span>
-
-          </div>
-
-        </div>
-
-
-        <form
-          class="quote-form"
-          id="quoteForm"
-        >
-
-          <div class="form-row">
-
-            <label>
-
-              <span data-i18n="form.name">
-                Full Name
-              </span>
-
-              <input
-                type="text"
-                name="name"
-                required
-                autocomplete="name"
-                placeholder="Your name"
-                data-placeholder-en="Your name"
-                data-placeholder-ar="اسمك"
-              >
-
-            </label>
-
-
-            <label>
-
-              <span data-i18n="form.company">
-                Company
-              </span>
-
-              <input
-                type="text"
-                name="company"
-                autocomplete="organization"
-                placeholder="Company name"
-                data-placeholder-en="Company name"
-                data-placeholder-ar="اسم الشركة"
-              >
-
-            </label>
-
-          </div>
-
-
-          <div class="form-row">
-
-            <label>
-
-              <span data-i18n="form.email">
-                Email
-              </span>
-
-              <input
-                type="email"
-                name="email"
-                required
-                autocomplete="email"
-                placeholder="you@company.com"
-                data-placeholder-en="you@company.com"
-                data-placeholder-ar="you@company.com"
-                dir="ltr"
-              >
-
-            </label>
-
-
-            <label>
-
-              <span data-i18n="form.phone">
-                Phone / WhatsApp
-              </span>
-
-              <input
-                type="tel"
-                name="phone"
-                required
-                autocomplete="tel"
-                placeholder="+92 347 1417357"
-                data-placeholder-en="+92 347 1417357"
-                data-placeholder-ar="+92 347 1417357"
-                dir="ltr"
-              >
-
-            </label>
-
-          </div>
-
-
-          <label>
-
-            <span data-i18n="form.service">
-              Service Needed
-            </span>
-
-            <select name="service" required>
-
-              <option
-                value=""
-                data-i18n="form.select"
-              >
-                Select a service
-              </option>
-
-              <option
-                value="Customer Support"
-                data-i18n="services.1.title"
-              >
-                Customer Support
-              </option>
-
-              <option
-                value="Call Center Operations"
-                data-i18n="services.2.title"
-              >
-                Call Center Operations
-              </option>
-
-              <option
-                value="Email & Chat Support"
-                data-i18n="services.3.title"
-              >
-                Email & Chat Support
-              </option>
-
-              <option
-                value="24/7 Support"
-                data-i18n="services.4.title"
-              >
-                24/7 Support
-              </option>
-
-              <option
-                value="Sales Support"
-                data-i18n="services.5.title"
-              >
-                Sales Support
-              </option>
-
-              <option
-                value="Back Office Support"
-                data-i18n="services.6.title"
-              >
-                Back Office Support
-              </option>
-
-            </select>
-
-          </label>
-
-
-          <label>
-
-            <span data-i18n="form.message">
-              Message
-            </span>
-
-            <textarea
-              name="message"
-              placeholder="Tell us briefly about your requirements"
-              data-placeholder-en="Tell us briefly about your requirements"
-              data-placeholder-ar="أخبرنا باختصار عن متطلباتك"
-              required
-            ></textarea>
-
-          </label>
-
-
-          <div class="form-actions">
-
-            <!-- SUBMIT -->
-            <button
-              type="submit"
-              class="btn btn-primary"
-              data-i18n="form.submit"
-            >
-              Send Request
-            </button>
-
-
-            <!-- WHATSAPP -->
-            <a
-              href="https://wa.me/923471417357"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-whatsapp"
-            >
-
-              <svg
-                viewBox="0 0 32 32"
-                width="19"
-                height="19"
-                aria-hidden="true"
-                fill="currentColor"
-              >
-
-                <path
-                  d="M19.11 17.39c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32Z"
-                />
-
-                <path
-                  d="M16.03 3.2c-6.99 0-12.67 5.68-12.67 12.67 0 2.23.58 4.33 1.6 6.15L3.2 28.8l6.97-1.73a12.62 12.62 0 0 0 5.86 1.45h.01c6.99 0 12.67-5.68 12.67-12.67S23.02 3.2 16.03 3.2Zm0 23.2h-.01c-1.85 0-3.66-.5-5.24-1.45l-.38-.23-4.14 1.03 1.06-4.03-.25-.41a10.53 10.53 0 1 1 8.96 4.88Z"
-                />
-
-              </svg>
-
-              <span data-i18n="form.whatsapp">
-                WhatsApp
-              </span>
-
-            </a>
-
-          </div>
-
-
-          <div
-            class="form-message"
-            id="formMessage"
-            aria-live="polite"
-          ></div>
-
-        </form>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         CONTACT
-         ===================================================== -->
-
-    <section
-      class="contact-section"
-      id="contact"
-    >
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div
-            class="eyebrow"
-            data-i18n="contact.eyebrow"
-          >
-            Contact Mahara
-          </div>
-
-          <h2 data-i18n="contact.title">
-            Let's connect.
-          </h2>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-          <!-- WHATSAPP -->
-          <a
-            href="https://wa.me/923471417357"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contact-card"
-          >
-
-            <div
-              class="contact-icon"
-              aria-hidden="true"
-            >
-
-              <svg
-                viewBox="0 0 32 32"
-                width="21"
-                height="21"
-                fill="currentColor"
-              >
-
-                <path
-                  d="M19.11 17.39c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32Z"
-                />
-
-                <path
-                  d="M16.03 3.2c-6.99 0-12.67 5.68-12.67 12.67 0 2.23.58 4.33 1.6 6.15L3.2 28.8l6.97-1.73a12.62 12.62 0 0 0 5.86 1.45h.01c6.99 0 12.67-5.68 12.67-12.67S23.02 3.2 16.03 3.2Zm0 23.2h-.01c-1.85 0-3.66-.5-5.24-1.45l-.38-.23-4.14 1.03 1.06-4.03-.25-.41a10.53 10.53 0 1 1 8.96 4.88Z"
-                />
-
-              </svg>
-
-            </div>
-
-            <div>
-
-              <small data-i18n="contact.whatsapp">
-                WhatsApp
-              </small>
-
-              <strong dir="ltr">
-                +92 347 1417357
-              </strong>
-
-            </div>
-
-          </a>
-
-
-          <!-- EMAIL -->
-          <a
-            href="mailto:info@maharabpo.com"
-            class="contact-card"
-          >
-
-            <div
-              class="contact-icon"
-              aria-hidden="true"
-            >
-
-              <svg
-                viewBox="0 0 24 24"
-                width="21"
-                height="21"
-                fill="none"
-              >
-
-                <path
-                  d="M4 5h16v14H4z"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                  stroke-linejoin="round"
-                />
-
-                <path
-                  d="m4 6 8 6 8-6"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                  stroke-linejoin="round"
-                />
-
-              </svg>
-
-            </div>
-
-            <div>
-
-              <small data-i18n="contact.email">
-                Email
-              </small>
-
-              <strong dir="ltr">
-                info@maharabpo.com
-              </strong>
-
-            </div>
-
-          </a>
-
-
-          <!-- PHONE -->
-          <a
-            href="tel:+923471417357"
-            class="contact-card"
-          >
-
-            <div
-              class="contact-icon"
-              aria-hidden="true"
-            >
-
-              <svg
-                viewBox="0 0 24 24"
-                width="21"
-                height="21"
-                fill="none"
-              >
-
-                <path
-                  d="M6.6 3.5 4.8 4.3c-.7.3-1.1 1.1-.9 1.8 1.6 6.5 6.6 11.5 13.1 13.1.7.2 1.5-.2 1.8-.9l.8-1.8c.3-.7 0-1.5-.6-1.8l-2.7-1.3c-.6-.3-1.3-.1-1.7.4l-1.1 1.3a14.4 14.4 0 0 1-5.8-5.8l1.3-1.1c.5-.4.7-1.1.4-1.7L8.4 4.1c-.3-.6-1.1-.9-1.8-.6Z"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                  stroke-linejoin="round"
-                />
-
-              </svg>
-
-            </div>
-
-            <div>
-
-              <small data-i18n="contact.phone">
-                Phone
-              </small>
-
-              <strong dir="ltr">
-                +92 347 1417357
-              </strong>
-
-            </div>
-
-          </a>
-
-
-          <!-- WEBSITE -->
-          <a
-            href="https://maharabpo.com"
-            class="contact-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-            <div
-              class="contact-icon"
-              aria-hidden="true"
-            >
-
-              <svg
-                viewBox="0 0 24 24"
-                width="21"
-                height="21"
-                fill="none"
-              >
-
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="8.5"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                />
-
-                <path
-                  d="M3.8 12h16.4M12 3.5c2 2.3 3 5.1 3 8.5s-1 6.2-3 8.5c-2-2.3-3-5.1-3-8.5s1-6.2 3-8.5Z"
-                  stroke="currentColor"
-                  stroke-width="1.7"
-                  stroke-linecap="round"
-                />
-
-              </svg>
-
-            </div>
-
-            <div>
-
-              <small data-i18n="contact.website">
-                Website
-              </small>
-
-              <strong dir="ltr">
-                maharabpo.com
-              </strong>
-
-            </div>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="container footer-grid">
-
-
-      <!-- FOOTER BRAND -->
-      <div class="footer-brand">
-
-        <img
-          src="mahra-logo1.png"
-          alt="Mahara BPO"
-          class="footer-logo"
-        >
-
-        <p data-i18n="footer.description">
-          Professional customer service outsourcing solutions
-          designed for businesses across the Gulf region.
-        </p>
-
-      </div>
-
-
-      <!-- COMPANY -->
-      <div class="footer-links">
-
-        <h3 data-i18n="footer.company">
-          Company
-        </h3>
 
         <a
           href="#about"
@@ -1903,64 +94,1880 @@
           Process
         </a>
 
+        <a
+          href="#technology"
+          data-i18n="nav.technology"
+        >
+          Technology
+        </a>
+
+        <a
+          href="#contact"
+          data-i18n="nav.contact"
+        >
+          Contact
+        </a>
+
+        <a
+          href="#quote"
+          class="nav-cta"
+          data-i18n="nav.cta"
+        >
+          Get a Quote
+        </a>
+
+      </nav>
+
+
+      <!-- Language Switcher -->
+      <div
+        class="language-switcher"
+        aria-label="Language selector"
+      >
+
+        <button
+          type="button"
+          class="lang-option active"
+          data-lang="en"
+          aria-pressed="true"
+        >
+          EN
+        </button>
+
+        <span class="language-divider">|</span>
+
+        <button
+          type="button"
+          class="lang-option"
+          data-lang="ar"
+          aria-pressed="false"
+        >
+          العربية
+        </button>
+
       </div>
 
 
-      <!-- SERVICES -->
-      <div class="footer-links">
+      <!-- Mobile Menu Button -->
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <h3 data-i18n="footer.services">
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section
+      id="home"
+      class="hero-section"
+    >
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content">
+
+          <p
+            class="eyebrow"
+            data-i18n="hero.eyebrow"
+          >
+            CUSTOMER SERVICE OUTSOURCING
+          </p>
+
+          <h1 class="hero-title">
+
+            <span data-i18n="hero.title1">
+              YOUR CUSTOMER
+            </span>
+
+            <br>
+
+            <span
+              class="gold-text"
+              data-i18n="hero.title2"
+            >
+              SERVICE PARTNER
+            </span>
+
+          </h1>
+
+          <div class="gold-line"></div>
+
+          <p
+            class="hero-description"
+            data-i18n="hero.description"
+          >
+            Helping businesses across the Gulf outsource customer
+            service to dedicated, professionally managed teams.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="#quote"
+              class="btn btn-primary"
+              data-i18n="hero.primary"
+            >
+              GET A QUOTE
+            </a>
+
+            <a
+              href="#services"
+              class="btn btn-outline"
+              data-i18n="hero.secondary"
+            >
+              OUR SERVICES
+            </a>
+
+          </div>
+
+
+          <div class="hero-trust">
+
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="hero.trust1">
+                Professional Teams
+              </span>
+            </div>
+
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="hero.trust2">
+                Gulf-Focused
+              </span>
+            </div>
+
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="hero.trust3">
+                24/7 Support
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Hero Floating Card -->
+        <div class="hero-card">
+
+          <p
+            class="hero-card-label"
+            data-i18n="hero.card.label"
+          >
+            MAHARA BPO
+          </p>
+
+          <h2
+            data-i18n="hero.card.title"
+          >
+            Service built around your customers.
+          </h2>
+
+          <p
+            data-i18n="hero.card.text"
+          >
+            Reliable outsourcing solutions designed to improve
+            customer experience, operational efficiency and business growth.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+
+    <section
+      id="about"
+      class="section about-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p
+            class="eyebrow"
+            data-i18n="about.eyebrow"
+          >
+            WHY MAHARA
+          </p>
+
+          <h2
+            data-i18n="about.title"
+          >
+            A smarter way to manage customer service.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p
+            class="section-description"
+            data-i18n="about.description"
+          >
+            We combine professionally managed teams, modern technology
+            and a customer-first approach to deliver dependable
+            outsourcing solutions for businesses across the Gulf.
+          </p>
+
+        </div>
+
+
+        <div class="value-grid">
+
+          <article class="value-card">
+
+            <div class="card-number">
+              01
+            </div>
+
+            <h3>
+              People
+            </h3>
+
+            <p>
+              Dedicated professionals focused on delivering
+              exceptional customer interactions.
+            </p>
+
+          </article>
+
+
+          <article class="value-card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>
+              Process
+            </h3>
+
+            <p>
+              Structured workflows designed for consistency,
+              efficiency and measurable performance.
+            </p>
+
+          </article>
+
+
+          <article class="value-card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>
+              Partnership
+            </h3>
+
+            <p>
+              We work as an extension of your business and
+              align our operations with your goals.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+         ===================================================== -->
+
+    <section
+      id="services"
+      class="section services-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p
+            class="eyebrow"
+            data-i18n="services.eyebrow"
+          >
+            WHAT WE DO
+          </p>
+
+          <h2
+            data-i18n="services.title"
+          >
+            Customer service solutions designed to perform.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p
+            class="section-description"
+            data-i18n="services.description"
+          >
+            From customer support to back-office operations,
+            Mahara BPO provides flexible solutions built around
+            your business needs.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <!-- Service 1 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>01</span>
+            </div>
+
+            <h3
+              data-i18n="service1.title"
+            >
+              Customer Support
+            </h3>
+
+            <p
+              data-i18n="service1.text"
+            >
+              Professional customer support teams handling customer
+              inquiries, requests and day-to-day interactions.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+
+          <!-- Service 2 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>02</span>
+            </div>
+
+            <h3
+              data-i18n="service2.title"
+            >
+              Call Center
+            </h3>
+
+            <p
+              data-i18n="service2.text"
+            >
+              Dedicated inbound and outbound call center teams
+              focused on quality, responsiveness and customer satisfaction.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+
+          <!-- Service 3 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>03</span>
+            </div>
+
+            <h3
+              data-i18n="service3.title"
+            >
+              Back Office
+            </h3>
+
+            <p
+              data-i18n="service3.text"
+            >
+              Reliable administrative and operational support that
+              helps your internal teams focus on higher-value work.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+
+          <!-- Service 4 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>04</span>
+            </div>
+
+            <h3
+              data-i18n="service4.title"
+            >
+              Technical Support
+            </h3>
+
+            <p
+              data-i18n="service4.text"
+            >
+              Professionally managed support teams helping customers
+              resolve technical questions quickly and efficiently.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+
+          <!-- Service 5 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>05</span>
+            </div>
+
+            <h3
+              data-i18n="service5.title"
+            >
+              Lead Generation
+            </h3>
+
+            <p
+              data-i18n="service5.text"
+            >
+              Structured customer engagement and lead-generation
+              support designed to help businesses build their pipeline.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+
+          <!-- Service 6 -->
+          <article class="service-card">
+
+            <div class="service-icon">
+              <span>06</span>
+            </div>
+
+            <h3
+              data-i18n="service6.title"
+            >
+              Quality Assurance
+            </h3>
+
+            <p
+              data-i18n="service6.text"
+            >
+              Quality monitoring and performance management designed
+              to maintain consistent service standards.
+            </p>
+
+            <a
+              href="#quote"
+              class="service-link"
+              data-i18n="nav.cta"
+            >
+              Get a Quote
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PERFORMANCE / STATS
+         ===================================================== -->
+
+    <section
+      class="section trust-section"
+      id="performance"
+    >
+
+      <div class="container">
+
+        <div class="section-heading centered">
+
+          <p
+            class="eyebrow"
+            data-i18n="trust.eyebrow"
+          >
+            BUILT FOR PERFORMANCE
+          </p>
+
+          <h2
+            data-i18n="trust.title"
+          >
+            Reliable service. Measurable results.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+
+            <div class="stat-icon">
+              ✓
+            </div>
+
+            <strong>
+              100%
+            </strong>
+
+            <span data-i18n="stat1">
+              Professional Service
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-icon">
+              ★
+            </div>
+
+            <strong>
+              24/7
+            </strong>
+
+            <span data-i18n="stat2">
+              Customer Focus
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-icon">
+              ◉
+            </div>
+
+            <strong>
+              GCC
+            </strong>
+
+            <span data-i18n="stat3">
+              Gulf Region
+            </span>
+
+          </div>
+
+
+          <div class="stat-card">
+
+            <div class="stat-icon">
+              24
+            </div>
+
+            <strong>
+              24/7
+            </strong>
+
+            <span data-i18n="stat4">
+              Support Availability
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+         ===================================================== -->
+
+    <section
+      id="process"
+      class="section process-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p
+            class="eyebrow"
+            data-i18n="process.eyebrow"
+          >
+            OUR PROCESS
+          </p>
+
+          <h2
+            data-i18n="process.title"
+          >
+            Simple to start. Built to scale.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <h3
+              data-i18n="process1.title"
+            >
+              Discover
+            </h3>
+
+            <p
+              data-i18n="process1.text"
+            >
+              We understand your business, customers and
+              operational requirements.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <h3
+              data-i18n="process2.title"
+            >
+              Design
+            </h3>
+
+            <p
+              data-i18n="process2.text"
+            >
+              We build a customized outsourcing solution
+              around your goals.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <h3
+              data-i18n="process3.title"
+            >
+              Launch
+            </h3>
+
+            <p
+              data-i18n="process3.text"
+            >
+              Our team prepares the people, processes and
+              technology required for launch.
+            </p>
+
+          </article>
+
+
+          <article class="process-card">
+
+            <div class="process-number">
+              04
+            </div>
+
+            <h3
+              data-i18n="process4.title"
+            >
+              Optimize
+            </h3>
+
+            <p
+              data-i18n="process4.text"
+            >
+              We continuously monitor performance and improve
+              the customer experience.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TECHNOLOGY
+         ===================================================== -->
+
+    <section
+      id="technology"
+      class="section technology-section"
+    >
+
+      <div class="container">
+
+        <div class="technology-intro">
+
+          <div>
+
+            <p
+              class="eyebrow"
+              data-i18n="technology.eyebrow"
+            >
+              TECHNOLOGY
+            </p>
+
+            <h2
+              data-i18n="technology.title"
+            >
+              Technology that supports better conversations.
+            </h2>
+
+            <div class="gold-line"></div>
+
+          </div>
+
+          <div>
+
+            <p
+              class="section-description"
+              data-i18n="technology.text"
+            >
+              Our operations are designed around modern
+              communication tools, structured workflows and
+              performance monitoring.
+            </p>
+
+            <a
+              href="#quote"
+              class="text-link"
+              data-i18n="technology.link"
+            >
+              LEARN MORE
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+
+          <article class="technology-card">
+
+            <div class="technology-icon">
+              01
+            </div>
+
+            <h3
+              data-i18n="technology1.title"
+            >
+              CRM Integration
+            </h3>
+
+            <p
+              data-i18n="technology1.text"
+            >
+              Structured customer information and workflows
+              help teams deliver consistent service.
+            </p>
+
+          </article>
+
+
+          <article class="technology-card">
+
+            <div class="technology-icon">
+              02
+            </div>
+
+            <h3
+              data-i18n="technology2.title"
+            >
+              Performance Monitoring
+            </h3>
+
+            <p
+              data-i18n="technology2.text"
+            >
+              Clear performance visibility helps identify
+              opportunities for improvement.
+            </p>
+
+          </article>
+
+
+          <article class="technology-card">
+
+            <div class="technology-icon">
+              03
+            </div>
+
+            <h3
+              data-i18n="technology3.title"
+            >
+              Omnichannel Support
+            </h3>
+
+            <p
+              data-i18n="technology3.text"
+            >
+              Connect customers through the channels
+              they prefer.
+            </p>
+
+          </article>
+
+
+          <article class="technology-card">
+
+            <div class="technology-icon">
+              04
+            </div>
+
+            <h3
+              data-i18n="technology4.title"
+            >
+              Data & Reporting
+            </h3>
+
+            <p
+              data-i18n="technology4.text"
+            >
+              Actionable reporting helps businesses understand
+              performance and customer needs.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY MAHARA
+         ===================================================== -->
+
+    <section
+      class="section why-section"
+      id="why-mahara"
+    >
+
+      <div class="container">
+
+        <div class="section-heading centered">
+
+          <p
+            class="eyebrow"
+            data-i18n="why.eyebrow"
+          >
+            WHY MAHARA
+          </p>
+
+          <h2
+            data-i18n="why.title"
+          >
+            More than an outsourcing provider.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="why-grid">
+
+
+          <article class="why-item">
+
+            <div class="why-number">
+              01
+            </div>
+
+            <div>
+
+              <h3
+                data-i18n="why1.title"
+              >
+                Professionally Managed Teams
+              </h3>
+
+              <p
+                data-i18n="why1.text"
+              >
+                Dedicated teams managed around your service
+                standards and customer expectations.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="why-item">
+
+            <div class="why-number">
+              02
+            </div>
+
+            <div>
+
+              <h3
+                data-i18n="why2.title"
+              >
+                Gulf Market Understanding
+              </h3>
+
+              <p
+                data-i18n="why2.text"
+              >
+                Solutions designed with the Gulf business
+                environment and customer expectations in mind.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="why-item">
+
+            <div class="why-number">
+              03
+            </div>
+
+            <div>
+
+              <h3
+                data-i18n="why3.title"
+              >
+                Flexible Operations
+              </h3>
+
+              <p
+                data-i18n="why3.text"
+              >
+                Scale your support capacity as your business grows.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="why-item">
+
+            <div class="why-number">
+              04
+            </div>
+
+            <div>
+
+              <h3
+                data-i18n="why4.title"
+              >
+                Quality Focus
+              </h3>
+
+              <p
+                data-i18n="why4.text"
+              >
+                Consistent monitoring and continuous improvement
+                help maintain service quality.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EXPERIENCE
+         ===================================================== -->
+
+    <section
+      class="experience-section"
+      id="experience"
+    >
+
+      <div class="experience-overlay"></div>
+
+      <div class="container experience-container">
+
+        <div class="experience-content">
+
+          <p
+            class="eyebrow"
+            data-i18n="experience.eyebrow"
+          >
+            THE MAHARA EXPERIENCE
+          </p>
+
+          <h2
+            data-i18n="experience.title"
+          >
+            Give your customers the experience they deserve.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p
+            data-i18n="experience.text"
+          >
+            Let your team focus on growing the business while
+            Mahara manages the customer experience with
+            professionalism, consistency and care.
+          </p>
+
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            data-i18n="experience.button"
+          >
+            TALK TO US
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TESTIMONIAL / APPROACH
+         ===================================================== -->
+
+    <section
+      class="section testimonial-section"
+    >
+
+      <div class="container">
+
+        <div class="testimonial-layout">
+
+          <div class="testimonial-label">
+
+            <p
+              class="eyebrow"
+              data-i18n="testimonial.eyebrow"
+            >
+              OUR APPROACH
+            </p>
+
+            <span
+              data-i18n="testimonial.label"
+            >
+              MAHARA BPO APPROACH
+            </span>
+
+          </div>
+
+
+          <div class="testimonial-message">
+
+            <div class="quote-mark">
+              “
+            </div>
+
+            <h2
+              data-i18n="testimonial.title"
+            >
+              Customer experience comes first.
+            </h2>
+
+            <p
+              data-i18n="testimonial.text"
+            >
+              Every interaction is an opportunity to strengthen
+              your relationship with your customers. Our teams
+              are built around that principle.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section
+      class="cta-section"
+    >
+
+      <div class="container cta-container">
+
+        <div>
+
+          <p
+            class="eyebrow"
+            data-i18n="cta.eyebrow"
+          >
+            READY TO START?
+          </p>
+
+          <h2
+            data-i18n="cta.title"
+          >
+            Let's build a better customer experience.
+          </h2>
+
+          <p
+            data-i18n="cta.text"
+          >
+            Tell us what your business needs and we'll help
+            you design the right outsourcing solution.
+          </p>
+
+        </div>
+
+
+        <a
+          href="#quote"
+          class="btn btn-primary"
+          data-i18n="cta.button"
+        >
+          GET STARTED
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUOTE SECTION
+         ===================================================== -->
+
+    <section
+      id="quote"
+      class="section quote-section"
+    >
+
+      <div class="container quote-grid">
+
+
+        <!-- Quote Information -->
+
+        <div class="quote-content">
+
+          <p
+            class="eyebrow"
+            data-i18n="quote.eyebrow"
+          >
+            REQUEST A QUOTE
+          </p>
+
+          <h2
+            data-i18n="quote.title"
+          >
+            Let's discuss your requirements.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p
+            data-i18n="quote.text"
+          >
+            Complete the form and our team will get back to you
+            to discuss your customer service requirements.
+          </p>
+
+
+          <ul class="quote-points">
+
+            <li>
+              <span>✓</span>
+              <span data-i18n="quote.point1">
+                Customized outsourcing solutions
+              </span>
+            </li>
+
+            <li>
+              <span>✓</span>
+              <span data-i18n="quote.point2">
+                Professionally managed teams
+              </span>
+            </li>
+
+            <li>
+              <span>✓</span>
+              <span data-i18n="quote.point3">
+                Flexible operational support
+              </span>
+            </li>
+
+            <li>
+              <span>✓</span>
+              <span data-i18n="quote.point4">
+                Gulf-focused customer experience
+              </span>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Quote Form -->
+
+        <form
+          class="quote-form"
+          novalidate
+        >
+
+          <div class="form-row">
+
+
+            <!-- Name -->
+
+            <div class="form-group">
+
+              <label
+                for="name"
+                data-i18n="form.name"
+              >
+                Full Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                data-i18n-placeholder="form.name.placeholder"
+                placeholder="Your name"
+              >
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div class="form-group">
+
+              <label
+                for="company"
+                data-i18n="form.company"
+              >
+                Company
+              </label>
+
+              <input
+                type="text"
+                id="company"
+                name="company"
+                autocomplete="organization"
+                data-i18n-placeholder="form.company.placeholder"
+                placeholder="Company name"
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="form-row">
+
+
+            <!-- Email -->
+
+            <div class="form-group">
+
+              <label
+                for="email"
+                data-i18n="form.email"
+              >
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                dir="ltr"
+                data-ltr
+                data-i18n-placeholder="form.email.placeholder"
+                placeholder="you@company.com"
+              >
+
+            </div>
+
+
+            <!-- Phone -->
+
+            <div class="form-group">
+
+              <label
+                for="phone"
+                data-i18n="form.phone"
+              >
+                Phone / WhatsApp
+              </label>
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                autocomplete="tel"
+                required
+                dir="ltr"
+                data-ltr
+                data-i18n-placeholder="form.phone.placeholder"
+                placeholder="+92..."
+              >
+
+            </div>
+
+          </div>
+
+
+          <!-- Service -->
+
+          <div class="form-group">
+
+            <label
+              for="service"
+              data-i18n="form.service"
+            >
+              Service
+            </label>
+
+            <select
+              id="service"
+              name="service"
+              required
+            >
+
+              <option
+                value=""
+                data-i18n="form.service.placeholder"
+              >
+                Select a service
+              </option>
+
+              <option
+                value="Customer Support"
+                data-i18n="form.service.customer"
+              >
+                Customer Support
+              </option>
+
+              <option
+                value="Call Center"
+                data-i18n="form.service.call"
+              >
+                Call Center
+              </option>
+
+              <option
+                value="Back Office"
+                data-i18n="form.service.backoffice"
+              >
+                Back Office
+              </option>
+
+              <option
+                value="Technical Support"
+                data-i18n="form.service.technical"
+              >
+                Technical Support
+              </option>
+
+              <option
+                value="Lead Generation"
+                data-i18n="form.service.leads"
+              >
+                Lead Generation
+              </option>
+
+              <option
+                value="Other"
+                data-i18n="form.service.other"
+              >
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Message -->
+
+          <div class="form-group">
+
+            <label
+              for="message"
+              data-i18n="form.message"
+            >
+              Tell us about your requirements
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              data-i18n-placeholder="form.message.placeholder"
+              placeholder="How can we help?"
+            ></textarea>
+
+          </div>
+
+
+          <!-- Submit -->
+
+          <button
+            type="submit"
+            class="btn btn-primary form-submit"
+            data-i18n="form.submit"
+          >
+            SEND REQUEST
+          </button>
+
+
+          <!-- WhatsApp -->
+
+          <a
+            href="https://wa.me/923471417357"
+            class="btn btn-whatsapp"
+            data-whatsapp
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span
+              class="whatsapp-icon"
+              data-whatsapp-icon
+              aria-hidden="true"
+            >
+              <!-- JavaScript inserts icon -->
+            </span>
+
+            <span data-i18n="form.whatsapp">
+              CONTACT VIA WHATSAPP
+            </span>
+
+          </a>
+
+
+          <!-- JS inserts form status here -->
+
+          <div
+            class="form-message"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+
+    <section
+      id="contact"
+      class="section contact-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p
+            class="eyebrow"
+            data-i18n="contact.eyebrow"
+          >
+            CONTACT
+          </p>
+
+          <h2
+            data-i18n="contact.title"
+          >
+            Let's connect.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <!-- Email -->
+
+          <article class="contact-card">
+
+            <div
+              class="contact-icon"
+              data-icon="email"
+            ></div>
+
+            <div>
+
+              <span
+                class="contact-label"
+                data-i18n="contact.email"
+              >
+                Email
+              </span>
+
+              <a
+                href="mailto:info@maharabpo.com"
+                data-ltr
+                dir="ltr"
+              >
+                info@maharabpo.com
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Phone -->
+
+          <article class="contact-card">
+
+            <div
+              class="contact-icon"
+              data-icon="phone"
+            ></div>
+
+            <div>
+
+              <span
+                class="contact-label"
+                data-i18n="contact.phone"
+              >
+                Phone
+              </span>
+
+              <a
+                href="tel:+923471417357"
+                data-ltr
+                dir="ltr"
+              >
+                +92 347 1417357
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- WhatsApp -->
+
+          <article class="contact-card">
+
+            <div
+              class="contact-icon"
+              data-icon="whatsapp"
+            ></div>
+
+            <div>
+
+              <span
+                class="contact-label"
+                data-i18n="contact.whatsapp"
+              >
+                WhatsApp
+              </span>
+
+              <a
+                href="https://wa.me/923471417357"
+                data-whatsapp
+                data-ltr
+                dir="ltr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +92 347 1417357
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- Website -->
+
+          <article class="contact-card">
+
+            <div
+              class="contact-icon"
+              data-icon="website"
+            ></div>
+
+            <div>
+
+              <span
+                class="contact-label"
+                data-i18n="contact.website"
+              >
+                Website
+              </span>
+
+              <a
+                href="#home"
+                data-ltr
+                dir="ltr"
+              >
+                Mahara BPO
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+      <!-- Footer Brand -->
+
+      <div class="footer-brand">
+
+        <a
+          href="#home"
+          class="footer-logo"
+        >
+
+          <img
+            src="mahra-logo1.png"
+            alt="Mahara BPO"
+          >
+
+        </a>
+
+        <p
+          data-i18n="footer.description"
+        >
+          Professional customer service outsourcing solutions
+          for businesses across the Gulf region.
+        </p>
+
+      </div>
+
+
+      <!-- Company -->
+
+      <div class="footer-column">
+
+        <h3
+          data-i18n="footer.company"
+        >
+          Company
+        </h3>
+
+        <a
+          href="#about"
+          data-i18n="footer.about"
+        >
+          About Us
+        </a>
+
+        <a
+          href="#services"
+          data-i18n="nav.services"
+        >
+          Services
+        </a>
+
+        <a
+          href="#process"
+          data-i18n="nav.process"
+        >
+          Process
+        </a>
+
+      </div>
+
+
+      <!-- Services -->
+
+      <div class="footer-column">
+
+        <h3
+          data-i18n="footer.services"
+        >
           Services
         </h3>
 
         <a
           href="#services"
-          data-i18n="services.1.title"
+          data-i18n="service1.title"
         >
           Customer Support
         </a>
 
         <a
           href="#services"
-          data-i18n="services.2.title"
+          data-i18n="service2.title"
         >
-          Call Center Operations
+          Call Center
         </a>
 
         <a
           href="#services"
-          data-i18n="services.3.title"
+          data-i18n="service3.title"
         >
-          Email & Chat Support
+          Back Office
+        </a>
+
+        <a
+          href="#services"
+          data-i18n="service4.title"
+        >
+          Technical Support
         </a>
 
       </div>
 
 
-      <!-- CONTACT -->
-      <div class="footer-links">
+      <!-- Contact -->
 
-        <h3 data-i18n="footer.contact">
+      <div class="footer-column">
+
+        <h3
+          data-i18n="footer.contact"
+        >
           Contact
         </h3>
 
         <a
-          href="https://wa.me/923471417357"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#contact"
+          data-i18n="contact.email"
         >
-          WhatsApp
-        </a>
-
-        <a href="mailto:info@maharabpo.com">
-          info@maharabpo.com
+          Email
         </a>
 
         <a
-          href="#quote"
-          data-i18n="nav.quote"
+          href="#contact"
+          data-i18n="contact.phone"
         >
-          Request a Quote
+          Phone
+        </a>
+
+        <a
+          href="#contact"
+          data-i18n="contact.whatsapp"
+        >
+          WhatsApp
         </a>
 
       </div>
@@ -1968,34 +1975,32 @@
     </div>
 
 
-    <!-- FOOTER BOTTOM -->
-    <div class="footer-bottom">
+    <!-- Footer Bottom -->
 
-      <div class="container footer-bottom-inner">
+    <div class="container footer-bottom">
 
-        <span dir="ltr">
-          ©
-          <span id="currentYear"></span>
-          MAHARA BPO. All rights reserved.
-        </span>
+      <p
+        data-i18n="footer.copyright"
+        data-current-year
+      >
+        © 2026 Mahara BPO. All rights reserved.
+      </p>
 
-        <div class="footer-meta">
+      <div class="footer-legal">
 
-          <a
-            href="#home"
-            data-i18n="footer.privacy"
-          >
-            Privacy
-          </a>
+        <a
+          href="#"
+          data-i18n="footer.privacy"
+        >
+          Privacy Policy
+        </a>
 
-          <a
-            href="#home"
-            data-i18n="footer.terms"
-          >
-            Terms
-          </a>
-
-        </div>
+        <a
+          href="#"
+          data-i18n="footer.terms"
+        >
+          Terms &amp; Conditions
+        </a>
 
       </div>
 
@@ -2010,31 +2015,33 @@
 
   <a
     href="https://wa.me/923471417357"
+    class="floating-whatsapp"
+    data-whatsapp
+    data-i18n-title="whatsapp.tooltip"
+    title="Chat with us on WhatsApp"
+    aria-label="Chat with us on WhatsApp"
     target="_blank"
     rel="noopener noreferrer"
-    class="floating-whatsapp"
-    data-tooltip="WhatsApp"
-    aria-label="Contact Mahara BPO on WhatsApp"
   >
 
-    <svg
-      viewBox="0 0 32 32"
-      width="27"
-      height="27"
+    <span
+      data-whatsapp-icon
       aria-hidden="true"
-      fill="currentColor"
-    >
+    ></span>
 
-      <path
-        d="M19.11 17.39c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.34-.79-.7-1.32-1.56-1.48-1.82-.16-.27-.02-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.81-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32Z"
-      />
+  </a>
 
-      <path
-        d="M16.03 3.2c-6.99 0-12.67 5.68-12.67 12.67 0 2.23.58 4.33 1.6 6.15L3.2 28.8l6.97-1.73a12.62 12.62 0 0 0 5.86 1.45h.01c6.99 0 12.67-5.68 12.67-12.67S23.02 3.2 16.03 3.2Zm0 23.2h-.01c-1.85 0-3.66-.5-5.24-1.45l-.38-.23-4.14 1.03 1.06-4.03-.25-.41a10.53 10.53 0 1 1 8.96 4.88Z"
-      />
 
-    </svg>
+  <!-- =====================================================
+       BACK TO TOP
+       ===================================================== -->
 
+  <a
+    href="#home"
+    class="back-to-top"
+    aria-label="Back to top"
+  >
+    ↑
   </a>
 
 
