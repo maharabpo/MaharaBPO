@@ -1,202 +1,508 @@
 /* =========================================================
    MAHARA BPO
-   Bilingual Website Script
-   English + International Standard Arabic
+   PREMIUM BILINGUAL WEBSITE
+   ENGLISH + INTERNATIONAL STANDARD ARABIC
+   ========================================================= */
+
+
+/* =========================================================
+   TRANSLATIONS
    ========================================================= */
 
 const translations = {
+
+  /* =======================================================
+     ENGLISH
+     ======================================================= */
+
   en: {
-    "nav.home": "Home",
-    "nav.about": "About Us",
-    "nav.services": "Services",
-    "nav.process": "How We Work",
-    "nav.why": "Why Mahara?",
-    "nav.contact": "Contact Us",
-    "nav.quote": "Get Started",
 
-    "hero.heading": "YOUR<br>CUSTOMER<br>SERVICE<br>PARTNER",
+    "nav.home":
+      "Home",
+
+    "nav.about":
+      "About",
+
+    "nav.services":
+      "Solutions",
+
+    "nav.process":
+      "How We Work",
+
+    "nav.technology":
+      "Technology",
+
+    "nav.why":
+      "Why Mahara",
+
+    "nav.contact":
+      "Contact",
+
+    "nav.quote":
+      "Get Started",
+
+
+    /* HERO */
+
+    "hero.eyebrow":
+      "Premium Modern Contact Center",
+
+    "hero.heading":
+      "Elevate Your Customer Experience<br><span>And Make a Difference</span>",
+
     "hero.description":
-      "Helping businesses across the Gulf deliver exceptional customer experiences through dedicated, professionally managed teams.",
-    "hero.cta": "Contact Us Today",
+      "Integrated customer experience solutions combining operational expertise, technology and dedicated teams to help businesses improve service quality, efficiency and sustainable growth across the Gulf.",
 
-    "hero.badge1": "Professional<br>Teams",
-    "hero.badge2": "Measured<br>Performance",
-    "hero.badge3": "Quality You<br>Can Trust",
+    "hero.ctaPrimary":
+      "Get Started",
 
-    "hero.panelTitle": "Your Customer Experience Partner",
-    "hero.panelText":
-      "We strengthen your customer experience through specialized, efficient teams that support your business and sustainable growth.",
+    "hero.ctaSecondary":
+      "Explore Solutions",
 
-    /* ABOUT */
-    "about.eyebrow": "About Us",
-    "about.heading":
-      "We Manage the Customer Conversation. You Focus on Growth.",
-    "about.p1":
-      "MAHARA BPO provides customer experience and business process outsourcing solutions for companies across the Gulf, with teams built around your brand and service standards.",
-    "about.p2":
-      "From the first customer interaction to follow-up, our teams operate as an extension of your business, bringing professionalism, empathy, consistency and measurable service quality to every interaction.",
+    "hero.trust1":
+      "Dedicated Teams",
 
-    "about.feature1": "Dedicated<br>Teams",
-    "about.feature2": "Transparent<br>Communication",
-    "about.feature3": "Dependable<br>Delivery",
+    "hero.trust2":
+      "Advanced Technology",
+
+    "hero.trust3":
+      "Scalable Operations",
+
+    "hero.cardLabel":
+      "Your Customer Experience Partner",
+
+    "hero.cardTitle":
+      "People. Process. Technology.",
+
+    "hero.cardText":
+      "A modern operating model built around your customers, your brand and your business goals.",
+
+
+    /* VALUE */
+
+    "value.eyebrow":
+      "Why Us",
+
+    "value.heading":
+      "We Do More Than Manage Customer Service.",
+
+    "value.lead":
+      "We build complete customer experience operations designed around the way your business works.",
+
+    "value.card1.title":
+      "Better Experience",
+
+    "value.card1.text":
+      "Professional and consistent communication across every customer touchpoint.",
+
+    "value.card2.title":
+      "Higher Efficiency",
+
+    "value.card2.text":
+      "Structured operations that help improve productivity and reduce operational waste.",
+
+    "value.card3.title":
+      "Scalable Growth",
+
+    "value.card3.text":
+      "Flexible support models that evolve with your business and customer demand.",
+
 
     /* SERVICES */
-    "services.eyebrow": "Our Services",
+
+    "services.eyebrow":
+      "Solutions",
+
     "services.heading":
-      "Customer Support Built Around Your Brand",
+      "Everything You Need to Manage Customer Experience",
 
-    "services.card1.title": "Inbound Call Support",
+    "services.description":
+      "From daily customer communication to operational support and performance visibility, our solutions are designed around your business.",
+
+    "services.learn":
+      "Explore Solution →",
+
+    "services.card1.title":
+      "Customer Service",
+
     "services.card1.text":
-      "Professional inbound support for every customer call.",
+      "Professional customer communication across the channels your customers use every day.",
 
-    "services.card2.title": "WhatsApp & Chat Support",
+    "services.card2.title":
+      "Contact Center",
+
     "services.card2.text":
-      "Fast, responsive support through WhatsApp and live chat.",
+      "Inbound and outbound operations managed with clear processes and measurable performance.",
 
-    "services.card3.title": "Email Support",
+    "services.card3.title":
+      "Technical Support",
+
     "services.card3.text":
-      "Clear, professional and reliable responses through email.",
+      "Responsive technical assistance that helps customers solve problems quickly.",
 
-    "services.card4.title": "Customer Follow-Up",
+    "services.card4.title":
+      "Operations Management",
+
     "services.card4.text":
-      "Consistent follow-up that keeps customers informed and engaged.",
+      "Organized operational support designed for consistency, control and measurable outcomes.",
 
-    "services.card5.title": "Live Agent Support",
+    "services.card5.title":
+      "Performance Analytics",
+
     "services.card5.text":
-      "Real-time assistance from professionally trained customer service agents.",
+      "Clear operational visibility that helps your team understand performance and make better decisions.",
 
-    "services.card6.title": "Appointment Scheduling",
+    "services.card6.title":
+      "Custom Solutions",
+
     "services.card6.text":
-      "Efficient appointment scheduling and customer coordination.",
+      "A support model designed around your industry, customer journey and business objectives.",
+
+
+    /* TRUST */
+
+    "trust.eyebrow":
+      "Built for Business",
+
+    "trust.heading":
+      "Operational Confidence Starts With the Right Partner",
+
+    "trust.stat1":
+      "Support & Operations",
+
+    "trust.stat2":
+      "Market Focus",
+
+    "trust.stat3":
+      "Channel Support",
+
+    "trust.stat4":
+      "With Your Business",
+
 
     /* PROCESS */
-    "process.eyebrow": "How We Work",
+
+    "process.eyebrow":
+      "How We Work",
+
     "process.heading":
-      "A Clear Process From Setup to Scale",
+      "From Your Requirement to a Complete Operating Model",
 
-    "process.step1.title": "Design",
+    "process.description":
+      "A structured approach designed to create clarity, consistency and continuous improvement.",
+
+    "process.step1.title":
+      "Understand",
+
     "process.step1.text":
-      "We design a customer service model around your business requirements, brand standards and customer journey.",
+      "We understand your business model, customers, operational requirements and service challenges.",
 
-    "process.step2.title": "Train",
+    "process.step2.title":
+      "Design",
+
     "process.step2.text":
-      "Our teams are trained on your products, services, procedures, communication standards and quality expectations.",
+      "We build an operating model aligned with your brand, customer journey and business goals.",
 
-    "process.step3.title": "Launch",
+    "process.step3.title":
+      "Launch",
+
     "process.step3.text":
-      "Your support operation begins through structured onboarding, supervision and continuous quality control.",
+      "Our trained team starts operations with clear procedures, supervision and quality standards.",
 
-    "process.step4.title": "Optimize",
+    "process.step4.title":
+      "Improve",
+
     "process.step4.text":
-      "We monitor performance and continuously improve the operation to enhance service quality and efficiency.",
+      "We monitor performance and continuously identify opportunities to improve service and efficiency.",
 
-    /* WHY MAHARA */
-    "why.eyebrow": "Why Outsource with Mahara?",
+
+    /* TECHNOLOGY */
+
+    "technology.eyebrow":
+      "Technology",
+
+    "technology.heading":
+      "Technology That Supports Your Team — Not Replaces It",
+
+    "technology.description":
+      "We use modern technology to improve speed, visibility and consistency while keeping people at the center of the customer experience.",
+
+    "technology.cta":
+      "Talk to Our Team →",
+
+    "technology.card1.title":
+      "System Integration",
+
+    "technology.card1.text":
+      "Connect customer operations with the tools your business already uses.",
+
+    "technology.card2.title":
+      "Smart Automation",
+
+    "technology.card2.text":
+      "Reduce repetitive work and improve response time.",
+
+    "technology.card3.title":
+      "Performance Visibility",
+
+    "technology.card3.text":
+      "Gain clearer visibility into service performance and operational results.",
+
+    "technology.card4.title":
+      "Omnichannel Support",
+
+    "technology.card4.text":
+      "Manage customer communication across the channels your customers prefer.",
+
+
+    /* WHY */
+
+    "why.eyebrow":
+      "Why Mahara",
+
     "why.heading":
       "Professional Support With Measurable Business Value",
 
-    "why.item1": "Your Business Stays in Control",
-    "why.item2": "Lower Operating Costs",
-    "why.item3": "Dedicated Teams",
-    "why.item4": "Flexible Scaling",
-    "why.item5": "Professional Management",
-    "why.item6": "Performance Visibility",
+    "why.overlay":
+      "Focus on your customers",
 
-    "why.badge": "Focus on your customers",
+    "why.item1.title":
+      "Stay in Control",
 
-    /* BENEFITS */
-    "benefits.eyebrow": "The Mahara Advantage",
+    "why.item1.text":
+      "Your business remains in control while our team manages the customer operation.",
 
-    "benefits.item1": "Dedicated customer service agents",
-    "benefits.item2": "Professional team supervision",
-    "benefits.item3": "Phone, WhatsApp, email and chat support",
-    "benefits.item4": "Customer inquiry handling",
-    "benefits.item5": "Complaint and escalation management",
-    "benefits.item6": "Order and booking assistance",
-    "benefits.item7": "Customer follow-ups",
-    "benefits.item8": "Quality monitoring",
+    "why.item2.title":
+      "Improve Efficiency",
+
+    "why.item2.text":
+      "Structured processes help reduce operational friction and improve productivity.",
+
+    "why.item3.title":
+      "Dedicated Teams",
+
+    "why.item3.text":
+      "Professionally trained teams work as an extension of your business.",
+
+    "why.item4.title":
+      "Flexible Scaling",
+
+    "why.item4.text":
+      "Increase or adjust operational capacity as your business requirements change.",
+
+    "why.item5.title":
+      "Professional Management",
+
+    "why.item5.text":
+      "Consistent supervision and quality management across your customer operations.",
+
+    "why.item6.title":
+      "Performance Visibility",
+
+    "why.item6.text":
+      "Clearer performance information to support better operational decisions.",
+
+
+    /* EXPERIENCE */
+
+    "experience.eyebrow":
+      "Customer Experience",
+
+    "experience.heading":
+      "Every Customer Interaction Makes a Difference.",
+
+    "experience.text":
+      "Customers may not remember every detail of a product, but they remember how your business made them feel. That is why we focus on every interaction — from the first conversation to the final follow-up.",
+
+    "experience.cta":
+      "Discover How We Work",
+
+
+    /* TESTIMONIAL */
+
+    "testimonial.eyebrow":
+      "Partnership",
+
+    "testimonial.heading":
+      "Partnerships Built Around Results",
+
+    "testimonial.text":
+      "Success is not only measured by the number of interactions we manage. It is measured by the value we add to our clients' businesses.",
+
+    "testimonial.label":
+      "The MAHARA BPO Approach",
+
+
+    /* FINAL CTA */
+
+    "final.eyebrow":
+      "Let's Build Better",
+
+    "final.heading":
+      "Ready to Elevate Your Customer Experience?",
+
+    "final.text":
+      "Tell us what your business needs and let us explore the right operating model for you.",
+
+    "final.button":
+      "Talk to Our Team",
+
 
     /* QUOTE */
-    "quote.eyebrow": "Request a Quote",
+
+    "quote.eyebrow":
+      "Request a Quote",
+
     "quote.heading":
-      "Tell us what your customers need. We will design the right support model for your business.",
+      "Tell Us What Your Customers Need.",
 
-    "form.fullName": "Full Name",
-    "form.companyName": "Company Name",
-    "form.country": "Country",
-    "form.businessEmail": "Business Email",
-    "form.phone": "Phone / WhatsApp",
-    "form.industry": "Industry",
-    "form.agentsRequired": "Number of Agents Required",
-    "form.languagesRequired": "Required Languages",
-    "form.servicesRequired": "Services Required",
-    "form.workingHours": "Required Working Hours",
-    "form.additionalInfo": "Additional Information",
+    "quote.description":
+      "We will design a support model around your business requirements, customer journey and growth objectives.",
 
-    "form.fullNamePlaceholder": "Full Name",
-    "form.companyNamePlaceholder": "Company Name",
-    "form.countryPlaceholder": "Country",
-    "form.businessEmailPlaceholder": "Business Email",
-    "form.phonePlaceholder": "Phone / WhatsApp",
-    "form.industryPlaceholder": "Industry",
+    "quote.point1":
+      "Dedicated support teams",
+
+    "quote.point2":
+      "Flexible operating models",
+
+    "quote.point3":
+      "Multi-channel support",
+
+
+    /* FORM */
+
+    "form.fullName":
+      "Full Name",
+
+    "form.companyName":
+      "Company Name",
+
+    "form.country":
+      "Country",
+
+    "form.businessEmail":
+      "Business Email",
+
+    "form.phone":
+      "Phone / WhatsApp",
+
+    "form.industry":
+      "Industry",
+
+    "form.agentsRequired":
+      "Number of Agents Required",
+
+    "form.languagesRequired":
+      "Required Languages",
+
+    "form.servicesRequired":
+      "Services Required",
+
+    "form.workingHours":
+      "Required Working Hours",
+
+    "form.additionalInfo":
+      "Additional Information",
+
+    "form.fullNamePlaceholder":
+      "Full Name",
+
+    "form.companyNamePlaceholder":
+      "Company Name",
+
+    "form.countryPlaceholder":
+      "Country",
+
+    "form.businessEmailPlaceholder":
+      "Business Email",
+
+    "form.phonePlaceholder":
+      "Phone / WhatsApp",
+
+    "form.industryPlaceholder":
+      "Industry",
 
     "form.additionalInfoPlaceholder":
       "Tell us about your goals, customer volume and preferred support model.",
 
-    "form.select": "Select",
+    "form.select":
+      "Select",
 
-    "form.optionAgents1": "1–5",
-    "form.optionAgents2": "6–10",
-    "form.optionAgents3": "11–25",
-    "form.optionAgents4": "26–50",
-    "form.optionAgents5": "51–100",
-    "form.optionAgents6": "100+",
+    "form.optionAgents1":
+      "1–5",
 
-    "form.optionLanguageArabic": "Arabic",
-    "form.optionLanguageEnglish": "English",
-    "form.optionLanguageUrdu": "Urdu",
-    "form.optionLanguageArabicEnglish": "Arabic + English",
-    "form.optionLanguageArabicEnglishUrdu": "Arabic + English + Urdu",
-    "form.optionLanguageOther": "Other",
+    "form.optionAgents2":
+      "6–10",
 
-    "form.optionServiceInbound": "Inbound Call Support",
-    "form.optionServiceWhatsApp": "WhatsApp & Chat Support",
-    "form.optionServiceEmail": "Email Support",
-    "form.optionServiceFollowUp": "Customer Follow-Up",
-    "form.optionServiceLiveAgent": "Live Agent Support",
-    "form.optionServiceAppointments": "Appointment Scheduling",
-    "form.optionServiceBackOffice": "Back-Office Support",
-    "form.optionService24Seven": "24/7 Support",
+    "form.optionAgents3":
+      "11–25",
 
-    "form.optionHoursBusiness": "Business Hours",
-    "form.optionHoursExtended": "Extended Hours",
-    "form.optionHours24Seven": "24/7",
+    "form.optionAgents4":
+      "26–50",
 
-    "form.submit": "Request a Quote",
-    "form.whatsapp": "Send Inquiry on WhatsApp",
+    "form.optionAgents5":
+      "51–100",
 
-    /* CONTACT */
-    "contact.eyebrow": "Contact Us Today",
-    "contact.emailLabel": "Email",
-    "contact.websiteLabel": "Website",
-    "contact.phoneLabel": "Phone",
+    "form.optionAgents6":
+      "100+",
 
-    /* FOOTER */
-    "footer.about":
-      "Your trusted customer experience and BPO partner for businesses ready to improve service, increase consistency and scale with confidence.",
+    "form.optionLanguageArabic":
+      "Arabic",
 
-    "footer.quickLinks": "Quick Links",
-    "footer.services": "Our Services",
-    "footer.contactInfo": "Contact Information",
-    "footer.available": "Available 24/7",
+    "form.optionLanguageEnglish":
+      "English",
 
-    "footer.copyright":
-      "© 2026 MAHARA BPO. All Rights Reserved.",
+    "form.optionLanguageUrdu":
+      "Urdu",
 
-    "footer.privacy": "Privacy Policy",
-    "footer.terms": "Terms & Conditions",
+    "form.optionLanguageArabicEnglish":
+      "Arabic + English",
 
-    /* FORM MESSAGES */
+    "form.optionLanguageArabicEnglishUrdu":
+      "Arabic + English + Urdu",
+
+    "form.optionLanguageOther":
+      "Other",
+
+    "form.optionServiceCustomer":
+      "Customer Service",
+
+    "form.optionServiceContact":
+      "Contact Center",
+
+    "form.optionServiceTechnical":
+      "Technical Support",
+
+    "form.optionServiceWhatsApp":
+      "WhatsApp & Chat Support",
+
+    "form.optionServiceEmail":
+      "Email Support",
+
+    "form.optionServiceFollowUp":
+      "Customer Follow-Up",
+
+    "form.optionServiceAppointments":
+      "Appointment Scheduling",
+
+    "form.optionServiceOther":
+      "Other",
+
+    "form.optionHoursBusiness":
+      "Business Hours",
+
+    "form.optionHoursExtended":
+      "Extended Hours",
+
+    "form.optionHours24Seven":
+      "24/7",
+
+    "form.submit":
+      "Request a Quote",
+
+    "form.whatsapp":
+      "WhatsApp Inquiry",
+
     "form.message.required":
       "Please complete all required fields correctly.",
 
@@ -206,212 +512,414 @@ const translations = {
     "form.message.whatsapp":
       "Your WhatsApp message is ready with your inquiry details.",
 
-    /* SERVICE LINKS */
-    "service.link.inbound": "Inbound Call Support",
-    "service.link.chat": "WhatsApp & Chat Support",
-    "service.link.email": "Email Support",
-    "service.link.followup": "Customer Follow-Up",
-    "service.link.live": "Live Agent Support",
-    "service.link.appointment": "Appointment Scheduling",
+
+    /* CONTACT */
+
+    "contact.eyebrow":
+      "Contact",
+
+    "contact.heading":
+      "Let's Start a Conversation",
+
+    "contact.emailLabel":
+      "Email",
+
+    "contact.phoneLabel":
+      "Phone",
+
+    "contact.websiteLabel":
+      "Website",
+
+
+    /* FOOTER */
+
+    "footer.about":
+      "Your trusted customer experience and BPO partner for businesses ready to improve service, increase consistency and scale with confidence.",
+
+    "footer.company":
+      "Company",
+
+    "footer.services":
+      "Services",
+
+    "footer.contact":
+      "Contact",
+
+    "footer.copyright":
+      "© 2026 MAHARA BPO. All Rights Reserved.",
+
+    "footer.privacy":
+      "Privacy Policy",
+
+    "footer.terms":
+      "Terms & Conditions",
 
     "aria.whatsapp":
       "Contact MAHARA BPO on WhatsApp"
+
   },
 
-  /* =========================================================
-     ARABIC
-     INTERNATIONAL STANDARD ARABIC
-     ========================================================= */
+
+  /* =======================================================
+     ARABIC — INTERNATIONAL STANDARD ARABIC
+     ======================================================= */
 
   ar: {
-    "nav.home": "الرئيسية",
-    "nav.about": "من نحن",
-    "nav.services": "خدماتنا",
-    "nav.process": "كيف نعمل",
-    "nav.why": "لماذا مهارة؟",
-    "nav.contact": "تواصل معنا",
-    "nav.quote": "ابدأ الآن",
+
+    "nav.home":
+      "الرئيسية",
+
+    "nav.about":
+      "من نحن",
+
+    "nav.services":
+      "حلولنا",
+
+    "nav.process":
+      "كيف نعمل",
+
+    "nav.technology":
+      "التقنية",
+
+    "nav.why":
+      "لماذا مهارة",
+
+    "nav.contact":
+      "تواصل معنا",
+
+    "nav.quote":
+      "ابدأ الآن",
+
+
+    /* HERO */
+
+    "hero.eyebrow":
+      "مركز عمليات متطور",
 
     "hero.heading":
-      "شريكك<br>في خدمة<br>العملاء",
+      "نرتقي بتجربة عملائك<br><span>ونصنع فرقًا في أعمالك</span>",
 
     "hero.description":
-      "نساعد الشركات في دول الخليج على تقديم تجربة استثنائية لعملائها من خلال فرق متخصصة ومدارة باحترافية.",
+      "حلول متكاملة لإدارة تجربة العملاء، تجمع بين الخبرة التشغيلية والتقنية والفرق المتخصصة لمساعدة الشركات على تحسين جودة الخدمة ورفع الكفاءة ودعم نمو أعمالها في أسواق الخليج.",
 
-    "hero.cta": "تواصل معنا اليوم",
+    "hero.ctaPrimary":
+      "ابدأ الآن",
 
-    "hero.badge1":
-      "فرق<br>متخصصة",
+    "hero.ctaSecondary":
+      "اكتشف حلولنا",
 
-    "hero.badge2":
-      "أداء<br>قابل للقياس",
+    "hero.trust1":
+      "فرق متخصصة",
 
-    "hero.badge3":
-      "جودة<br>يمكن الوثوق بها",
+    "hero.trust2":
+      "تقنيات متقدمة",
 
-    "hero.panelTitle":
+    "hero.trust3":
+      "عمليات قابلة للتوسع",
+
+    "hero.cardLabel":
       "شريكك في تجربة العملاء",
 
-    "hero.panelText":
-      "نعزز تجربة عملائك من خلال فرق متخصصة وفعّالة تعمل وفق معايير واضحة لدعم أعمالك وتعزيز نموها المستدام.",
+    "hero.cardTitle":
+      "الإنسان. العملية. التقنية.",
 
-    /* ABOUT */
-    "about.eyebrow": "من نحن",
+    "hero.cardText":
+      "نموذج تشغيلي حديث مصمم حول عملائك وعلامتك التجارية وأهداف أعمالك.",
 
-    "about.heading":
-      "نحن ندير تواصل عملائك، وأنت تركز على نمو أعمالك.",
 
-    "about.p1":
-      "تقدم مهارة BPO حلولًا متخصصة في تجربة العملاء وخدمات تعهيد العمليات للشركات في دول الخليج، من خلال فرق مصممة وفق احتياجات علامتك التجارية ومعايير الخدمة الخاصة بك.",
+    /* VALUE */
 
-    "about.p2":
-      "بدءًا من أول تواصل مع العميل وحتى المتابعة، تعمل فرقنا كامتداد لأعمالك، مع الالتزام بالاحترافية والتعاطف والاتساق وتقديم مستوى خدمة قابل للقياس.",
+    "value.eyebrow":
+      "لماذا نحن",
 
-    "about.feature1":
-      "فرق<br>متخصصة",
+    "value.heading":
+      "لا ندير خدمة العملاء فحسب، بل نبني تجربة متكاملة.",
 
-    "about.feature2":
-      "تواصل<br>شفاف",
+    "value.lead":
+      "نبني عمليات متكاملة لتجربة العملاء، مصممة وفق طبيعة أعمالك واحتياجات عملائك.",
 
-    "about.feature3":
-      "خدمة<br>موثوقة",
+    "value.card1.title":
+      "تجربة أفضل",
+
+    "value.card1.text":
+      "تواصل احترافي ومتسق عبر مختلف نقاط التواصل مع العميل.",
+
+    "value.card2.title":
+      "كفاءة أعلى",
+
+    "value.card2.text":
+      "عمليات منظمة تساعد على رفع الإنتاجية وتقليل الهدر التشغيلي.",
+
+    "value.card3.title":
+      "نمو قابل للتوسع",
+
+    "value.card3.text":
+      "نماذج دعم مرنة تتطور مع نمو أعمالك وتغير احتياجات عملائك.",
+
 
     /* SERVICES */
-    "services.eyebrow": "خدماتنا",
+
+    "services.eyebrow":
+      "حلولنا",
 
     "services.heading":
-      "خدمات دعم العملاء المصممة وفق احتياجات علامتك التجارية",
+      "كل ما تحتاجه لإدارة تجربة عملائك",
+
+    "services.description":
+      "من التواصل اليومي مع العملاء إلى دعم العمليات ووضوح مؤشرات الأداء، نقدم حلولًا مصممة وفق احتياجات أعمالك.",
+
+    "services.learn":
+      "اكتشف الحل ←",
 
     "services.card1.title":
-      "دعم المكالمات الواردة",
+      "خدمة العملاء",
 
     "services.card1.text":
-      "خدمة هاتفية احترافية للتعامل مع مكالمات العملاء بكفاءة واهتمام.",
+      "إدارة احترافية لتواصل العملاء عبر القنوات التي يستخدمونها يوميًا.",
 
     "services.card2.title":
-      "الدعم عبر واتساب والدردشة",
+      "مركز الاتصال",
 
     "services.card2.text":
-      "دعم سريع وفعّال عبر واتساب والدردشة المباشرة.",
+      "إدارة عمليات الاتصال الواردة والصادرة وفق إجراءات واضحة ومؤشرات أداء قابلة للقياس.",
 
     "services.card3.title":
-      "دعم البريد الإلكتروني",
+      "الدعم الفني",
 
     "services.card3.text":
-      "ردود واضحة واحترافية وموثوقة على استفسارات العملاء عبر البريد الإلكتروني.",
+      "دعم فني سريع وفعّال يساعد العملاء على حل المشكلات وتحسين تجربة ما بعد البيع.",
 
     "services.card4.title":
-      "متابعة العملاء",
+      "إدارة العمليات",
 
     "services.card4.text":
-      "متابعة منهجية تضمن استمرار التواصل وإبقاء العملاء على اطلاع.",
+      "دعم تشغيلي منظم يركز على الاتساق والتحكم وتحقيق نتائج قابلة للقياس.",
 
     "services.card5.title":
-      "دعم الوكيل المباشر",
+      "تحليل الأداء",
 
     "services.card5.text":
-      "مساعدة مباشرة وفورية من وكلاء خدمة عملاء مدربين باحترافية.",
+      "رؤية أوضح لأداء العمليات تساعدك على فهم النتائج واتخاذ قرارات أفضل.",
 
     "services.card6.title":
-      "حجز المواعيد",
+      "حلول مخصصة",
 
     "services.card6.text":
-      "تنظيم المواعيد وتنسيقها مع العملاء بسهولة وكفاءة.",
+      "نموذج دعم مصمم وفق مجال عملك ورحلة عميلك وأهدافك التشغيلية.",
+
+
+    /* TRUST */
+
+    "trust.eyebrow":
+      "مصمم للأعمال",
+
+    "trust.heading":
+      "الثقة التشغيلية تبدأ باختيار الشريك المناسب",
+
+    "trust.stat1":
+      "الدعم والتشغيل",
+
+    "trust.stat2":
+      "تركيز على أسواق الخليج",
+
+    "trust.stat3":
+      "دعم متعدد القنوات",
+
+    "trust.stat4":
+      "يتوسع مع أعمالك",
+
 
     /* PROCESS */
-    "process.eyebrow": "كيف نعمل",
+
+    "process.eyebrow":
+      "كيف نعمل",
 
     "process.heading":
-      "منهجية واضحة تبدأ من الإعداد وتمتد إلى التوسع",
+      "من احتياجك إلى نموذج تشغيلي متكامل",
+
+    "process.description":
+      "منهجية واضحة تهدف إلى تحقيق الوضوح والاتساق والتحسين المستمر.",
 
     "process.step1.title":
-      "التصميم",
+      "نفهم",
 
     "process.step1.text":
-      "نصمم نموذجًا لخدمة العملاء يتوافق مع متطلبات أعمالك ومعايير علامتك التجارية ورحلة العميل.",
+      "نفهم نموذج عملك وعملاءك ومتطلباتك التشغيلية والتحديات المرتبطة بالخدمة.",
 
     "process.step2.title":
-      "التدريب",
+      "نصمم",
 
     "process.step2.text":
-      "ندرب فرقنا على منتجاتك وخدماتك وإجراءات العمل ومعايير التواصل والجودة المعتمدة لديك.",
+      "نبني نموذجًا تشغيليًا يتوافق مع علامتك التجارية ورحلة العميل وأهداف أعمالك.",
 
     "process.step3.title":
-      "الإطلاق",
+      "نطلق",
 
     "process.step3.text":
-      "نبدأ عمليات الدعم من خلال خطة إطلاق منظمة وإشراف مستمر ومراقبة دقيقة لجودة الخدمة.",
+      "يبدأ فريقنا المدرب العمليات وفق إجراءات واضحة وإشراف مستمر ومعايير جودة محددة.",
 
     "process.step4.title":
-      "التحسين",
+      "نطوّر",
 
     "process.step4.text":
-      "نراقب الأداء ونحلل النتائج ونعمل باستمرار على تحسين جودة الخدمة ورفع الكفاءة التشغيلية.",
+      "نراقب الأداء ونحدد باستمرار فرص تحسين جودة الخدمة والكفاءة التشغيلية.",
+
+
+    /* TECHNOLOGY */
+
+    "technology.eyebrow":
+      "التقنية",
+
+    "technology.heading":
+      "تقنية تدعم فريقك، ولا تستبدله",
+
+    "technology.description":
+      "نستخدم التقنيات الحديثة لتحسين سرعة الاستجابة ووضوح الأداء واتساق العمليات، مع الحفاظ على العنصر البشري في قلب تجربة العميل.",
+
+    "technology.cta":
+      "تحدث مع فريقنا ←",
+
+    "technology.card1.title":
+      "تكامل الأنظمة",
+
+    "technology.card1.text":
+      "ربط عمليات خدمة العملاء بالأدوات والأنظمة التي تستخدمها أعمالك.",
+
+    "technology.card2.title":
+      "الأتمتة الذكية",
+
+    "technology.card2.text":
+      "تقليل المهام المتكررة وتحسين سرعة الاستجابة.",
+
+    "technology.card3.title":
+      "وضوح مؤشرات الأداء",
+
+    "technology.card3.text":
+      "رؤية أوضح لأداء الخدمة والنتائج التشغيلية.",
+
+    "technology.card4.title":
+      "دعم متعدد القنوات",
+
+    "technology.card4.text":
+      "إدارة تواصل العملاء عبر القنوات التي يفضلون استخدامها.",
+
 
     /* WHY */
+
     "why.eyebrow":
-      "لماذا الاستعانة بمهارة؟",
+      "لماذا مهارة",
 
     "why.heading":
       "دعم احترافي يحقق قيمة أعمال قابلة للقياس",
 
-    "why.item1":
-      "تبقى أعمالك تحت سيطرتك",
-
-    "why.item2":
-      "خفض التكاليف التشغيلية",
-
-    "why.item3":
-      "فرق متخصصة",
-
-    "why.item4":
-      "مرونة في التوسع",
-
-    "why.item5":
-      "إدارة احترافية",
-
-    "why.item6":
-      "وضوح مؤشرات الأداء",
-
-    "why.badge":
+    "why.overlay":
       "ركز على عملائك",
 
-    /* BENEFITS */
-    "benefits.eyebrow":
-      "مزايا العمل مع مهارة",
+    "why.item1.title":
+      "تبقى أعمالك تحت سيطرتك",
 
-    "benefits.item1":
-      "وكلاء متخصصون في خدمة العملاء",
+    "why.item1.text":
+      "تبقى قراراتك وأعمالك تحت سيطرتك بينما نتولى إدارة عمليات التواصل مع العملاء.",
 
-    "benefits.item2":
-      "إشراف احترافي على فرق العمل",
+    "why.item2.title":
+      "كفاءة تشغيلية أعلى",
 
-    "benefits.item3":
-      "دعم عبر الهاتف وواتساب والبريد الإلكتروني والدردشة",
+    "why.item2.text":
+      "إجراءات منظمة تساعد على تقليل التعقيد التشغيلي ورفع الإنتاجية.",
 
-    "benefits.item4":
-      "إدارة استفسارات العملاء",
+    "why.item3.title":
+      "فرق متخصصة",
 
-    "benefits.item5":
-      "إدارة الشكاوى وحالات التصعيد",
+    "why.item3.text":
+      "فرق مدربة باحترافية تعمل كامتداد حقيقي لأعمالك.",
 
-    "benefits.item6":
-      "المساعدة في الطلبات والحجوزات",
+    "why.item4.title":
+      "مرونة في التوسع",
 
-    "benefits.item7":
-      "متابعة العملاء",
+    "why.item4.text":
+      "زيادة أو تعديل القدرة التشغيلية وفق تغير احتياجات أعمالك.",
 
-    "benefits.item8":
-      "مراقبة جودة الخدمة",
+    "why.item5.title":
+      "إدارة احترافية",
+
+    "why.item5.text":
+      "إشراف مستمر وإدارة جودة متسقة عبر عمليات خدمة العملاء.",
+
+    "why.item6.title":
+      "وضوح الأداء",
+
+    "why.item6.text":
+      "معلومات أداء أوضح تساعدك على اتخاذ قرارات تشغيلية أفضل.",
+
+
+    /* EXPERIENCE */
+
+    "experience.eyebrow":
+      "تجربة العملاء",
+
+    "experience.heading":
+      "كل تفاعل مع العميل يصنع فرقًا.",
+
+    "experience.text":
+      "قد لا يتذكر العميل كل تفاصيل المنتج، لكنه يتذكر كيف جعلته شركتك يشعر. لذلك نركز على كل تفاعل، من أول محادثة إلى آخر متابعة.",
+
+    "experience.cta":
+      "اكتشف كيف نعمل",
+
+
+    /* TESTIMONIAL */
+
+    "testimonial.eyebrow":
+      "الشراكة",
+
+    "testimonial.heading":
+      "شراكات تُبنى حول النتائج",
+
+    "testimonial.text":
+      "لا نقيس النجاح بعدد التفاعلات التي نديرها فقط، بل بالقيمة التي نضيفها إلى أعمال عملائنا.",
+
+    "testimonial.label":
+      "منهج مهارة BPO",
+
+
+    /* FINAL CTA */
+
+    "final.eyebrow":
+      "نبني نتائج أفضل",
+
+    "final.heading":
+      "هل أنت مستعد للارتقاء بتجربة عملائك؟",
+
+    "final.text":
+      "أخبرنا باحتياجات أعمالك، ودعنا نستكشف معًا النموذج التشغيلي المناسب لك.",
+
+    "final.button":
+      "تحدث مع فريقنا",
+
 
     /* QUOTE */
+
     "quote.eyebrow":
       "اطلب عرضًا",
 
     "quote.heading":
-      "أخبرنا باحتياجات عملائك، وسنصمم لك نموذج الدعم المناسب لأعمالك.",
+      "أخبرنا باحتياجات عملائك.",
+
+    "quote.description":
+      "سنصمم نموذج دعم يتوافق مع متطلبات أعمالك ورحلة العميل وأهداف النمو.",
+
+    "quote.point1":
+      "فرق دعم متخصصة",
+
+    "quote.point2":
+      "نماذج تشغيل مرنة",
+
+    "quote.point3":
+      "دعم متعدد القنوات",
+
 
     /* FORM */
+
     "form.fullName":
       "الاسم الكامل",
 
@@ -505,8 +1013,14 @@ const translations = {
     "form.optionLanguageOther":
       "أخرى",
 
-    "form.optionServiceInbound":
-      "دعم المكالمات الواردة",
+    "form.optionServiceCustomer":
+      "خدمة العملاء",
+
+    "form.optionServiceContact":
+      "مركز الاتصال",
+
+    "form.optionServiceTechnical":
+      "الدعم الفني",
 
     "form.optionServiceWhatsApp":
       "الدعم عبر واتساب والدردشة",
@@ -517,17 +1031,11 @@ const translations = {
     "form.optionServiceFollowUp":
       "متابعة العملاء",
 
-    "form.optionServiceLiveAgent":
-      "دعم الوكيل المباشر",
-
     "form.optionServiceAppointments":
       "حجز المواعيد",
 
-    "form.optionServiceBackOffice":
-      "دعم العمليات الخلفية",
-
-    "form.optionService24Seven":
-      "دعم على مدار الساعة",
+    "form.optionServiceOther":
+      "أخرى",
 
     "form.optionHoursBusiness":
       "ساعات العمل الرسمية",
@@ -544,34 +1052,47 @@ const translations = {
     "form.whatsapp":
       "إرسال الاستفسار عبر واتساب",
 
+    "form.message.required":
+      "يرجى استكمال جميع الحقول المطلوبة بصورة صحيحة.",
+
+    "form.message.email":
+      "سيتم فتح تطبيق البريد الإلكتروني لإرسال استفسارك إلى Info@MaharaBPO.com.",
+
+    "form.message.whatsapp":
+      "تم تجهيز رسالة واتساب متضمنة تفاصيل استفسارك.",
+
+
     /* CONTACT */
+
     "contact.eyebrow":
-      "تواصل معنا اليوم",
+      "تواصل معنا",
+
+    "contact.heading":
+      "لنبدأ محادثة",
 
     "contact.emailLabel":
       "البريد الإلكتروني",
 
-    "contact.websiteLabel":
-      "الموقع الإلكتروني",
-
     "contact.phoneLabel":
       "الهاتف",
 
+    "contact.websiteLabel":
+      "الموقع الإلكتروني",
+
+
     /* FOOTER */
+
     "footer.about":
       "شريكك الموثوق في تجربة العملاء وخدمات التعهيد، لمساعدتك على تحسين مستوى الخدمة وتعزيز الاتساق والتوسع في أعمالك بثقة.",
 
-    "footer.quickLinks":
-      "روابط سريعة",
+    "footer.company":
+      "الشركة",
 
     "footer.services":
-      "خدماتنا",
+      "الخدمات",
 
-    "footer.contactInfo":
-      "معلومات التواصل",
-
-    "footer.available":
-      "متاح على مدار الساعة",
+    "footer.contact":
+      "التواصل",
 
     "footer.copyright":
       "© 2026 مهارة BPO. جميع الحقوق محفوظة.",
@@ -582,119 +1103,105 @@ const translations = {
     "footer.terms":
       "الشروط والأحكام",
 
-    /* FORM MESSAGES */
-    "form.message.required":
-      "يرجى استكمال جميع الحقول المطلوبة بصورة صحيحة.",
-
-    "form.message.email":
-      "سيتم فتح تطبيق البريد الإلكتروني لإرسال استفسارك إلى Info@MaharaBPO.com.",
-
-    "form.message.whatsapp":
-      "تم تجهيز رسالة واتساب متضمنة تفاصيل استفسارك.",
-
-    /* SERVICE LINKS */
-    "service.link.inbound":
-      "دعم المكالمات الواردة",
-
-    "service.link.chat":
-      "الدعم عبر واتساب والدردشة",
-
-    "service.link.email":
-      "دعم البريد الإلكتروني",
-
-    "service.link.followup":
-      "متابعة العملاء",
-
-    "service.link.live":
-      "دعم الوكيل المباشر",
-
-    "service.link.appointment":
-      "حجز المواعيد",
-
     "aria.whatsapp":
       "تواصل مع مهارة BPO عبر واتساب"
+
   }
+
 };
 
 
 /* =========================================================
-   LANGUAGE
+   STATE
    ========================================================= */
 
-let selectedLanguage = "en";
-
-function getStoredLanguage() {
-  const savedLanguage = localStorage.getItem("maharaLanguage");
-
-  if (savedLanguage === "ar") {
-    return "ar";
-  }
-
-  return "en";
-}
+let selectedLanguage =
+  localStorage.getItem("maharaLanguage") === "ar"
+    ? "ar"
+    : "en";
 
 
 /* =========================================================
-   TRANSLATION ENGINE
+   TRANSLATION FUNCTION
    ========================================================= */
 
 function applyTranslation(language) {
 
-  selectedLanguage =
-    translations[language] ? language : "en";
+  if (!translations[language]) {
+    language = "en";
+  }
 
-  const currentTranslations =
+  selectedLanguage =
+    language;
+
+  const current =
     translations[selectedLanguage];
 
-  /* HTML language */
+
+  /* HTML */
+
   document.documentElement.lang =
-    selectedLanguage === "ar" ? "ar" : "en";
+    selectedLanguage;
 
-  /* HTML direction */
   document.documentElement.dir =
-    selectedLanguage === "ar" ? "rtl" : "ltr";
+    selectedLanguage === "ar"
+      ? "rtl"
+      : "ltr";
 
-  /* Useful CSS state */
   document.documentElement.dataset.language =
     selectedLanguage;
 
-  /* Normal text */
+
+  /* Text */
+
   document
     .querySelectorAll("[data-i18n]")
     .forEach((element) => {
 
-      const key = element.dataset.i18n;
+      const key =
+        element.dataset.i18n;
 
       if (
         Object.prototype.hasOwnProperty.call(
-          currentTranslations,
+          current,
           key
         )
       ) {
+
         element.textContent =
-          currentTranslations[key];
+          current[key];
+
       }
+
     });
 
-  /* HTML content */
+
+  /* HTML */
+
   document
     .querySelectorAll("[data-i18n-html]")
     .forEach((element) => {
 
-      const key = element.dataset.i18nHtml;
+      const key =
+        element.dataset.i18nHtml;
 
       if (
         Object.prototype.hasOwnProperty.call(
-          currentTranslations,
+          current,
           key
         )
       ) {
+
         element.innerHTML =
-          currentTranslations[key];
+          current[key];
+
       }
+
     });
 
+
   /* Placeholders */
+
   document
     .querySelectorAll("[data-i18n-placeholder]")
     .forEach((element) => {
@@ -704,61 +1211,76 @@ function applyTranslation(language) {
 
       if (
         Object.prototype.hasOwnProperty.call(
-          currentTranslations,
+          current,
           key
         )
       ) {
+
         element.placeholder =
-          currentTranslations[key];
+          current[key];
+
       }
+
     });
 
+
   /* Language buttons */
+
   document
     .querySelectorAll(".lang-option")
     .forEach((button) => {
 
-      const isActive =
-        button.dataset.lang === selectedLanguage;
+      const active =
+        button.dataset.lang ===
+        selectedLanguage;
 
       button.classList.toggle(
         "active",
-        isActive
+        active
       );
 
       button.setAttribute(
         "aria-pressed",
-        String(isActive)
+        String(active)
       );
+
     });
 
-  /* WhatsApp floating button */
-  const whatsappLink =
-    document.querySelector(".floating-whatsapp");
 
-  if (whatsappLink) {
+  /* WhatsApp */
 
-    whatsappLink.setAttribute(
-      "aria-label",
-      currentTranslations["aria.whatsapp"]
+  const whatsapp =
+    document.querySelector(
+      ".floating-whatsapp"
     );
 
-    whatsappLink.setAttribute(
+  if (whatsapp) {
+
+    whatsapp.setAttribute(
+      "aria-label",
+      current["aria.whatsapp"]
+    );
+
+    whatsapp.setAttribute(
       "data-tooltip",
       selectedLanguage === "ar"
         ? "تواصل معنا عبر واتساب"
-        : "Chat with us on WhatsApp"
+        : "Chat with us"
     );
+
   }
 
-  /* Store preference */
+
+  /* Save */
+
   localStorage.setItem(
     "maharaLanguage",
     selectedLanguage
   );
 
-  /* Update accessibility */
-  updateAccessibilityLabels();
+
+  updateAccessibility();
+
 }
 
 
@@ -766,33 +1288,22 @@ function applyTranslation(language) {
    ACCESSIBILITY
    ========================================================= */
 
-function updateAccessibilityLabels() {
+function updateAccessibility() {
 
-  const navToggle =
-    document.querySelector(".nav-toggle");
-
-  if (navToggle) {
-
-    navToggle.setAttribute(
-      "aria-label",
-      selectedLanguage === "ar"
-        ? "فتح قائمة التنقل"
-        : "Open navigation menu"
+  const toggle =
+    document.querySelector(
+      ".nav-toggle"
     );
-  }
 
-  const nav =
-    document.querySelector(".navbar");
+  if (!toggle) return;
 
-  if (nav) {
+  toggle.setAttribute(
+    "aria-label",
+    selectedLanguage === "ar"
+      ? "فتح قائمة التنقل"
+      : "Open navigation"
+  );
 
-    nav.setAttribute(
-      "aria-label",
-      selectedLanguage === "ar"
-        ? "التنقل الرئيسي"
-        : "Main navigation"
-    );
-  }
 }
 
 
@@ -802,22 +1313,31 @@ function updateAccessibilityLabels() {
 
 function closeMobileMenu() {
 
-  const navMenu =
-    document.getElementById("navMenu");
+  const menu =
+    document.getElementById(
+      "navMenu"
+    );
 
-  const navToggle =
-    document.querySelector(".nav-toggle");
+  const toggle =
+    document.querySelector(
+      ".nav-toggle"
+    );
 
-  if (!navMenu) return;
+  if (!menu) return;
 
-  navMenu.classList.remove("open");
+  menu.classList.remove(
+    "open"
+  );
 
-  if (navToggle) {
-    navToggle.setAttribute(
+  if (toggle) {
+
+    toggle.setAttribute(
       "aria-expanded",
       "false"
     );
+
   }
+
 }
 
 
@@ -825,89 +1345,89 @@ function closeMobileMenu() {
    FORM DATA
    ========================================================= */
 
-function collectQuoteData() {
+function collectFormData() {
 
-  const quoteForm =
-    document.getElementById("quoteForm");
+  const form =
+    document.getElementById(
+      "quoteForm"
+    );
 
-  if (!quoteForm) return null;
+  if (!form) return null;
 
-  const formData =
-    new FormData(quoteForm);
-
-  const services =
-    formData.getAll("servicesRequired");
-
-  const selectedServices =
-    services.length
-      ? services.map(value => String(value))
-      : [];
+  const data =
+    new FormData(form);
 
   return {
 
     fullName:
       String(
-        formData.get("fullName") || ""
-      ).trim() || "Not provided",
+        data.get("fullName") || ""
+      ).trim(),
 
     companyName:
       String(
-        formData.get("companyName") || ""
-      ).trim() || "Not provided",
+        data.get("companyName") || ""
+      ).trim(),
 
     country:
       String(
-        formData.get("country") || ""
-      ).trim() || "Not provided",
+        data.get("country") || ""
+      ).trim(),
 
     businessEmail:
       String(
-        formData.get("businessEmail") || ""
-      ).trim() || "Not provided",
+        data.get("businessEmail") || ""
+      ).trim(),
 
     phone:
       String(
-        formData.get("phone") || ""
-      ).trim() || "Not provided",
+        data.get("phone") || ""
+      ).trim(),
 
     industry:
       String(
-        formData.get("industry") || ""
-      ).trim() || "Not provided",
+        data.get("industry") || ""
+      ).trim(),
 
     agentsRequired:
       String(
-        formData.get("agentsRequired") || ""
-      ).trim() || "Not provided",
+        data.get("agentsRequired") || ""
+      ).trim(),
 
     languagesRequired:
       String(
-        formData.get("languagesRequired") || ""
-      ).trim() || "Not provided",
+        data.get("languagesRequired") || ""
+      ).trim(),
+
+    servicesRequired:
+      String(
+        data.get("servicesRequired") || ""
+      ).trim(),
 
     workingHours:
       String(
-        formData.get("workingHours") || ""
-      ).trim() || "Not provided",
+        data.get("workingHours") || ""
+      ).trim(),
 
     additionalInfo:
       String(
-        formData.get("additionalInfo") || ""
-      ).trim() || "Not provided",
+        data.get("additionalInfo") || ""
+      ).trim()
 
-    servicesRequired:
-      selectedServices
   };
+
 }
 
 
 /* =========================================================
-   FORM VALIDATION
+   VALIDATION
    ========================================================= */
 
-function validateQuoteForm(form) {
+function validateForm(form) {
 
-  let valid = true;
+  let valid =
+    true;
+
 
   form
     .querySelectorAll("[required]")
@@ -925,14 +1445,19 @@ function validateQuoteForm(form) {
           "input-error"
         );
 
-        valid = false;
+        valid =
+          false;
+
       }
+
     });
+
 
   const email =
     form.querySelector(
       'input[type="email"]'
     );
+
 
   if (
     email &&
@@ -945,10 +1470,14 @@ function validateQuoteForm(form) {
       "input-error"
     );
 
-    valid = false;
+    valid =
+      false;
+
   }
 
+
   return valid;
+
 }
 
 
@@ -956,24 +1485,22 @@ function validateQuoteForm(form) {
    FORM MESSAGE
    ========================================================= */
 
-function updateFormMessage(
-  messageKey,
-  language = selectedLanguage
+function showFormMessage(
+  key
 ) {
 
-  const formMessage =
+  const element =
     document.getElementById(
       "quoteFormMessage"
     );
 
-  if (!formMessage) return;
+  if (!element) return;
 
-  formMessage.textContent =
-    translations[language][messageKey] || "";
+  element.textContent =
+    translations[
+      selectedLanguage
+    ][key] || "";
 
-  formMessage.classList.add(
-    "visible"
-  );
 }
 
 
@@ -983,45 +1510,69 @@ function updateFormMessage(
 
 function createEmailBody(data) {
 
-  if (selectedLanguage === "ar") {
+  if (
+    selectedLanguage === "ar"
+  ) {
 
     return [
+
       `الاسم الكامل: ${data.fullName}`,
+
       `اسم الشركة: ${data.companyName}`,
+
       `الدولة: ${data.country}`,
+
       `البريد الإلكتروني للعمل: ${data.businessEmail}`,
+
       `الهاتف / واتساب: ${data.phone}`,
+
       `مجال العمل: ${data.industry}`,
+
       `عدد الوكلاء المطلوب: ${data.agentsRequired}`,
+
       `اللغات المطلوبة: ${data.languagesRequired}`,
-      `الخدمات المطلوبة: ${
-        data.servicesRequired.length
-          ? data.servicesRequired.join("، ")
-          : "غير محدد"
-      }`,
+
+      `الخدمات المطلوبة: ${data.servicesRequired}`,
+
       `ساعات العمل المطلوبة: ${data.workingHours}`,
-      `معلومات إضافية: ${data.additionalInfo}`
+
+      `معلومات إضافية: ${
+        data.additionalInfo || "لا توجد"
+      }`
+
     ].join("\n");
 
   }
 
+
   return [
+
     `Full Name: ${data.fullName}`,
+
     `Company Name: ${data.companyName}`,
+
     `Country: ${data.country}`,
+
     `Business Email: ${data.businessEmail}`,
+
     `Phone / WhatsApp: ${data.phone}`,
+
     `Industry: ${data.industry}`,
+
     `Number of Agents: ${data.agentsRequired}`,
+
     `Required Languages: ${data.languagesRequired}`,
-    `Services Required: ${
-      data.servicesRequired.length
-        ? data.servicesRequired.join(", ")
-        : "Not provided"
-    }`,
+
+    `Services Required: ${data.servicesRequired}`,
+
     `Working Hours: ${data.workingHours}`,
-    `Additional Information: ${data.additionalInfo}`
+
+    `Additional Information: ${
+      data.additionalInfo || "None"
+    }`
+
   ].join("\n");
+
 }
 
 
@@ -1031,290 +1582,350 @@ function createEmailBody(data) {
 
 function createWhatsAppMessage(data) {
 
-  if (selectedLanguage === "ar") {
+  if (
+    selectedLanguage === "ar"
+  ) {
 
     return [
-      "مرحبًا مهارة BPO، أرغب في الحصول على معلومات حول خدماتكم في مجال تعهيد خدمة العملاء.",
+
+      "مرحبًا مهارة BPO، أرغب في الحصول على معلومات حول خدماتكم.",
 
       `الاسم الكامل: ${data.fullName}`,
+
       `اسم الشركة: ${data.companyName}`,
+
       `الدولة: ${data.country}`,
-      `البريد الإلكتروني للعمل: ${data.businessEmail}`,
+
+      `البريد الإلكتروني: ${data.businessEmail}`,
+
       `الهاتف / واتساب: ${data.phone}`,
+
       `مجال العمل: ${data.industry}`,
+
       `عدد الوكلاء المطلوب: ${data.agentsRequired}`,
+
       `اللغات المطلوبة: ${data.languagesRequired}`,
 
-      `الخدمات المطلوبة: ${
-        data.servicesRequired.length
-          ? data.servicesRequired.join("، ")
-          : "غير محدد"
-      }`,
+      `الخدمات المطلوبة: ${data.servicesRequired}`,
 
-      `ساعات العمل المطلوبة: ${data.workingHours}`,
-      `معلومات إضافية: ${data.additionalInfo}`
+      `ساعات العمل: ${data.workingHours}`,
+
+      `معلومات إضافية: ${
+        data.additionalInfo || "لا توجد"
+      }`
+
     ].join("\n");
 
   }
 
+
   return [
-    "Hello MAHARA BPO, I would like to request information about your customer experience and BPO services.",
+
+    "Hello MAHARA BPO, I would like to learn more about your customer experience and BPO solutions.",
 
     `Full Name: ${data.fullName}`,
+
     `Company Name: ${data.companyName}`,
+
     `Country: ${data.country}`,
+
     `Business Email: ${data.businessEmail}`,
+
     `Phone / WhatsApp: ${data.phone}`,
+
     `Industry: ${data.industry}`,
+
     `Number of Agents: ${data.agentsRequired}`,
+
     `Required Languages: ${data.languagesRequired}`,
 
-    `Services Required: ${
-      data.servicesRequired.length
-        ? data.servicesRequired.join(", ")
-        : "Not provided"
-    }`,
+    `Services Required: ${data.servicesRequired}`,
 
     `Working Hours: ${data.workingHours}`,
-    `Additional Information: ${data.additionalInfo}`
+
+    `Additional Information: ${
+      data.additionalInfo || "None"
+    }`
+
   ].join("\n");
+
 }
 
 
 /* =========================================================
-   DOM READY
+   INITIALIZATION
    ========================================================= */
 
 document.addEventListener(
   "DOMContentLoaded",
   () => {
 
-    const navToggle =
-      document.querySelector(".nav-toggle");
 
-    const navMenu =
-      document.getElementById("navMenu");
-
-    const navLinks =
-      document.querySelectorAll(
-        ".nav-menu a"
-      );
-
-    const quoteForm =
-      document.getElementById("quoteForm");
-
-    const whatsappQuoteBtn =
-      document.getElementById(
-        "whatsappQuoteBtn"
-      );
-
-
-    /* -----------------------------------------
-       INITIAL LANGUAGE
-       ----------------------------------------- */
+    /* LANGUAGE */
 
     applyTranslation(
-      getStoredLanguage()
+      selectedLanguage
     );
 
 
-    /* -----------------------------------------
-       MOBILE NAVIGATION
-       ----------------------------------------- */
+    /* =====================================================
+       MOBILE MENU
+       ===================================================== */
+
+    const toggle =
+      document.querySelector(
+        ".nav-toggle"
+      );
+
+    const menu =
+      document.getElementById(
+        "navMenu"
+      );
+
 
     if (
-      navToggle &&
-      navMenu
+      toggle &&
+      menu
     ) {
 
-      navToggle.addEventListener(
+      toggle.addEventListener(
         "click",
         () => {
 
-          const isOpen =
-            navMenu.classList.toggle(
+          const open =
+            menu.classList.toggle(
               "open"
             );
 
-          navToggle.setAttribute(
+          toggle.setAttribute(
             "aria-expanded",
-            String(isOpen)
-          );
-        }
-      );
-
-      navLinks.forEach(
-        (link) => {
-
-          link.addEventListener(
-            "click",
-            () => {
-              closeMobileMenu();
-            }
+            String(open)
           );
 
         }
       );
+
     }
 
 
-    /* -----------------------------------------
-       LANGUAGE SWITCHER
-       ----------------------------------------- */
+    /* =====================================================
+       CLOSE MENU WHEN LINK CLICKED
+       ===================================================== */
 
     document
-      .querySelectorAll(".lang-option")
-      .forEach((button) => {
+      .querySelectorAll(
+        ".nav-menu a"
+      )
+      .forEach((link) => {
 
-        button.addEventListener(
+        link.addEventListener(
           "click",
           () => {
 
-            const language =
-              button.dataset.lang;
-
-            applyTranslation(
-              language
-            );
-
             closeMobileMenu();
+
           }
         );
 
       });
 
 
-    /* -----------------------------------------
-       FORM SUBMISSION
-       ----------------------------------------- */
+    /* =====================================================
+       LANGUAGE BUTTONS
+       ===================================================== */
 
-    if (quoteForm) {
+    document
+      .querySelectorAll(
+        ".lang-option"
+      )
+      .forEach((button) => {
 
-      quoteForm.addEventListener(
+        button.addEventListener(
+          "click",
+          () => {
+
+            applyTranslation(
+              button.dataset.lang
+            );
+
+            closeMobileMenu();
+
+          }
+        );
+
+      });
+
+
+    /* =====================================================
+       FORM
+       ===================================================== */
+
+    const form =
+      document.getElementById(
+        "quoteForm"
+      );
+
+
+    if (form) {
+
+      form.addEventListener(
         "submit",
         (event) => {
 
           event.preventDefault();
 
+
           if (
-            !validateQuoteForm(
-              quoteForm
-            )
+            !validateForm(form)
           ) {
 
-            updateFormMessage(
+            showFormMessage(
               "form.message.required"
             );
 
-            const firstError =
-              quoteForm.querySelector(
+            const error =
+              form.querySelector(
                 ".input-error"
               );
 
-            if (firstError) {
-              firstError.focus();
+            if (error) {
+              error.focus();
             }
 
             return;
+
           }
 
+
           const data =
-            collectQuoteData();
+            collectFormData();
+
 
           if (!data) return;
+
 
           const subject =
             selectedLanguage === "ar"
               ? "طلب جديد لخدمات مهارة BPO"
-              : "New Customer Experience Inquiry - MAHARA BPO";
+              : "New MAHARA BPO Customer Experience Inquiry";
 
-          const emailBody =
-            createEmailBody(data);
+
+          const body =
+            createEmailBody(
+              data
+            );
+
 
           const mailto =
-            `mailto:Info@MaharaBPO.com` +
-            `?subject=${encodeURIComponent(subject)}` +
-            `&body=${encodeURIComponent(emailBody)}`;
+            "mailto:Info@MaharaBPO.com" +
+            "?subject=" +
+            encodeURIComponent(
+              subject
+            ) +
+            "&body=" +
+            encodeURIComponent(
+              body
+            );
+
 
           window.location.href =
             mailto;
 
-          updateFormMessage(
+
+          showFormMessage(
             "form.message.email"
           );
+
         }
       );
+
     }
 
 
-    /* -----------------------------------------
+    /* =====================================================
        WHATSAPP FORM BUTTON
-       ----------------------------------------- */
+       ===================================================== */
+
+    const whatsappButton =
+      document.getElementById(
+        "whatsappQuoteBtn"
+      );
+
 
     if (
-      whatsappQuoteBtn &&
-      quoteForm
+      whatsappButton &&
+      form
     ) {
 
-      whatsappQuoteBtn.addEventListener(
+      whatsappButton.addEventListener(
         "click",
         () => {
 
+
           if (
-            !validateQuoteForm(
-              quoteForm
-            )
+            !validateForm(form)
           ) {
 
-            updateFormMessage(
+            showFormMessage(
               "form.message.required"
             );
 
-            const firstError =
-              quoteForm.querySelector(
+            const error =
+              form.querySelector(
                 ".input-error"
               );
 
-            if (firstError) {
-              firstError.focus();
+            if (error) {
+              error.focus();
             }
 
             return;
+
           }
 
+
           const data =
-            collectQuoteData();
+            collectFormData();
+
 
           if (!data) return;
+
 
           const message =
             createWhatsAppMessage(
               data
             );
 
-          const whatsappUrl =
-            `https://wa.me/923471417357?text=` +
-            encodeURIComponent(message);
+
+          const url =
+            "https://wa.me/923471417357?text=" +
+            encodeURIComponent(
+              message
+            );
+
 
           window.open(
-            whatsappUrl,
+            url,
             "_blank",
             "noopener,noreferrer"
           );
 
-          updateFormMessage(
+
+          showFormMessage(
             "form.message.whatsapp"
           );
+
         }
       );
+
     }
 
 
-    /* -----------------------------------------
-       REMOVE FORM ERROR WHEN USER TYPES
-       ----------------------------------------- */
+    /* =====================================================
+       REMOVE ERROR WHEN USER EDITS FIELD
+       ===================================================== */
 
-    quoteForm
+    form
       ?.querySelectorAll(
         "input, select, textarea"
       )
@@ -1323,18 +1934,22 @@ document.addEventListener(
         field.addEventListener(
           "input",
           () => {
+
             field.classList.remove(
               "input-error"
             );
+
           }
         );
 
         field.addEventListener(
           "change",
           () => {
+
             field.classList.remove(
               "input-error"
             );
+
           }
         );
 
@@ -1355,7 +1970,9 @@ document.addEventListener(
     if (
       event.key === "Escape"
     ) {
+
       closeMobileMenu();
+
     }
 
   }
@@ -1363,42 +1980,47 @@ document.addEventListener(
 
 
 /* =========================================================
-   CLICK OUTSIDE MOBILE MENU
+   CLICK OUTSIDE MENU
    ========================================================= */
 
 document.addEventListener(
   "click",
   (event) => {
 
-    const navMenu =
+    const menu =
       document.getElementById(
         "navMenu"
       );
 
-    const navToggle =
+    const toggle =
       document.querySelector(
         ".nav-toggle"
       );
 
+
     if (
-      !navMenu ||
-      !navMenu.classList.contains(
+      !menu ||
+      !menu.classList.contains(
         "open"
       )
     ) {
+
       return;
+
     }
 
+
     if (
-      !navMenu.contains(
+      !menu.contains(
         event.target
       ) &&
-      !navToggle?.contains(
+      !toggle?.contains(
         event.target
       )
     ) {
 
       closeMobileMenu();
+
     }
 
   }
@@ -1406,7 +2028,7 @@ document.addEventListener(
 
 
 /* =========================================================
-   DESKTOP MENU RESET
+   DESKTOP RESET
    ========================================================= */
 
 window.addEventListener(
@@ -1414,9 +2036,11 @@ window.addEventListener(
   () => {
 
     if (
-      window.innerWidth > 980
+      window.innerWidth > 900
     ) {
+
       closeMobileMenu();
+
     }
 
   }
