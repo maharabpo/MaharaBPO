@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Tahoma, sans-serif;
   background: var(--bg-900);
   color: var(--text);
   line-height: 1.6;
@@ -349,7 +349,7 @@ h3 {
   border-radius: 50%;
   border: 1px solid var(--gold);
   color: var(--gold);
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Montserrat", "Segoe UI", Tahoma, sans-serif;
   font-size: 0.78rem;
   font-weight: 800;
   line-height: 1;
@@ -988,14 +988,14 @@ html[dir="rtl"] {
 
 html[dir="rtl"] body {
   text-align: right;
-  font-family: "Tajawal", Tahoma, sans-serif;
+  font-family: "Cairo", "Tajawal", Tahoma, sans-serif;
   line-height: 1.85;
 }
 
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 {
-  font-family: "Tajawal", Tahoma, sans-serif;
+  font-family: "Cairo", "Tajawal", Tahoma, sans-serif;
   letter-spacing: 0;
   line-height: 1.25;
   font-weight: 800;
@@ -1017,7 +1017,7 @@ html[dir="rtl"] .btn,
 html[dir="rtl"] input,
 html[dir="rtl"] select,
 html[dir="rtl"] textarea {
-  font-family: "Tajawal", Tahoma, sans-serif;
+  font-family: "Cairo", "Tajawal", Tahoma, sans-serif;
 }
 
 html[dir="rtl"] .eyebrow {
@@ -1215,5 +1215,382 @@ html[dir="rtl"] .floating-whatsapp:focus-visible::after {
 
   .btn {
     width: 100%;
+  }
+}
+
+/* =========================================================
+   MAHARA BPO — FINAL POLISH / PRODUCTION OVERRIDES
+   ========================================================= */
+
+:root {
+  --gold: #c9a96e;
+  --gold-soft: #e1c58f;
+  --bg-900: #1a1a1a;
+  --bg-800: #242424;
+  --panel: #2d2d2d;
+  --text: #ffffff;
+  --muted: #c8d4e4;
+  --container: 1240px;
+  --radius: 20px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  background: var(--bg-900);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+.brand-logo {
+  width: auto;
+  max-width: 190px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.site-header {
+  background: rgba(10, 10, 10, 0.92);
+  border-bottom-color: rgba(201, 169, 110, 0.22);
+}
+
+.nav-menu a,
+.btn,
+.lang-option {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero {
+  min-height: calc(100svh - 88px);
+  background:
+    linear-gradient(90deg, rgba(5, 7, 10, 0.86), rgba(5, 7, 10, 0.62)),
+    url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.hero::before {
+  background:
+    radial-gradient(circle at 75% 30%, rgba(201, 169, 110, 0.14), transparent 28%),
+    linear-gradient(180deg, transparent 65%, rgba(10, 10, 10, 0.42));
+}
+
+.hero-copy h1 {
+  max-width: 760px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.hero-description {
+  color: var(--muted);
+  max-width: 610px;
+  font-weight: 500;
+}
+
+.section-heading h2,
+.about-copy h2,
+.quote-copy h2 {
+  font-weight: 800;
+}
+
+.service-card,
+.process-card,
+.why-item,
+.quote-form,
+.mini-contact-card,
+.brand-panel {
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.service-card:hover,
+.process-card:hover,
+.why-item:hover,
+.mini-contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 169, 110, 0.42);
+  box-shadow: 0 20px 42px rgba(0,0,0,.22);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(200, 212, 228, .52);
+}
+
+select {
+  appearance: auto;
+}
+
+select option {
+  background: #161616;
+  color: #fff;
+}
+
+.floating-whatsapp {
+  width: 62px;
+  height: 62px;
+  font-size: 1.45rem;
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.floating-whatsapp span {
+  transform: rotate(-8deg);
+}
+
+html[dir="rtl"] body {
+  font-family: "Cairo", "Tajawal", Tahoma, sans-serif;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .nav-menu,
+html[dir="rtl"] .lang-option,
+html[dir="rtl"] .btn,
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+  font-family: "Cairo", "Tajawal", Tahoma, sans-serif;
+}
+
+html[dir="rtl"] .hero {
+  background:
+    linear-gradient(270deg, rgba(5, 7, 10, 0.86), rgba(5, 7, 10, 0.62)),
+    url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+html[dir="rtl"] .hero-copy {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .hero-rtl {
+  text-align: right;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    min-height: 78px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+    font-size: .82rem;
+  }
+
+  .hero-inner {
+    min-height: 680px;
+  }
+
+  .hero-portrait-wrap {
+    height: 560px;
+  }
+}
+
+@media (max-width: 980px) {
+  .brand-logo {
+    height: 48px;
+    max-width: 165px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .mobile-header-controls {
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    left: 16px;
+    right: 16px;
+    top: calc(100% + 10px);
+    max-height: calc(100svh - 100px);
+    overflow-y: auto;
+    align-items: stretch;
+  }
+
+  html[dir="rtl"] .nav-menu {
+    left: 16px;
+    right: 16px;
+    align-items: stretch;
+  }
+
+  .mobile-menu-brand {
+    width: 100%;
+  }
+
+  .nav-menu > a:not(.mobile-menu-brand) {
+    width: 100%;
+    padding: 10px 6px;
+  }
+
+  .lang-switcher:not(.mobile-language-switcher) {
+    align-self: center;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 28px, var(--container));
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
+  .navbar {
+    min-height: 72px;
+  }
+
+  .brand-logo {
+    height: 42px;
+    max-width: 145px;
+  }
+
+  .mobile-header-controls {
+    gap: 7px;
+  }
+
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
+  }
+
+  .mobile-language-switcher .lang-option {
+    padding: .38rem .52rem;
+  }
+
+  .hero-inner {
+    gap: 28px;
+    padding: 48px 0 38px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 12vw, 3.45rem);
+    line-height: .98;
+  }
+
+  .hero-description {
+    font-size: .96rem;
+    line-height: 1.75;
+  }
+
+  .hero-btn,
+  .btn {
+    width: 100%;
+  }
+
+  .hero-visual {
+    min-height: 0;
+  }
+
+  .hero-portrait-wrap {
+    height: min(78svh, 460px);
+    min-height: 360px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .hero-rtl {
+    padding: 20px;
+  }
+
+  .hero-rtl h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-section,
+  .services-section,
+  .process-section,
+  .outsource-section,
+  .benefits-section,
+  .quote-section,
+  .contact-section {
+    padding: 64px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading h2,
+  .about-copy h2,
+  .quote-copy h2 {
+    font-size: 2rem;
+  }
+
+  .about-image-card {
+    min-height: 320px;
+  }
+
+  .service-card {
+    min-height: 160px;
+  }
+
+  .why-image-badge {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  html[dir="rtl"] .why-image-badge {
+    left: 12px;
+    right: auto;
+  }
+
+  .benefits-copy {
+    padding-right: 0;
+  }
+
+  .quote-form {
+    padding: 16px;
+  }
+
+  .floating-whatsapp {
+    right: 14px;
+    bottom: 14px;
+    width: 56px;
+    height: 56px;
+  }
+
+  html[dir="rtl"] .floating-whatsapp {
+    left: 14px;
+    right: auto;
+  }
+
+  .footer-bottom-inner {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-meta {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
   }
 }
