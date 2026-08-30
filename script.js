@@ -51,7 +51,7 @@ const translations = {
       "Elevate Your Customer Experience<br><span>And Make a Difference</span>",
 
     "hero.description":
-      "Integrated customer experience solutions combining operational expertise, technology and dedicated teams to help businesses improve service quality, efficiency and sustainable growth across the Gulf.",
+      "حلول متكاملة لإدارة تجربة العملاء، تجمع بين الخبرة التشغيلية والتقنية والفرق المتخصصة لمساعدة الشركات على تقديم خدمة استثنائية، ورفع الكفاءة، ودعم نمو أعمالها في أسواق الخليج.",
 
     "hero.ctaPrimary":
       "Get Started",
