@@ -3902,3 +3902,98 @@ html[dir="rtl"] .floating-whatsapp::after {
   }
 
 }
+
+
+/* =========================================================
+   MAHARA BPO — FINAL RTL / CONTACT / MOBILE FIXES
+   ========================================================= */
+
+.brand,
+.brand-logo,
+.ltr,
+.ltr-value,
+.email-value,
+.phone-value,
+.website-value,
+.phone-link,
+.whatsapp-link,
+.contact-value {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .trust-number,
+html[dir="rtl"] .trust-stat strong,
+html[dir="rtl"] .phone-value,
+html[dir="rtl"] .email-value,
+html[dir="rtl"] .website-value {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .twenty-four-seven,
+html[dir="rtl"] [data-value="24/7"] {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+input[type="email"],
+input[type="tel"],
+input[name="email"],
+input[name="phone"],
+input[name="businessEmail"],
+input[name="phoneNumber"] {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+html[dir="rtl"] .hero-trust {
+  direction: rtl;
+}
+
+html[dir="rtl"] .hero-trust .trust-number {
+  direction: ltr !important;
+}
+
+.whatsapp-float,
+.whatsapp-button,
+.whatsapp-link {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+.icon-svg {
+  width: 1.1em;
+  height: 1.1em;
+  display: inline-block;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .hero-trust {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hero-description {
+    font-size: .94rem;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .phone-value,
+  .email-value,
+  .website-value,
+  .contact-value {
+    direction: ltr !important;
+    unicode-bidi: isolate;
+  }
+}
