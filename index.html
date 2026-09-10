@@ -12,18 +12,20 @@
   <meta name="keywords" content="MAHARA BPO, BPO Gulf, customer service outsourcing, contact center, call center outsourcing, GCC, UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman">
 
   <link rel="canonical" href="https://www.maharabpo.com/">
-  <link rel="icon" type="image/png" href="mahra-logo1.png">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.maharabpo.com/">
   <meta property="og:title" content="MAHARA BPO | Your Customer Service Partner">
   <meta property="og:description" content="Dedicated customer service teams for businesses across the Gulf.">
-  <meta property="og:image" content="https://www.maharabpo.com/mahra-logo1.png">
+  <meta property="og:image" content="https://www.maharabpo.com/assets/brand/logo-preview.png">
   <meta property="og:image:alt" content="MAHARA BPO">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MAHARA BPO | Your Customer Service Partner">
   <meta name="twitter:description" content="Dedicated customer service teams for businesses across the Gulf.">
-  <meta name="twitter:image" content="https://www.maharabpo.com/mahra-logo1.png">
+  <meta name="twitter:image" content="https://www.maharabpo.com/assets/brand/logo-preview.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +48,7 @@
     "@type":"Organization",
     "name":"MAHARA BPO",
     "url":"https://www.maharabpo.com/",
-    "logo":"https://www.maharabpo.com/mahra-logo1.png",
+    "logo":"https://www.maharabpo.com/assets/brand/logo-preview.png",
     "email":"Info@MaharaBPO.com",
     "telephone":"+923471417357",
     "description":"Customer service outsourcing and professionally managed contact center teams for businesses across the Gulf.",
@@ -60,11 +62,11 @@
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="MAHARA BPO home">
-        <img src="mahra-logo1.png" alt="MAHARA BPO" class="brand-logo">
+      <a class="brand" href="#home" aria-label="MAHARA BPO home" data-i18n-aria="a11y.home">
+        <img src="assets/brand/logo-en-dark.svg" data-brand-logo width="336" height="88" alt="MAHARA BPO" class="brand-logo">
       </a>
 
-      <nav class="desktop-nav" aria-label="Main navigation">
+      <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="a11y.nav">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#services" data-i18n="nav.services">Solutions</a>
         <a href="#process" data-i18n="nav.process">How We Work</a>
@@ -73,20 +75,20 @@
       </nav>
 
       <div class="nav-actions">
-        <div class="language-switch" aria-label="Language">
-          <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
-          <button class="lang-btn" type="button" data-lang="ar" aria-pressed="false">العربية</button>
+        <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="a11y.language">
+          <button class="lang-btn active" type="button" lang="en" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" type="button" lang="ar" data-lang="ar" aria-pressed="false">العربية</button>
         </div>
 
         <a class="btn btn-gold nav-cta" href="#quote" data-i18n="nav.quote">Get a Quote</a>
 
-        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" inert>
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#services" data-i18n="nav.services">Solutions</a>
       <a href="#process" data-i18n="nav.process">How We Work</a>
@@ -96,16 +98,14 @@
     </div>
   </header>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="hero" id="home">
       <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
-      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
 
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="hero-badge">
-            <span class="status-dot"></span>
+            <span class="status-dot" aria-hidden="true"></span>
             <span data-i18n="hero.badge">Serving businesses across the Gulf</span>
           </div>
 
@@ -123,36 +123,36 @@
             <a class="btn btn-ghost btn-lg" href="#services" data-i18n="hero.secondary">Explore Solutions</a>
           </div>
 
-          <div class="hero-metrics" aria-label="Mahara BPO strengths">
+          <div class="hero-metrics" aria-label="Mahara BPO strengths" data-i18n-aria="a11y.strengths">
             <div>
-              <strong>6</strong>
-              <span data-i18n="hero.metric1">Gulf markets</span>
+              <strong data-i18n="hero.channel1">Voice</strong>
+              <span data-i18n="hero.metric1">Customer care</span>
             </div>
             <div>
-              <strong>24/7</strong>
-              <span data-i18n="hero.metric2">Support ready</span>
+              <strong data-i18n="hero.channel2">Digital</strong>
+              <span data-i18n="hero.metric2">Multichannel support</span>
             </div>
             <div>
-              <strong>100%</strong>
-              <span data-i18n="hero.metric3">Dedicated teams</span>
+              <strong data-i18n="hero.channel3">Dedicated</strong>
+              <span data-i18n="hero.metric3">Managed teams</span>
             </div>
           </div>
         </div>
 
         <div class="hero-visual reveal">
           <div class="visual-shell">
-            <div class="visual-photo" role="img" aria-label="Professional customer service team"></div>
+            <div class="visual-photo" role="img" aria-label="Team collaborating in an office" data-i18n-aria="a11y.photo"></div>
             <div class="visual-shade"></div>
 
             <div class="brand-panel">
-              <img src="mahra-logo1.png" alt="MAHARA BPO" class="hero-logo">
+              <img src="assets/brand/logo-en-dark.svg" data-brand-logo width="336" height="88" alt="MAHARA BPO" class="hero-logo">
               <div class="gold-line"></div>
               <p data-i18n="hero.panelKicker">PEOPLE • PROCESS • POSSIBILITIES</p>
               <h2 data-i18n="hero.panelTitle">Customer experience built to perform.</h2>
             </div>
 
             <div class="floating-card fc-one">
-              <span class="card-icon">✓</span>
+              <span class="card-icon" aria-hidden="true">✓</span>
               <div>
                 <small data-i18n="hero.card1small">Operations</small>
                 <strong data-i18n="hero.card1">Quality Assured</strong>
@@ -160,7 +160,7 @@
             </div>
 
             <div class="floating-card fc-two">
-              <span class="card-icon">↗</span>
+              <span class="card-icon" aria-hidden="true">↗</span>
               <div>
                 <small data-i18n="hero.card2small">Growth</small>
                 <strong data-i18n="hero.card2">Scalable Teams</strong>
@@ -174,7 +174,7 @@
         <div class="container country-inner">
           <span data-i18n="coverage.label">Gulf coverage</span>
           <div class="country-list">
-            <b>UAE</b><i></i><b>Saudi Arabia</b><i></i><b>Qatar</b><i></i><b>Kuwait</b><i></i><b>Bahrain</b><i></i><b>Oman</b>
+            <b data-i18n="country.0">UAE</b><i></i><b data-i18n="country.1">Saudi Arabia</b><i></i><b data-i18n="country.2">Qatar</b><i></i><b data-i18n="country.3">Kuwait</b><i></i><b data-i18n="country.4">Bahrain</b><i></i><b data-i18n="country.5">Oman</b>
           </div>
         </div>
       </div>
@@ -200,29 +200,29 @@
 
       <div class="container value-grid">
         <article class="value-card reveal">
-          <span class="value-no">01</span>
-          <div class="value-icon">◎</div>
+          <span class="value-no" aria-hidden="true">01</span>
+          <div class="value-icon" aria-hidden="true">◎</div>
           <h3 data-i18n="values.v1title">Customer Focus</h3>
           <p data-i18n="values.v1text">Every workflow starts with your customer journey, expectations, and brand voice.</p>
         </article>
 
         <article class="value-card reveal">
-          <span class="value-no">02</span>
-          <div class="value-icon">◇</div>
+          <span class="value-no" aria-hidden="true">02</span>
+          <div class="value-icon" aria-hidden="true">◇</div>
           <h3 data-i18n="values.v2title">Dedicated Teams</h3>
           <p data-i18n="values.v2text">Agents work as an extension of your business, not as a generic shared service.</p>
         </article>
 
         <article class="value-card reveal">
-          <span class="value-no">03</span>
-          <div class="value-icon">✓</div>
+          <span class="value-no" aria-hidden="true">03</span>
+          <div class="value-icon" aria-hidden="true">✓</div>
           <h3 data-i18n="values.v3title">Quality Assured</h3>
           <p data-i18n="values.v3text">Coaching, quality checks, reporting, and structured management support consistent delivery.</p>
         </article>
 
         <article class="value-card reveal">
-          <span class="value-no">04</span>
-          <div class="value-icon">↗</div>
+          <span class="value-no" aria-hidden="true">04</span>
+          <div class="value-icon" aria-hidden="true">↗</div>
           <h3 data-i18n="values.v4title">Performance Driven</h3>
           <p data-i18n="values.v4text">We manage against practical KPIs so customer service becomes a measurable business function.</p>
         </article>
@@ -239,8 +239,8 @@
 
         <div class="service-grid">
           <article class="service-card reveal">
-            <div class="service-icon">☎</div>
-            <span class="service-no">01</span>
+            <div class="service-icon" aria-hidden="true">☎</div>
+            <span class="service-no" aria-hidden="true">01</span>
             <h3 data-i18n="services.s1title">Inbound Customer Service</h3>
             <p data-i18n="services.s1text">Professional handling of customer calls, inquiries, complaints, order questions, and general support.</p>
             <ul>
@@ -252,20 +252,20 @@
 
           <article class="service-card reveal featured">
             <div class="featured-tag" data-i18n="services.popular">CORE SERVICE</div>
-            <div class="service-icon">◉</div>
-            <span class="service-no">02</span>
+            <div class="service-icon" aria-hidden="true">◉</div>
+            <span class="service-no" aria-hidden="true">02</span>
             <h3 data-i18n="services.s2title">Omnichannel Support</h3>
             <p data-i18n="services.s2text">Serve customers consistently across WhatsApp, email, live chat, social channels, and voice.</p>
             <ul>
-              <li>WhatsApp</li>
+              <li data-i18n="common.whatsapp">WhatsApp</li>
               <li data-i18n="services.s2b">Email & live chat</li>
               <li data-i18n="services.s2c">Social support</li>
             </ul>
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon">↗</div>
-            <span class="service-no">03</span>
+            <div class="service-icon" aria-hidden="true">↗</div>
+            <span class="service-no" aria-hidden="true">03</span>
             <h3 data-i18n="services.s3title">Outbound Customer Care</h3>
             <p data-i18n="services.s3text">Structured outbound calling for follow-up, verification, customer retention, surveys, and service campaigns.</p>
             <ul>
@@ -276,8 +276,8 @@
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon">▦</div>
-            <span class="service-no">04</span>
+            <div class="service-icon" aria-hidden="true">▦</div>
+            <span class="service-no" aria-hidden="true">04</span>
             <h3 data-i18n="services.s4title">Back-Office Support</h3>
             <p data-i18n="services.s4text">Reliable operational support for repetitive customer-facing and administrative processes.</p>
             <ul>
@@ -288,8 +288,8 @@
           </article>
 
           <article class="service-card reveal">
-            <div class="service-icon">◆</div>
-            <span class="service-no">05</span>
+            <div class="service-icon" aria-hidden="true">◆</div>
+            <span class="service-no" aria-hidden="true">05</span>
             <h3 data-i18n="services.s5title">Quality & Performance</h3>
             <p data-i18n="services.s5text">Build stronger service through QA monitoring, coaching routines, reporting, and performance reviews.</p>
             <ul>
@@ -316,7 +316,7 @@
           <h2 data-i18n="process.title">From requirement to a managed team.</h2>
           <p data-i18n="process.lead">A clear launch process keeps implementation practical, controlled, and aligned with your service standards.</p>
           <div class="process-note">
-            <span>MAHARA</span>
+            <span data-i18n="common.brand">MAHARA</span>
             <p data-i18n="process.note">We adapt the operating model to your processes, systems, customer volumes, and KPIs.</p>
           </div>
         </div>
@@ -358,34 +358,15 @@
       <div class="container">
         <div class="why-grid">
           <div class="why-visual reveal">
-            <div class="dashboard-card main-dashboard">
-              <div class="dash-top">
-                <span data-i18n="why.dashboard">SERVICE PERFORMANCE</span>
-                <span class="live-pill"><i></i> LIVE</span>
+            <div class="brand-signature">
+              <img src="assets/brand/mark-dark.svg" alt="" width="160" height="160" loading="lazy">
+              <p class="eyebrow" data-i18n="hero.panelKicker">PEOPLE • PROCESS • POSSIBILITIES</p>
+              <h3 data-i18n="hero.panelTitle">Customer experience built to perform.</h3>
+              <div class="signature-values">
+                <span data-i18n="values.v1title">Customer Focus</span>
+                <span data-i18n="values.v2title">Dedicated Teams</span>
+                <span data-i18n="services.s5title">Quality &amp; Performance</span>
               </div>
-              <div class="chart-bars" aria-hidden="true">
-                <span style="height:42%"></span>
-                <span style="height:60%"></span>
-                <span style="height:51%"></span>
-                <span style="height:76%"></span>
-                <span style="height:68%"></span>
-                <span style="height:88%"></span>
-                <span style="height:81%"></span>
-                <span style="height:94%"></span>
-              </div>
-              <div class="dash-stats">
-                <div><small data-i18n="why.q">Quality</small><strong>94%</strong></div>
-                <div><small data-i18n="why.s">SLA</small><strong>97%</strong></div>
-                <div><small data-i18n="why.c">CSAT</small><strong>4.8/5</strong></div>
-              </div>
-            </div>
-            <div class="mini-dashboard md-one">
-              <small data-i18n="why.response">Response</small>
-              <strong data-i18n="why.fast">Fast</strong>
-            </div>
-            <div class="mini-dashboard md-two">
-              <small data-i18n="why.scale">Scale</small>
-              <strong data-i18n="why.flexible">Flexible</strong>
             </div>
           </div>
 
@@ -428,16 +409,16 @@
           <div class="contact-mini">
             <a href="mailto:Info@MaharaBPO.com">
               <span>✉</span>
-              <div><small data-i18n="quote.email">Email</small><strong>Info@MaharaBPO.com</strong></div>
+              <div><small data-i18n="quote.email">Email</small><strong dir="ltr">Info@MaharaBPO.com</strong></div>
             </a>
             <a href="https://wa.me/923471417357" target="_blank" rel="noopener">
               <span>◉</span>
-              <div><small>WhatsApp</small><strong>+92 347 141 7357</strong></div>
+              <div><small data-i18n="common.whatsapp">WhatsApp</small><strong dir="ltr">+92 347 141 7357</strong></div>
             </a>
           </div>
         </div>
 
-        <form class="quote-form reveal" id="quoteForm">
+        <form class="quote-form reveal" id="quoteForm" aria-describedby="formNote">
           <div class="form-row">
             <label>
               <span data-i18n="form.name">Your name</span>
@@ -452,19 +433,19 @@
           <div class="form-row">
             <label>
               <span data-i18n="form.email">Work email</span>
-              <input type="email" name="email" required autocomplete="email" placeholder="name@company.com">
+              <input type="email" dir="ltr" name="email" required autocomplete="email" placeholder="name@company.com">
             </label>
             <label>
               <span data-i18n="form.country">Country / market</span>
               <select name="country" required>
                 <option value="" data-i18n="form.select">Select</option>
-                <option>UAE</option>
-                <option>Saudi Arabia</option>
-                <option>Qatar</option>
-                <option>Kuwait</option>
-                <option>Bahrain</option>
-                <option>Oman</option>
-                <option data-i18n="form.other">Other</option>
+                <option value="UAE" data-i18n="country.0">UAE</option>
+                <option value="Saudi Arabia" data-i18n="country.1">Saudi Arabia</option>
+                <option value="Qatar" data-i18n="country.2">Qatar</option>
+                <option value="Kuwait" data-i18n="country.3">Kuwait</option>
+                <option value="Bahrain" data-i18n="country.4">Bahrain</option>
+                <option value="Oman" data-i18n="country.5">Oman</option>
+                <option value="Other" data-i18n="form.other">Other</option>
               </select>
             </label>
           </div>
@@ -473,12 +454,12 @@
             <span data-i18n="form.need">What support do you need?</span>
             <select name="service" required>
               <option value="" data-i18n="form.select">Select</option>
-              <option data-i18n="form.opt1">Inbound customer service</option>
-              <option data-i18n="form.opt2">WhatsApp / chat / email support</option>
-              <option data-i18n="form.opt3">Outbound customer care</option>
-              <option data-i18n="form.opt4">Back-office support</option>
-              <option data-i18n="form.opt5">Full outsourced customer service team</option>
-              <option data-i18n="form.opt6">Other</option>
+              <option value="service-1" data-i18n="form.opt1">Inbound customer service</option>
+              <option value="service-2" data-i18n="form.opt2">WhatsApp / chat / email support</option>
+              <option value="service-3" data-i18n="form.opt3">Outbound customer care</option>
+              <option value="service-4" data-i18n="form.opt4">Back-office support</option>
+              <option value="service-5" data-i18n="form.opt5">Full outsourced customer service team</option>
+              <option value="service-6" data-i18n="form.opt6">Other</option>
             </select>
           </label>
 
@@ -488,15 +469,17 @@
           </label>
 
           <button class="btn btn-gold btn-lg full" type="submit" data-i18n="form.submit">Send via WhatsApp</button>
-          <p class="form-note" data-i18n="form.note">Submitting opens WhatsApp with your details pre-filled so you can review the message before sending.</p>
+          <p class="form-note" id="formNote" data-i18n="form.note">Submitting opens WhatsApp with your details pre-filled so you can review the message before sending.</p>
         </form>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
+  </main>
+
+    <footer class="contact-section" id="contact">
       <div class="container contact-grid">
         <div>
-          <img src="mahra-logo1.png" alt="MAHARA BPO" class="footer-logo">
+          <img src="assets/brand/logo-en-dark.svg" data-brand-logo width="336" height="88" alt="MAHARA BPO" class="footer-logo">
           <p data-i18n="footer.tagline">Your customer service partner across the Gulf.</p>
         </div>
         <div>
@@ -509,21 +492,20 @@
         <div>
           <small data-i18n="footer.contact">Contact</small>
           <a href="mailto:Info@MaharaBPO.com">Info@MaharaBPO.com</a>
-          <a href="https://wa.me/923471417357" target="_blank" rel="noopener">WhatsApp +92 347 141 7357</a>
+          <a href="https://wa.me/923471417357" target="_blank" rel="noopener"><span data-i18n="common.whatsapp">WhatsApp</span> <bdi>+92 347 141 7357</bdi></a>
           <span data-i18n="footer.region">Serving businesses across the Gulf region</span>
         </div>
       </div>
 
       <div class="container footer-bottom">
-        <span>© <span id="year"></span> MAHARA BPO. <span data-i18n="footer.rights">All rights reserved.</span></span>
-        <span>PEOPLE • PROCESS • POSSIBILITIES</span>
+        <span>© <span id="year"></span> <bdi data-i18n="common.company">MAHARA BPO</bdi>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span data-i18n="hero.panelKicker">PEOPLE • PROCESS • POSSIBILITIES</span>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/923471417357?text=Hello%20Mahara%20BPO%2C%20I%20would%20like%20to%20discuss%20customer%20service%20outsourcing." target="_blank" rel="noopener" aria-label="Chat with Mahara BPO on WhatsApp">
+  <a class="whatsapp-float" href="https://wa.me/923471417357?text=Hello%20Mahara%20BPO%2C%20I%20would%20like%20to%20discuss%20customer%20service%20outsourcing." target="_blank" rel="noopener" aria-label="Chat with Mahara BPO on WhatsApp" data-i18n-aria="a11y.whatsapp">
     <span>◉</span>
-    <b>WhatsApp</b>
+    <b data-i18n="common.whatsapp">WhatsApp</b>
   </a>
 
   <script src="script.js" defer></script>

@@ -2,6 +2,27 @@
 
 const translations = {
   en: {
+    "a11y.home":"MAHARA BPO home",
+    "a11y.nav":"Main navigation",
+    "a11y.language":"Language",
+    "a11y.strengths":"Mahara BPO strengths",
+    "a11y.photo":"Team collaborating in an office",
+    "a11y.whatsapp":"Chat with Mahara BPO on WhatsApp",
+    "a11y.open":"Open menu",
+    "a11y.close":"Close menu",
+    "common.brand":"MAHARA",
+    "common.company":"MAHARA BPO",
+    "common.whatsapp":"WhatsApp",
+    "hero.channel1":"Voice",
+    "hero.channel2":"Digital",
+    "hero.channel3":"Dedicated",
+    "country.0":"UAE",
+    "country.1":"Saudi Arabia",
+    "country.2":"Qatar",
+    "country.3":"Kuwait",
+    "country.4":"Bahrain",
+    "country.5":"Oman",
+
     "a11y.skip":"Skip to content",
     "nav.about":"About",
     "nav.services":"Solutions",
@@ -15,9 +36,9 @@ const translations = {
     "hero.lead":"Outsource customer service to dedicated, professionally managed teams built around your brand, your customers, and your growth.",
     "hero.primary":"Build Your Team",
     "hero.secondary":"Explore Solutions",
-    "hero.metric1":"Gulf markets",
-    "hero.metric2":"Support ready",
-    "hero.metric3":"Dedicated teams",
+    "hero.metric1":"Customer care",
+    "hero.metric2":"Multichannel support",
+    "hero.metric3":"Managed teams",
     "hero.panelKicker":"PEOPLE • PROCESS • POSSIBILITIES",
     "hero.panelTitle":"Customer experience built to perform.",
     "hero.card1small":"Operations",
@@ -82,7 +103,7 @@ const translations = {
     "why.title":"A practical operating partner for growing Gulf businesses.",
     "why.lead":"We focus on the things that matter most when outsourcing customer service: control, consistency, visibility, flexibility, and brand alignment.",
     "why.dashboard":"SERVICE PERFORMANCE",
-    "why.q":"Quality","why.s":"SLA","why.c":"CSAT",
+    "why.q":"Quality","why.s":"مستوى الخدمة","why.c":"CSAT",
     "why.response":"Response","why.fast":"Fast","why.scale":"Scale","why.flexible":"Flexible",
     "why.w1t":"Dedicated operating model","why.w1d":"Teams, workflows, and reporting structured around your business.",
     "why.w2t":"Gulf market focus","why.w2d":"A service approach built for businesses operating across GCC markets.",
@@ -117,6 +138,27 @@ const translations = {
   },
 
   ar: {
+    "a11y.home":"مهارة — الصفحة الرئيسية",
+    "a11y.nav":"التنقل الرئيسي",
+    "a11y.language":"اللغة",
+    "a11y.strengths":"مزايا مهارة",
+    "a11y.photo":"فريق يتعاون في المكتب",
+    "a11y.whatsapp":"تواصل مع مهارة عبر واتساب",
+    "a11y.open":"فتح القائمة",
+    "a11y.close":"إغلاق القائمة",
+    "common.brand":"مهارة",
+    "common.company":"مهارة",
+    "common.whatsapp":"واتساب",
+    "hero.channel1":"المكالمات",
+    "hero.channel2":"القنوات الرقمية",
+    "hero.channel3":"فرق مخصصة",
+    "country.0":"الإمارات",
+    "country.1":"السعودية",
+    "country.2":"قطر",
+    "country.3":"الكويت",
+    "country.4":"البحرين",
+    "country.5":"عُمان",
+
     "a11y.skip":"الانتقال إلى المحتوى",
     "nav.about":"من نحن",
     "nav.services":"حلولنا",
@@ -130,35 +172,35 @@ const translations = {
     "hero.lead":"استعن بفريق خدمة عملاء مخصص ومدار باحتراف، مصمم ليمثل علامتك التجارية ويخدم عملاءك ويدعم نمو أعمالك.",
     "hero.primary":"ابنِ فريقك معنا",
     "hero.secondary":"استكشف حلولنا",
-    "hero.metric1":"أسواق خليجية",
-    "hero.metric2":"جاهزية للدعم",
-    "hero.metric3":"فرق مخصصة",
+    "hero.metric1":"خدمة العملاء",
+    "hero.metric2":"دعم متعدد القنوات",
+    "hero.metric3":"إدارة احترافية",
     "hero.panelKicker":"الأفراد • العمليات • الإمكانات",
-    "hero.panelTitle":"تجربة عملاء مصممة لتحقيق الأداء.",
+    "hero.panelTitle":"تجربة عملاء ترتقي بأعمالك.",
     "hero.card1small":"العمليات",
-    "hero.card1":"جودة مضمونة",
+    "hero.card1":"إدارة الجودة",
     "hero.card2small":"النمو",
     "hero.card2":"فرق قابلة للتوسع",
     "coverage.label":"نطاق الخدمة الخليجي",
 
-    "about.eyebrow":"عن مهارة BPO",
-    "about.title":"أكثر من مجرد دعم خارجي.<br><span>فريق مبني حول أعمالك.</span>",
-    "about.p1":"تساعد مهارة BPO الشركات النامية على بناء عمليات خدمة عملاء موثوقة دون تكلفة وتعقيد إدارة كل شيء داخلياً.",
+    "about.eyebrow":"عن مهارة",
+    "about.title":"أكثر من خدمة عملاء خارجية.<br><span>فريق يعمل بروح أعمالك.</span>",
+    "about.p1":"تساعد مهارة الشركات النامية على بناء عمليات خدمة عملاء موثوقة دون تكلفة وتعقيد إدارة كل شيء داخلياً.",
     "about.p2":"نجمع بين الكفاءات المدربة والإجراءات الواضحة وإدارة الجودة والتقارير والتقنية العملية لضمان أن يعكس كل تواصل هوية علامتك التجارية.",
     "about.link":"تحدث مع فريقنا ←",
 
     "values.v1title":"التركيز على العميل",
     "values.v1text":"نبدأ كل عملية من رحلة العميل وتوقعاته ونبرة علامتك التجارية.",
     "values.v2title":"فرق مخصصة",
-    "values.v2text":"يعمل الوكلاء كامتداد حقيقي لأعمالك وليس كخدمة مشتركة عامة.",
-    "values.v3title":"جودة مضمونة",
+    "values.v2text":"يعمل موظفو خدمة العملاء كامتداد حقيقي لأعمالك وليس كخدمة مشتركة عامة.",
+    "values.v3title":"إدارة الجودة",
     "values.v3text":"التدريب وفحوصات الجودة والتقارير والإدارة المنظمة تدعم مستوى خدمة ثابتاً.",
     "values.v4title":"أداء قابل للقياس",
     "values.v4text":"ندير العمل وفق مؤشرات أداء عملية لتحويل خدمة العملاء إلى وظيفة واضحة وقابلة للقياس.",
 
     "services.eyebrow":"حلولنا",
     "services.title":"دعم تجربة العملاء بما يناسب طريقة عملك.",
-    "services.lead":"ابدأ بوظيفة محددة أو ابنِ عملية خدمة عملاء كاملة بالاستعانة بفريق مهارة BPO.",
+    "services.lead":"ابدأ بوظيفة محددة أو ابنِ عملية خدمة عملاء كاملة بالاستعانة بفريق مهارة.",
     "services.s1title":"خدمة العملاء الواردة",
     "services.s1text":"إدارة احترافية لمكالمات العملاء والاستفسارات والشكاوى وأسئلة الطلبات والدعم العام.",
     "services.s1a":"الدعم الصوتي","services.s1b":"إدارة الشكاوى","services.s1c":"دعم الطلبات والحسابات",
@@ -166,38 +208,38 @@ const translations = {
     "services.s2title":"دعم متعدد القنوات",
     "services.s2text":"خدمة متسقة عبر واتساب والبريد الإلكتروني والدردشة المباشرة والقنوات الاجتماعية والمكالمات.",
     "services.s2b":"البريد والدردشة","services.s2c":"دعم وسائل التواصل",
-    "services.s3title":"العناية الصادرة بالعملاء",
+    "services.s3title":"التواصل الاستباقي مع العملاء",
     "services.s3text":"مكالمات صادرة منظمة للمتابعة والتحقق والاحتفاظ بالعملاء والاستبيانات والحملات الخدمية.",
     "services.s3a":"متابعة العملاء","services.s3b":"الاستبيانات والملاحظات","services.s3c":"دعم الاحتفاظ بالعملاء",
-    "services.s4title":"الدعم الخلفي",
+    "services.s4title":"دعم العمليات الإدارية",
     "services.s4text":"دعم تشغيلي موثوق للعمليات المتكررة المرتبطة بالعملاء والمهام الإدارية.",
-    "services.s4a":"معالجة البيانات","services.s4b":"إدارة التذاكر","services.s4c":"تحديث أنظمة CRM",
+    "services.s4a":"معالجة البيانات","services.s4b":"إدارة التذاكر","services.s4c":"تحديث أنظمة إدارة علاقات العملاء",
     "services.s5title":"الجودة والأداء",
     "services.s5text":"رفع مستوى الخدمة من خلال مراقبة الجودة والتدريب والتقارير ومراجعات الأداء.",
-    "services.s5a":"مراقبة الجودة","services.s5b":"تدريب الوكلاء","services.s5c":"تقارير مؤشرات الأداء",
+    "services.s5a":"مراقبة الجودة","services.s5b":"تدريب موظفي خدمة العملاء","services.s5c":"تقارير مؤشرات الأداء",
     "services.customEyebrow":"نموذج مخصص",
     "services.customTitle":"تحتاج حلاً مصمماً حول سير عملك؟",
-    "services.customText":"أخبرنا بما يديره فريقك اليوم وسنصمم نموذج الاستعانة الخارجي المناسب لعملياتك.",
-    "services.customCta":"صمم حلي",
+    "services.customText":"أخبرنا بما يديره فريقك اليوم وسنصمم نموذج التعهيد المناسب لعملياتك.",
+    "services.customCta":"صمّم حلك معنا",
 
     "process.eyebrow":"كيف نعمل",
-    "process.title":"من المتطلب إلى فريق مُدار.",
+    "process.title":"من احتياجاتك إلى فريق متكامل.",
     "process.lead":"تضمن خطوات الإطلاق الواضحة تطبيقاً عملياً ومنظماً ومتوافقاً مع معايير الخدمة لديك.",
-    "process.note":"نكيّف نموذج التشغيل مع عملياتك وأنظمتك وأحجام العملاء ومؤشرات الأداء لديك.",
+    "process.note":"نكيّف نموذج التشغيل مع عملياتك وأنظمتك وحجم التواصل مع العملاء ومؤشرات الأداء لديك.",
     "process.p1title":"نفهم",
     "process.p1text":"نرسم رحلة العميل والقنوات والأحجام ومتطلبات الخدمة وأهداف العمل.",
     "process.p2title":"نصمم",
     "process.p2text":"نحدد هيكل الفريق وسير العمل وقواعد التصعيد والتقارير والأدوات ومؤشرات الأداء.",
     "process.p3title":"ندرب ونطلق",
-    "process.p3text":"يتم تدريب الوكلاء على علامتك ومنتجاتك وقاعدة المعرفة والأنظمة وسيناريوهات العملاء.",
+    "process.p3text":"يتم تدريب موظفي خدمة العملاء على علامتك ومنتجاتك وقاعدة المعرفة والأنظمة وسيناريوهات العملاء.",
     "process.p4title":"ندير ونطور",
     "process.p4text":"نراقب الجودة والأداء وندرب الفريق ونرفع التقارير ونطور العملية باستمرار.",
 
-    "why.eyebrow":"لماذا مهارة BPO",
+    "why.eyebrow":"لماذا مهارة",
     "why.title":"شريك تشغيل عملي للشركات الخليجية النامية.",
     "why.lead":"نركز على أهم ما تحتاجه عند الاستعانة بخدمة العملاء خارجياً: التحكم والثبات والوضوح والمرونة والالتزام بهوية العلامة التجارية.",
     "why.dashboard":"أداء الخدمة",
-    "why.q":"الجودة","why.s":"SLA","why.c":"رضا العملاء",
+    "why.q":"الجودة","why.s":"مستوى الخدمة","why.c":"رضا العملاء",
     "why.response":"الاستجابة","why.fast":"سريعة","why.scale":"التوسع","why.flexible":"مرن",
     "why.w1t":"نموذج تشغيل مخصص","why.w1d":"فرق وإجراءات وتقارير مصممة حول طبيعة أعمالك.",
     "why.w2t":"تركيز على أسواق الخليج","why.w2d":"نهج خدمة مناسب للشركات العاملة في أسواق دول مجلس التعاون.",
@@ -215,8 +257,8 @@ const translations = {
     "form.need":"ما نوع الدعم الذي تحتاجه؟",
     "form.opt1":"خدمة العملاء الواردة",
     "form.opt2":"دعم واتساب / الدردشة / البريد",
-    "form.opt3":"العناية الصادرة بالعملاء",
-    "form.opt4":"الدعم الخلفي",
+    "form.opt3":"التواصل الاستباقي مع العملاء",
+    "form.opt4":"دعم العمليات الإدارية",
     "form.opt5":"فريق خدمة عملاء كامل بالاستعانة الخارجية",
     "form.opt6":"أخرى",
     "form.message":"أخبرنا عن متطلباتك",
@@ -240,6 +282,7 @@ const siteHeader = document.querySelector(".site-header");
 const quoteForm = document.getElementById("quoteForm");
 
 function applyLanguage(lang){
+  lang = lang === "ar" ? "ar" : "en";
   const dict = translations[lang] || translations.en;
   root.lang = lang;
   root.dir = lang === "ar" ? "rtl" : "ltr";
@@ -260,6 +303,22 @@ function applyLanguage(lang){
     if(dict[key] !== undefined) el.placeholder = dict[key];
   });
 
+  document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
+    const value = dict[el.dataset.i18nAria];
+    if(value !== undefined) el.setAttribute("aria-label",value);
+  });
+  document.querySelectorAll("[data-brand-logo]").forEach(img=>{
+    img.src = `assets/brand/logo-${lang}-dark.svg`;
+    img.alt = dict["common.company"];
+  });
+  document.title = lang === "ar" ? "مهارة | تعهيد خدمة العملاء في منطقة الخليج" : "MAHARA BPO | Customer Service Outsourcing Across the Gulf";
+  const floatingLink = document.querySelector(".whatsapp-float");
+  if(floatingLink){
+    const greeting = lang === "ar" ? "مرحباً مهارة، أرغب في مناقشة تعهيد خدمة العملاء." : "Hello Mahara BPO, I would like to discuss customer service outsourcing.";
+    floatingLink.href = `https://wa.me/923471417357?text=${encodeURIComponent(greeting)}`;
+  }
+  if(menuToggle) menuToggle.setAttribute("aria-label",dict[menuToggle.getAttribute("aria-expanded") === "true" ? "a11y.close" : "a11y.open"]);
+
   langButtons.forEach(btn=>{
     const active = btn.dataset.lang === lang;
     btn.classList.toggle("active", active);
@@ -273,18 +332,31 @@ langButtons.forEach(btn=>{
   btn.addEventListener("click",()=>applyLanguage(btn.dataset.lang));
 });
 
-menuToggle?.addEventListener("click",()=>{
-  const open = mobileMenu.classList.toggle("open");
+function setMenuOpen(open, restoreFocus = false){
+  if(!mobileMenu || !menuToggle) return;
+  mobileMenu.classList.toggle("open",open);
+  mobileMenu.inert = !open;
   menuToggle.classList.toggle("open",open);
   menuToggle.setAttribute("aria-expanded",String(open));
-});
-
+  menuToggle.setAttribute("aria-label",translations[root.lang][open ? "a11y.close" : "a11y.open"]);
+  if(restoreFocus) menuToggle.focus();
+}
+menuToggle?.addEventListener("click",()=>setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true"));
 mobileMenu?.querySelectorAll("a").forEach(a=>{
   a.addEventListener("click",()=>{
-    mobileMenu.classList.remove("open");
-    menuToggle?.classList.remove("open");
-    menuToggle?.setAttribute("aria-expanded","false");
+    setMenuOpen(false);
+    const target = document.querySelector(a.getAttribute("href"));
+    if(target){target.setAttribute("tabindex","-1");target.focus({preventScroll:true});}
   });
+});
+document.addEventListener("keydown",event=>{
+  if(event.key === "Escape" && menuToggle?.getAttribute("aria-expanded") === "true") setMenuOpen(false,true);
+});
+document.addEventListener("click",event=>{
+  if(!siteHeader?.contains(event.target)) setMenuOpen(false);
+});
+window.matchMedia("(min-width:1121px)").addEventListener("change",event=>{
+  if(event.matches) setMenuOpen(false);
 });
 
 function handleScroll(){
@@ -297,6 +369,7 @@ const revealObserver = "IntersectionObserver" in window
   ? new IntersectionObserver(entries=>{
       entries.forEach(entry=>{
         if(entry.isIntersecting){
+          entry.target.classList.remove("pending");
           entry.target.classList.add("visible");
           revealObserver.unobserve(entry.target);
         }
@@ -306,25 +379,31 @@ const revealObserver = "IntersectionObserver" in window
 
 document.querySelectorAll(".reveal").forEach((el,i)=>{
   el.style.transitionDelay = `${Math.min((i%4)*65,195)}ms`;
-  if(revealObserver) revealObserver.observe(el);
+  if(revealObserver && !window.matchMedia("(prefers-reduced-motion: reduce)").matches && el.getBoundingClientRect().top > window.innerHeight){
+    el.classList.add("pending");
+    revealObserver.observe(el);
+  }
   else el.classList.add("visible");
 });
 
 quoteForm?.addEventListener("submit",e=>{
   e.preventDefault();
+  if(!quoteForm.reportValidity()) return;
   const data = new FormData(quoteForm);
+  const country = quoteForm.elements.country.selectedOptions[0]?.textContent || "";
+  const service = quoteForm.elements.service.selectedOptions[0]?.textContent || "";
   const lang = root.lang === "ar" ? "ar" : "en";
 
   const message = lang === "ar"
-    ? `مرحباً مهارة BPO،
+    ? `مرحباً مهارة،
 
 أرغب في مناقشة خدمة الاستعانة الخارجية لخدمة العملاء.
 
 الاسم: ${data.get("name") || ""}
 الشركة: ${data.get("company") || ""}
 البريد: ${data.get("email") || ""}
-الدولة / السوق: ${data.get("country") || ""}
-الخدمة المطلوبة: ${data.get("service") || ""}
+الدولة / السوق: ${country}
+الخدمة المطلوبة: ${service}
 التفاصيل: ${data.get("message") || ""}`
     : `Hello Mahara BPO,
 
@@ -333,8 +412,8 @@ I would like to discuss customer service outsourcing.
 Name: ${data.get("name") || ""}
 Company: ${data.get("company") || ""}
 Email: ${data.get("email") || ""}
-Country / market: ${data.get("country") || ""}
-Support needed: ${data.get("service") || ""}
+Country / market: ${country}
+Support needed: ${service}
 Details: ${data.get("message") || ""}`;
 
   window.open(`https://wa.me/923471417357?text=${encodeURIComponent(message)}`,"_blank","noopener");
