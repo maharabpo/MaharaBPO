@@ -705,3 +705,21 @@ ul{margin:0;padding:0;list-style:none}
 }
 @media(max-width:380px){.brand-logo{width:120px}.nav-wrap{gap:6px}.language-switch{padding:2px}.lang-btn{padding-inline:6px}.menu-toggle{width:40px}.container{width:calc(100% - 24px)}}
 @media(prefers-reduced-motion:reduce){.reveal.pending{opacity:1;transform:none}}
+
+/* Bilingual service expansion: readable type and direction-aware layout. */
+.hero h1{font-size:clamp(2.4rem,4.2vw,4.5rem);line-height:1.16}
+.hero-badge{max-width:100%;white-space:normal}
+.country-list{flex-wrap:wrap}
+.service-icon svg,.value-icon svg,.card-icon svg{display:block;width:24px;height:24px}
+.service-card h3{overflow-wrap:break-word}
+[dir="rtl"] .hero h1{line-height:1.5;letter-spacing:0}
+[dir="rtl"] .country-inner>span,[dir="rtl"] .footer-bottom,[dir="rtl"] .contact-grid small{letter-spacing:0}
+[dir="rtl"] input:not([dir="ltr"]),[dir="rtl"] textarea{text-align:right}
+@media(max-width:640px){.hero h1{font-size:clamp(2.1rem,8.5vw,3rem)}.hero-metrics{flex-wrap:wrap}.hero-metrics div{min-width:75px}.hero-metrics span{font-size:.875rem}}
+
+.delivery-details{margin-top:48px;padding-top:32px;border-top:1px solid var(--line)}
+.delivery-details>h3{font-size:1.4rem;margin-bottom:24px;line-height:1.5}
+.delivery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.delivery-grid h4{color:var(--gold);font-size:1rem;margin:0 0 10px}
+.delivery-grid p{font-size:1rem;color:var(--muted);margin:0;line-height:1.8}
+@media(max-width:640px){.delivery-grid{grid-template-columns:1fr;gap:24px}}
