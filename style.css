@@ -3,17 +3,17 @@
    ========================= */
 
 :root{
-  --bg:#07090c;
-  --bg-2:#0b0f14;
-  --soft:#10161d;
-  --panel:#131a22;
-  --panel-2:#18212b;
+  --bg:#06232b;
+  --bg-2:#082b33;
+  --soft:#0d343d;
+  --panel:#0d343d;
+  --panel-2:#123f48;
   --gold:#c9a96e;
   --gold-2:#e6cf9e;
   --gold-3:#8c6f3e;
   --text:#f6f7f8;
-  --muted:#a9b3be;
-  --muted-2:#a4afbc;
+  --muted:#bacbd0;
+  --muted-2:#b4c5ca;
   --line:rgba(255,255,255,.08);
   --gold-line:rgba(201,169,110,.28);
   --shadow:0 30px 80px rgba(0,0,0,.42);
@@ -260,7 +260,6 @@ ul{margin:0;padding:0;list-style:none}
 }
 .visual-photo{
   position:absolute;inset:0;
-  background:url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1500&q=86") center/cover no-repeat;
   transform:scale(1.02);
 }
 .visual-shade{
@@ -723,3 +722,41 @@ ul{margin:0;padding:0;list-style:none}
 .delivery-grid h4{color:var(--gold);font-size:1rem;margin:0 0 10px}
 .delivery-grid p{font-size:1rem;color:var(--muted);margin:0;line-height:1.8}
 @media(max-width:640px){.delivery-grid{grid-template-columns:1fr;gap:24px}}
+
+/* Teal and gold brand refresh */
+.site-header{background:rgba(6,35,43,.94)}
+.site-header.scrolled,.mobile-menu{background:rgba(6,35,43,.98)}
+.hero{min-height:auto;background:#082b33}
+.hero-bg{background:radial-gradient(ellipse at 80% 15%,#144550 0%,#082b33 60%)}
+.hero-grid{gap:64px;padding-block:64px;grid-template-columns:1.1fr .9fr}
+.hero-badge{letter-spacing:.02em;font-weight:600}
+.hero h1{font-size:clamp(2.6rem,4.2vw,4rem);line-height:1.15;letter-spacing:-.035em}
+.hero-lead{max-width:560px;font-size:1.05rem;line-height:1.85;color:#d1dfe2}
+.hero-metrics{margin-top:32px;gap:16px}
+.hero-metrics strong{font-size:1.15rem;line-height:1.5}
+.hero-metrics span{font-size:.8rem;letter-spacing:.03em;text-transform:none}
+.visual-shell{height:550px;min-height:0;border-radius:120px 20px 20px 20px;border-color:rgba(201,169,110,.4);box-shadow:0 24px 64px #00151c66}
+.visual-photo{position:absolute;width:100%;height:100%;object-fit:cover;object-position:center 35%;transform:none}
+.visual-shade{background:linear-gradient(0deg,rgba(3,25,32,.92),transparent 42%)}
+.brand-panel{bottom:25px;left:28px;right:28px;padding:0;background:none;border:0;backdrop-filter:none}
+.brand-panel p{font-size:.68rem;letter-spacing:.08em}
+.brand-panel h2{font-size:1.35rem;line-height:1.4;margin-top:9px;color:#fff}
+.country-strip{background:#06232b}
+.country-inner{gap:24px;padding-block:16px;min-height:72px}
+.section{padding-block:88px}
+.section h2{font-size:clamp(2rem,3vw,2.9rem);line-height:1.25}
+.split-layout{gap:64px}.section-body{padding-top:10px}
+.value-grid{margin-top:44px}.value-card{min-height:255px}.value-card h3{margin-top:25px}
+.service-card{min-height:0;padding:30px;display:flex;flex-direction:column}
+.service-card ul{margin-top:auto;padding-top:22px}
+.service-consultation{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:8px 32px;align-items:center;background:#103b44}
+.service-consultation .eyebrow,.service-consultation h3,.service-consultation>p{grid-column:1;margin:0}
+.service-consultation .btn{grid-column:2;grid-row:1/4}
+.quote-form{background:#0d343d}.quote-form input,.quote-form select,.quote-form textarea{background:#06232b}
+.process-note,.brand-signature{background:#082b33}
+[dir="rtl"] .visual-shell{border-radius:20px 120px 20px 20px}
+[dir="rtl"] .hero h1{line-height:1.5;letter-spacing:0}
+[dir="rtl"] .hero-badge,[dir="rtl"] .brand-panel p,[dir="rtl"] .hero-metrics span{letter-spacing:0}
+@media(max-width:1120px){.hero-grid{gap:32px}.visual-shell{height:520px}.service-grid{grid-template-columns:1fr 1fr}.service-card:nth-child(3){grid-column:1/-1}}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding-block:44px;gap:36px}.hero-copy{max-width:690px}.hero h1{max-width:680px}.hero-visual{max-width:600px}.visual-shell{height:520px}.country-inner{gap:12px}.section{padding-block:64px}.split-layout{gap:24px}.service-grid{grid-template-columns:1fr}.service-consultation{display:flex;align-items:flex-start}.service-consultation .btn{margin-top:16px}.hero-actions{display:flex}}
+@media(max-width:640px){.hero h1{font-size:clamp(2.1rem,8.5vw,3rem)}.hero-badge{font-size:.75rem}.hero-lead{font-size:1rem}.hero-actions{display:grid}.hero-actions .btn{padding-inline:12px}.hero-metrics{gap:10px}.hero-metrics strong{font-size:1rem}.hero-metrics span{font-size:.75rem}.visual-shell{height:430px;border-radius:70px 16px 16px 16px}[dir="rtl"] .visual-shell{border-radius:16px 70px 16px 16px}.brand-panel{left:22px;right:22px;bottom:24px}.brand-panel h2{font-size:1.2rem}.value-card{min-height:0}.section-head,.section-head.center{margin-bottom:32px}.service-card{padding:24px}.service-consultation{gap:12px}}
