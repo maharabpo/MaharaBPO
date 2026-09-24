@@ -593,6 +593,7 @@ ul{margin:0;padding:0;list-style:none}
 .reveal.visible{opacity:1;transform:none}
 
 /* RTL */
+[dir="rtl"] .process-note span,[dir="rtl"] .brand-panel p,[dir="rtl"] .hero-badge{letter-spacing:0}
 [dir="rtl"] .desktop-nav,[dir="rtl"] .nav-actions,[dir="rtl"] .hero-actions,[dir="rtl"] .country-list{direction:rtl}
 [dir="rtl"] .hero-copy,[dir="rtl"] .section-copy,[dir="rtl"] .section-body,[dir="rtl"] .why-copy,[dir="rtl"] .quote-copy{text-align:right}
 [dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{letter-spacing:0;line-height:1.4}
