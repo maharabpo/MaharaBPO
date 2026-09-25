@@ -549,19 +549,29 @@ ul{margin:0;padding:0;list-style:none}
 .form-note{color:var(--muted-2);font-size:.875rem;line-height:1.6;text-align:center;margin-top:11px}
 
 /* Footer */
-.contact-section{padding:72px 0 90px;background:#05070a}
-.contact-grid{display:grid;grid-template-columns:1.4fr .7fr 1fr;gap:70px;padding-bottom:50px}
-.footer-logo{width:224px;height:auto;margin-bottom:22px;object-fit:contain}
-.contact-grid>div:first-child p{color:var(--muted);font-size:.875rem;max-width:350px}
-.contact-grid>div:not(:first-child){display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-.contact-grid small{color:var(--gold);font-size:.875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-.contact-grid a,.contact-grid span{color:var(--muted);font-size:.875rem}
-.contact-grid a:hover{color:var(--gold-2)}
+.contact-section{
+  padding:72px 0 90px;
+  background:#151515;
+  border-top:1px solid rgba(201,169,110,.25);
+  color:#fff;
+  text-align:start;
+}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.7fr) minmax(0,1fr);gap:clamp(32px,5vw,70px);padding-bottom:48px}
+.footer-logo{width:224px;height:auto;margin-bottom:24px;object-fit:contain}
+.contact-grid>div:first-child p{color:#aeb8c5;font-size:1rem;max-width:350px;line-height:1.8}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.footer-heading{color:#fff;font-size:.875rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px;line-height:1.5}
+.contact-grid a{color:#fff;font-size:.875rem;min-height:44px;display:inline-flex;align-items:center;max-width:100%;transition:color .18s ease}
+.contact-grid a:hover,.contact-grid a:focus-visible{color:#c9a96e}
+.footer-whatsapp{flex-wrap:wrap;column-gap:8px}
+.footer-whatsapp bdi{white-space:nowrap}
+.footer-region{color:#aeb8c5;font-size:.875rem;line-height:1.8;max-width:32ch;margin-top:12px}
+[dir="rtl"] .footer-heading{letter-spacing:0}
 .footer-bottom{
-  border-top:1px solid var(--line);
-  padding-top:22px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px;
-  color:var(--muted-2);
+  border-top:1px solid rgba(201,169,110,.15);
+  padding-top:24px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;
+  color:#aeb8c5;
   font-size:.875rem;
   letter-spacing:.04em;
 }
@@ -668,6 +678,7 @@ ul{margin:0;padding:0;list-style:none}
   .form-row{grid-template-columns:1fr;gap:0}
   .quote-form{padding:20px}
   .contact-grid{grid-template-columns:1fr}
+  .contact-section{padding-top:48px}
   .contact-grid>div:first-child{grid-column:auto}
   .footer-bottom{flex-direction:column;align-items:flex-start}
   .whatsapp-float b{display:none}
